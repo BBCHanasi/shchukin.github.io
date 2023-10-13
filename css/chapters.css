@@ -1,0 +1,320 @@
+/* New-Chapters*/
+.new-chapters{
+	padding-top: 84px;
+	padding-bottom: 32px;
+}
+
+.new-item-chapters-wrapper{
+	display: grid;
+	gap:6px;
+	grid-template-columns: repeat(4, 1fr);
+	max-width: 1330px;
+	margin: 32px auto 0 auto;
+}
+
+.new-item-chapter{
+	border-radius: 25px;
+    position: relative;
+    padding-top: 100%;
+    height: min-content;
+    background-repeat: no-repeat;
+    background-size: cover;
+	transition: all 0.2s ease;
+	cursor: pointer;
+}
+
+.new-item-chapter.in-progress{
+	pointer-events: none;
+}
+
+.new-item-chapter.presale{
+	pointer-events: none;
+}
+
+.new-item-chapter.no-timeline{
+	pointer-events: none;
+}
+
+.in-progress .lessons-icon,
+.in-progress .time-icon{
+	display: none!important;
+}
+
+.new-item-chapter.text-white{
+	color:#fff;
+}
+
+.new-item-chapter.text-black{
+	color:#000;
+}
+
+.new-item-chapter .item-content{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* .new-item-chapter .bl-8:before {
+	content: '';
+	display: flex;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 100px;
+	height: 100px;
+	background: red 0% 0% no-repeat padding-box;
+	border-radius: 50%;
+}
+
+.new-item-chapter .bl-8:after {
+	content: 'Скидка 10 000 ₽';
+	display: flex;
+	position: absolute;
+	top: 25px;
+	right: 25px;
+	max-width: 70px;
+	height: 70px;
+	align-items: center;
+	text-align: center;
+} */
+
+
+
+.icon-text{
+	line-height: 1;
+	margin-top: 0px;
+}
+
+.time-icon, .lessons-icon{
+	display: flex;
+	align-items: center;
+}
+
+.lessons-icon::before{
+	content: '';
+    -webkit-mask: url(/media/images/icons/video.svg) no-repeat center;
+    mask: url(/media/images/icons/video.svg) no-repeat center;
+	background-color: #000;
+    height: 12px;
+	width: 14px;
+    margin-right: 5px;
+	box-sizing: border-box;
+}
+
+.time-icon::before{
+	content: '';
+    -webkit-mask: url(/media/images/icons/time.svg) no-repeat center;
+    mask: url(/media/images/icons/time.svg) no-repeat center;
+    width: 12px;
+    height: 12px;
+	background-color: #000;
+    margin-right: 5px;
+	box-sizing: border-box;
+}
+
+.text-white .time-icon::before, .text-white .lessons-icon::before{
+	background-color: #fff;
+}
+
+.new-item-chapter .info-wrapper{
+	padding: 31px 20px 0px 20px;
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+.new-item-chapter .info-wrapper > div{
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+
+	padding-right: 12px;
+	font-size:13px;
+	line-height: 1;
+}
+
+.new-item-chapter .info-wrapper .presale-title{
+	display: none;
+}
+
+.new-item-chapter .info-wrapper .pretitle{
+	font-size:13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.39px;
+	line-height: 1;
+	margin-top: 2px;
+}
+
+.new-item-chapter .title{
+	padding: 5px 20px 0px 20px;
+	font-size:24px;
+	line-height: 28px;
+	font-weight: 400;
+}
+
+.info-wrapper .presale-title {
+	display: none;
+}
+
+.presale .info-wrapper .pretitle{
+	display: none;
+}
+
+.presale .info-wrapper .lessons-icon{
+	display: none;
+}
+
+.presale .info-wrapper .time-icon{
+	display: none;
+}
+
+.presale .info-wrapper .presale-title{
+	display: flex;
+	text-transform: uppercase;
+	font-size:12px;
+	letter-spacing: 0.03rem;
+}
+
+.chapter-cover{
+	width:100%;
+	height: 100%;
+    position: absolute;
+    top: 0;
+	overflow: hidden;
+	will-change: transform; /*Чтобы не резало углы в ios*/
+    border-radius: 25px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.chapter-cover img{
+	width: 100%;
+	height: 100%;
+	transition: all 0.2s ease;
+}
+
+.chapter-cover video{
+	width:100%;
+	height: 100%;
+	transition: all 0.2s ease;
+}
+
+.price-wrapper{
+	padding: 0px 20px 24px 20px;
+}
+
+.price-wrapper .title{
+	padding: 0;
+	font-size: 17px;
+	line-height: 1;
+	font-weight: 500;
+}
+
+.price-wrapper .post-title{
+	padding: 0;
+	font-size: 12px;
+	line-height: 1;
+	font-weight: 500;
+	opacity: 0.75;
+}
+
+.chapters-btn{
+	padding: 0px 22px 22px 22px;
+}
+
+.chapters-btn .btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size:12px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.03rem;
+
+	height: 48px;
+	background: #383838;
+	color:#fff;
+	text-decoration: none;
+	border-radius: 12px;
+	transition:  all 0.2s ease;
+}
+
+.chapters-btn .btn:hover{
+	background-color: #0000;
+	outline: 1px solid #fff;
+	transition: all 0.2s ease;
+}
+@media only screen and (max-width:1380px){
+	.chapters-header,
+	.new-item-chapters-wrapper{
+		--max-width: 1330px;
+		--space: max(24px, calc((100% - var(--max-width)) / 2));
+		padding-left: var(--space);
+		padding-right: var(--space);
+	}
+}
+@media (min-width:1024px) and (max-width:1280px){
+	.new-item-chapters-wrapper{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+@media only screen and (min-width: 1024px) {
+
+	.new-item-chapter:hover .chapter-cover video, 
+	.new-item-chapter:hover .chapter-cover img{
+		transform: scale(1.1);
+		transition: all 0.2s ease;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+
+	.new-item-chapters-wrapper{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.new-chapters{
+		padding: 64px 0px 32px 0px;
+	}
+
+	.chapter-cover{
+		border-radius: 25px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+
+	.new-item-chapters-wrapper{
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.new-chapters{
+		padding: 84px 24px 24px 24px;
+	}
+
+	.new-item-chapters-wrapper{
+		padding: 0;
+	}
+	.chapters-header{
+		padding:0px;
+	}
+}
+
+@media only screen and (max-width: 550px) {
+	
+	.new-item-chapters-wrapper{
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.new-chapters{
+		padding: 84px 24px 24px 24px;
+	}
+}

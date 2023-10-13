@@ -1,0 +1,62 @@
+{
+    "text-color":"white",
+    "type-preview":"video",
+    "type-cover":"img",
+    "in_progress":"false",
+    "item-img-add-class":"no-scale",
+    "preview-img":"media/blocks/10/preview-10.mp4",
+    "cover-img":"media/blocks/10/cover-10.jpg",
+    "price-title":"от 825 ₽ в месяц",
+    "price-description":"или сразу 15 900 ₽",
+    "title":"Р значит Руки",
+    "description":"Руки — это не только элемент персонажа, который приходит в ночных кошмарах к 2D и 3D художникам, но&nbsp;и&nbsp;еще самая слабо разобранная тема в дизайне стилизованных 3д персонажей",
+    "lessons":"8",
+    "time":" 5 ч 30 мин",
+    "level":"Средняя",
+    "bestseller": true,
+    "category": [
+        "modeling",
+        "characters",
+        "rigging",
+        "animation",
+        "mad-rabbit",
+        "for-illustrators",
+        "for-motion-designers"
+    ],
+    "icons":[
+        "blender"
+    ],
+    "teachers":[
+        {
+            "name":"Никита Никитин",
+            "prof":"",
+            "avatar":"media/images/teachers/small/mad.jpg"
+        }
+    ],
+    "timeline":[
+        {
+            "title":"Моделинг",
+            "description":"Замоделим 4 популярных типа стилизованных рук, начиная от совсем мультяшных до приближенных к&nbsp;реалистичным аналогам",
+            "tags":["моделинг", "сетка"],
+            "img":"media/blocks/10/timeline/1.mp4"
+        },
+        {
+            "title":"Дизайн",
+            "description":"Изучим фишки и приемы стилизации формы рук из&nbsp;арсенала профессиональных дизайнеров&nbsp;персонажей",
+            "tags":["хитрости", "софт скиллз"],
+            "img":"media/blocks/10/timeline/2.mp4"
+        },
+        {
+            "title":"Риг и развесовка",
+            "description":"Разберем процесс риггинга всех замоделенных ранее рук, а также поработаем с развесовкой, чтобы ладонь и пальцы корректно сгибались",
+            "tags":["риггинг", "логика", "хитрости"],
+            "img":"media/blocks/10/timeline/3.mp4"
+        },
+        {
+            "title":"Позы и анимация",
+            "description":"Научимся выставлять руки в позы, которые используются при анимации персонажей, и&nbsp;создадим свою библиотеку поз",
+            "tags":["риггинг", "логика"],
+            "img":"media/blocks/10/timeline/4.mp4"
+        }
+    ]
+}

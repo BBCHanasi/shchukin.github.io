@@ -1,0 +1,81 @@
+{
+    "text-color":"black",
+    "type-preview":"img",
+    "type-cover":"video",
+    "in_progress":"false",
+    "item-img-add-class":"scale",
+    "preview-img":"media/blocks/5/preview-5.webp",
+    "cover-img":"media/blocks/5/cover-5.mp4",
+    "price-title":"от 1500 ₽ в месяц",
+    "price-description":"или сразу 19 900 ₽",
+    "title":"Шерсть и частицы",
+    "description":"Освоим работу с системой частиц в Blender,<br> научимся создавать волосы, различные<br> типы шерсти и шерстяных персонажей",
+    "lessons":"12",
+    "time":"6 ч 40 мин",
+    "level":"Новичок",
+    "category": [
+        "characters",
+        "another-speaker"
+    ],
+    "icons":[
+        "ai",
+        "ae",
+        "ps"
+    ],
+    "teachers":[
+        {
+            "name":"Никита Никитин",
+            "prof":"",
+            "avatar":"media/images/teachers/small/mad.jpg"
+        },
+        {
+            "name":"Екатерина Петрова",
+            "prof":"",
+            "avatar":"media/images/teachers/small/ekaterina.jpg"
+        }
+    ],
+    "timeline":[
+        {
+            "title":"Моделинг",
+            "description":"Замоделим Лалафанфана — самого модного в мире утенка, чтобы ставить на нем эксперименты",
+            "tags":["моделинг","стилизация"],
+            "img":"media/blocks/5/timeline/1.mp4"
+        },
+        {
+            "title":"Знакомство с частицами",
+            "description":"Разберем инструменты работы с частицами <br> и подробно рассмотрим их настройки",
+            "tags":["частицы","логика"],
+            "img":"media/blocks/5/timeline/2.mp4"
+        },
+        {
+            "title":"Настроим шерсть",
+            "description":"Добавим Лалафанфану шерсти, чтобы он не замерз, настроим ее и расчешем утенка",
+            "tags":["частицы","логика"],
+            "img":"media/blocks/5/timeline/3.mp4"
+        },
+        {
+            "title":"Доп настройки",
+            "description":"Рассмотрим дополнительные возможности<br> и инструменты для работы с шерстью",
+            "tags":["частицы","логика","текстуринг"],
+            "img":"media/blocks/5/timeline/4.mp4"
+        },
+        {
+            "title":"Волосы",
+            "description":"Добавим Лалафанфану прическу и поможем подобрать новый стильный лук",
+            "tags":["частицы","логика"],
+            "img":"media/blocks/5/timeline/5.mp4"
+        },
+        {
+            "title":"Головные уборы",
+            "description":"Сделаем клевые головные уборы, помнем их скульптом и добавим на них частички шерсти",
+            "tags":["скульптинг","частицы"],
+            "img":"media/blocks/5/timeline/6.mp4"
+        },
+        {
+            "title":"Одежда",
+            "description":"Добавим Лалафанфану модный прикид и сделаем реалистичные текстурки",
+            "tags":["моделинг","стилизация","текстуринг"],
+            "img":"media/blocks/5/timeline/7.mp4"
+        }
+    ]
+}

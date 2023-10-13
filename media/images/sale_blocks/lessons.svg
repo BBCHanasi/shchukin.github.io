@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="12.997" height="15.001" viewBox="0 0 12.997 15.001">
+  <g id="lib_icon" data-name="lib icon" transform="translate(-677.003 -281)">
+    <g id="Rectangle_27" data-name="Rectangle 27" transform="translate(679 281)" fill="none" stroke="#838383" stroke-width="1">
+      <rect width="11" height="13" stroke="none"/>
+      <rect x="0.5" y="0.5" width="10" height="12" fill="none"/>
+    </g>
+    <path id="Path_109" data-name="Path 109" d="M677.5,1939v12.615h10.5" transform="translate(0 -1656.114)" fill="none" stroke="#838383" stroke-width="1"/>
+    <path id="Polygon_1" data-name="Polygon 1" d="M3,0,6,5H0Z" transform="translate(687.754 284.5) rotate(90)" fill="#838383"/>
+  </g>
+</svg>

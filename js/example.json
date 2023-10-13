@@ -1,0 +1,34 @@
+{
+    "exampleItems" : [
+        {"type":"video", "author":"Евгений Заболотний", "description":"Нашел работу мечты<br> после курса","avatar":"media/images/examples/ava_5","example":"media/video/examples/example_1.mp4", "link":"t.me/subd1v"},
+        {"type":"video", "author":"Дима Жеков", "description":"Любит стоп-моушн<br>LEGO анимацию","avatar":"media/images/examples/new_ava_2","example":"media/video/examples/new_example_2.mp4", "link":"t.me/cofiju"},
+        {"type":"img", "author":"Аня Мельникова", "description":"Заработала $40 000 <br> на NFT коллекции","avatar":"media/images/testimonials/5","example":"media/images/examples/example_20", "link":"t.me/AnyaAnya3d"},
+        {"type":"img", "author":"Василий Юф", "description":"Ходит по тонкому льду между реализмом и стилизацией","avatar":"media/images/examples/ava-yuf","example":"media/images/examples/example-yuf", "link":"t.me/yuf_13"},
+        {"type":"video", "author":"Александр Морозов", "description":"Веб-разработчик, который полностью ушел в 3D","avatar":"media/images/examples/ava_morozov","example":"media/video/examples/example-slickslike.mp4", "link":"t.me/slickslike"},
+        {"type":"img", "author":"Евгений Вакулич", "description":"Ушел с любимой работы,<br>чтобы посвятить себя 3D","avatar":"media/images/examples/new_ava_3","example":"media/images/examples/new_example_3","link":"t.me/mongusteau" },
+        {"type":"video", "author":"Никита Доталов", "description":"До курса работал<br> в частной охране","avatar":"media/images/examples/ava-dotalov","example":"media/video/examples/example-avadakedavraaa.mp4", "link":"t.me/avadakedavraaa"},
+        {"type":"video", "author":"Ильмир Хамадерзин", "description":"Любит Маркуса Магнуссона<br>и его стиль","avatar":"media/images/examples/new_ava_4","example":"media/video/examples/new_example_3.mp4", "link":"t.me/lililmir"},
+        {"type":"video", "author":"Даниил Пичугин", "description":"Обожает текстурирование<br> и Звездные Войны","avatar":"media/images/examples/ava-pichugin","example":"media/video/examples/example-ancientborn.mp4", "link":"t.me/ancientborn"},
+        {"type":"video", "author":"Илья Саплин", "description":"Продал этот арт <br>как NFT за $3 000","avatar":"media/images/examples/ava_12","example":"media/video/examples/example_12.mp4", "link":"t.me/mr_candyman"},
+        {"type":"img", "author":"Дима Никоноров", "description":"Рисует графику<br>для студии Petrick.co","avatar":"media/images/examples/ava_13","example":"media/images/examples/new_example_6", "link":"t.me/nik0dzima"},
+        {"type":"img", "author":"Никита Егошкин", "description":"До курса сменил более <br>пяти профессий","avatar":"media/images/examples/ava_15","example":"media/images/examples/new_example_7", "link":"t.me/bratvrag"},
+        {"type":"img", "author":"Вадим Константинович", "description":"Покупает все курсы Мэд Рэббита с&nbsp;2017 года","avatar":"media/images/examples/ava_4","example":"media/images/examples/example-vadim11", "link":"t.me/vadimv11"},
+        {"type":"img", "author":"Мария Тюлина", "description":"Обожает текстурировать<br>в Substance Painter","avatar":"media/images/examples/new_ava_5","example":"media/images/examples/example-tulina", "link":" t.me/Tyulina_M"},
+        {"type":"img", "author":"Настя Недыхалова", "description":"Попал в ТОП-10 в коллаборации <br>с Blake Stevenson","avatar":"media/images/examples/ava_14","example":"media/images/examples/example_14", "link":"t.me/nedykhalovart"},
+        {"type":"video", "author":"Алексей Копыт", "description":"Считает BBC лучшей <br>покупкой за 2021 год","avatar":"media/images/examples/ava_2","example":"media/video/examples/new_example_1.mp4", "link":"t.me/idobrinya11"}
+  
+    ],
+    "oldExampleItems":[
+        {"type":"img", "author":"Максим Шамин", "description":"Попал в ТОП-10 в коллаборации <br>с Blake Stevenson","avatar":"media/images/examples/ava_1","example":"media/images/examples/example_1"},
+        {"type":"img", "author":"Сергей Игнатеня", "description":"До курса работал машинистом<br>папиросно-сигаретной линии","avatar":"media/images/examples/ava_6","example":"media/images/examples/example_6"},
+        {"type":"img", "author":"Ульяна Ткаченко", "description":"Профессиональная костюмерша, <br>влюбившаяся в 3D-графикуStevenson","avatar":"media/images/examples/ava_7","example":"media/images/examples/example_7"},
+        {"type":"img", "author":"Света Ерёмина", "description":"Попала в ТОП-10 в коллаборации <br>с Blake Stevenson","avatar":"media/images/examples/ava_8","example":"media/images/examples/example_8"},
+        {"type":"img", "author":"Настя Недыхалова", "description":"Попала в ТОП-10 в коллаборации <br>с Blake Stevenson","avatar":"media/images/examples/ava_14","example":"media/images/examples/example_14"},
+        {"type":"img", "author":"Матвей Долгополов", "description":"Специализируется <br>на Rubber hose стиле","avatar":"media/images/examples/ava_16","example":"media/images/examples/example_16"},
+        {"type":"img", "author":"Александр Бухтенко", "description":"Работает в СТС Медиа","avatar":"media/images/examples/ava_19","example":"media/images/examples/example_19"},
+        {"type":"img", "author":"Артур Гатауллин", "description":"Не любит реализм и считает,<br>что стилизация — топ","avatar":"media/images/examples/new_ava_1","example":"media/images/examples/new_example_1", "link":"t.me/xtreamfeal"},
+        {"type":"img", "author":"Роман Карасев", "description":"Победил в челлендже <br>с Blake Stevenson","avatar":"media/images/examples/ava_10","example":"media/images/examples/new_example_10", "link":"t.me/Karasev_Roman"},
+        {"type":"video", "author":"Илья Саплин", "description":"Продал этот арт <br>как NFT за $3 000","avatar":"media/images/examples/ava_12","example":"media/video/examples/example_12.mp4", "link":"t.me/mr_candyman"},
+        {"type":"img", "author":"Роман Колотилин", "description":"Попал в ТОП-10 в коллаборации <br>с Blake Stevenson","avatar":"media/images/examples/ava_3","example":"media/images/examples/example_3", "link":"t.me/pelomier"}
+    ]
+}

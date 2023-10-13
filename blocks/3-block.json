@@ -1,0 +1,68 @@
+{
+    "text-color":"white",
+    "type-preview":"img",
+    "type-cover":"video",
+    "in_progress":"false",
+    "item-img-add-class":"scale",
+    "preview-img":"media/blocks/3/preview-3.webp",
+    "cover-img":"media/blocks/3/cover-3.mp4",
+    "price-title":"от 1000 ₽ в месяц",
+    "price-description":"или сразу 15 900 ₽",
+    "title":"Детализация<br> и текстуры",
+    "description":"Замоделим гидрант, освоим новую программу<br> для текстурирования Substance Painter и научимся создавать в ней реалистичные материалы",
+    "lessons":"10",
+    "time":"4 ч 50 мин",
+    "level":"Новичок",
+    "bestseller": true,
+    "category": [
+        "modeling",
+        "lighting",
+        "texturing",
+        "mad-rabbit",
+        "for-illustrators"
+    ],
+    "icons":[
+        "blender",
+        "pt",
+        "ps"
+    ],
+    "teachers":[
+        {
+            "name":"Никита Никитин",
+            "prof":"",
+            "avatar":"media/images/teachers/small/mad.jpg"
+        }
+    ],
+    "timeline":[
+        {
+            "title":"Моделинг",
+            "description":"Разберем еще пару интересных особенностей моделирования цилиндрических форм",
+            "tags":["моделинг","сетка","хитрости"],
+            "img":"media/blocks/3/timeline/1.mp4"
+        },
+        {
+            "title":"UV развертка",
+            "description":"Подробно поговорим про развертку и подготовим модель к импорту в Substance Painter",
+            "tags":["развертка","логика"],
+            "img":"media/blocks/3/timeline/2.mp4"
+        },
+        {
+            "title":"Текстуринг",
+            "description":"Рассмотрим интерфейс и логику работы Substance Painter, научимся создавать в ней реалистичные текстуры",
+            "tags":["материалы","текстуры","логика"],
+            "img":"media/blocks/3/timeline/3.mp4"
+        },
+        {
+            "title":"Освещение",
+            "description":"Научимся настраивать свет для цилиндрических объектов так, чтобы достичь максимального объема",
+            "tags":["софт скиллз","свет"],
+            "img":"media/blocks/3/timeline/4.mp4"
+        },
+        {
+            "title":"Постобработка",
+            "description":"Избавимся от некрасивых теней и добьемся сочного результата на выходе",
+            "tags":["софт скиллз","хитрости"],
+            "img":"media/blocks/3/timeline/5.mp4"
+        }
+    ]
+}

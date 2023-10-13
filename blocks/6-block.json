@@ -1,0 +1,100 @@
+{
+    "text-color":"black",
+    "type-preview":"img",
+    "type-cover":"img",
+    "in_progress":"false",
+    "item-img-add-class":"scale",
+    "preview-img":"media/blocks/6/preview-6.webp",
+    "cover-img":"media/blocks/6/cover-6.jpg",
+    "price-title":"от 2000 ₽ в месяц",
+    "price-description":"или сразу 23 900 ₽",
+    "title":"BBC x Jetpacks",
+    "description":"Курс-коллаборация, созданный совместно с канадским иллюстратором Jetpacksandrollerskates. Задача курса показать варианты адаптации 2Д иллюстрации в 3Д.",
+    "lessons":"27",
+    "time":"9 ч 40 мин",
+    "level":"Новичок",
+    "category": [
+        "characters",
+        "rigging",
+        "another-speaker",
+        "for-illustrators"
+    ],
+    "icons":[
+        "blender",
+        "pt",
+        "ps"
+    ],
+    "teachers":[
+        {
+            "name":"Никита Никитин",
+            "prof":"",
+            "avatar":"media/images/teachers/small/mad.jpg"
+        },
+        {
+            "name":"Денис Бондарев",
+            "prof":"",
+            "avatar":"media/images/teachers/small/bondarev.jpg"
+        },
+        {
+            "name":"Ксения Чуйко",
+            "prof":"",
+            "avatar":"media/images/teachers/small/ksenia.jpg"
+        }
+    ],
+    "timeline":[
+        {
+            "title":"Чумной доктор",
+            "description":"Создадим каркас персонажа в Т-образной позе, чтобы удобно было менять позу в дальнейшем",
+            "tags":["моделинг"],
+            "img":"media/blocks/6/timeline/1.mp4"
+        },
+        {
+            "title":"Детали",
+            "description":"Добавим детали и разберем новые инструменты<br> для моделинга",
+            "tags":["моделинг","логика"],
+            "img":"media/blocks/6/timeline/2.mp4"
+        },
+        {
+            "title":"Риггинг",
+            "description":"Снова вернемся к нашей любимой теме риггинга.<br> Те, кому полюбился курс с шаманом, после этого урока будут плакать",
+            "tags":["риггинг","логика"],
+            "img":"media/blocks/6/timeline/3.mp4"
+        },
+        {
+            "title":"Текстуринг",
+            "description":"Сделаем развертку и перенесем модель в Substance Painter, чтобы добавить ему текстуры",
+            "tags":["материалы","текстуры"],
+            "img":"media/blocks/6/timeline/4.mp4"
+        },
+        {
+            "title":"Рендер",
+            "description":"Выставим ракурс и камеру под плоский ракурс, поговорим о том как стилизовать позу под оригинальный референс",
+            "tags":["софт скиллз","камера","хитрости"],
+            "img":"media/blocks/6/timeline/5.mp4"
+        },
+        {
+            "title":"Психопат",
+            "description":"Создадим каркас персонажа, используя новые техники. Если вам интересно почему персонаж называется психопатом, лучше не спрашивайте: канадский юмор",
+            "tags":["моделинг","риггинг"],
+            "img":"media/blocks/6/timeline/6.mp4"
+        },
+        {
+            "title":"Одежда",
+            "description":"Научимся моделировать стилизованную одежду",
+            "tags":["моделинг","сетка"],
+            "img":"media/blocks/6/timeline/7.mp4"
+        },
+        {
+            "title":"Объекты и окружение",
+            "description":"Создадим дополнительные объекты и добавим условное окружение",
+            "tags":["моделинг","хитрости"],
+            "img":"media/blocks/6/timeline/8.mp4"
+        },
+        {
+            "title":"Материалы",
+            "description":"Стилизуем персонажа и сцену так, чтобы результат на выходе был неотличим от 2Д рисунка",
+            "tags":["материалы","стилизация"],
+            "img":"media/blocks/6/timeline/9.mp4"
+        }
+    ]
+}

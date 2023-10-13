@@ -1,0 +1,74 @@
+{
+    "text-color":"white",
+    "type-preview":"video",
+    "type-cover":"img",
+    "in_progress":"false",
+    "item-img-add-class":"scale",
+    "preview-img":"media/blocks/2/preview-2.mp4",
+    "cover-img":"media/blocks/2/cover-2.jpg",
+    "price-title":"от 1000 ₽ в месяц",
+    "price-description":"или сразу 15 900 ₽",
+    "title":"Продвинутое моделирование",
+    "description":"Лего мини-фигурка была специально спроектирована так, чтобы человек, который решил в точности смоделировать ее в Блендере, долго и мучительно страдал. Но не на тех напали!",
+    "lessons":"6",
+    "time":"5 ч 55 мин",
+    "level":"Новичок",
+    "bestseller": true,
+    "category": [
+        "modeling",
+        "characters",
+        "lighting",
+        "texturing",
+        "mad-rabbit",
+        "for-designers"
+    ],
+    "icons":[
+        "blender",
+        "ps"
+    ],
+    "teachers":[
+        {
+            "name":"Никита Никитин",
+            "prof":"",
+            "avatar":"media/images/teachers/small/mad.jpg"
+        }
+    ],
+    "timeline":[
+        {
+            "title":"Subdiv моделирование",
+            "description":"На примере LEGO мини-фигурки продолжим изучать тонкости и нюансы Subdiv моделирования. Будет весело (но это не точно)",
+            "tags":["моделинг","сетка"],
+            "img":"media/blocks/2/timeline/1.mp4"
+        },
+        {
+            "title":"Топология — 1",
+            "description":"Научимся изящно склеивать элементы объекта<br> в цельный меш и узнаем почему н-гоны<br> не всегда страшны",
+            "tags":["моделинг","сетка","хитрости "],
+            "img":"media/blocks/2/timeline/2.mp4"
+        },
+        {
+            "title":"Топология — 2",
+            "description":"Поработаем с цилиндрическими формами<br> и разберемся в каких случаях от натяжений<br> на модели не обязательно избавляться",
+            "tags":["моделинг","сетка","хитрости"],
+            "img":"media/blocks/2/timeline/3.mp4"
+        },
+        {
+            "title":"Ретопология",
+            "description":"Освоим новый подход для моделирование сложных форм и узнаем почему без ретопологии в 3д нечего делать",
+            "tags":["моделинг","сетка","хитрости"],
+            "img":"media/blocks/2/timeline/4.mp4"
+        },
+        {
+            "title":"Рефакторинг",
+            "description":"Научимся отделять общее от частного и упрощать сложные формы без потери привлекательности",
+            "tags":["моделинг","сетка","стилизация"],
+            "img":"media/blocks/2/timeline/5.mp4"
+        },
+        {
+            "title":"Презентация",
+            "description":"Добавим материалы и наклейки, используем студийное освещение, чтобы фигурка смотрелась как настоящая",
+            "tags":["материалы","развертка","свет"],
+            "img":"media/blocks/2/timeline/6.mp4"
+        }
+    ]
+}

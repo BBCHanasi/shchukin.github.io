@@ -1,0 +1,81 @@
+{
+    "text-color":"white",
+    "type-preview":"video",
+    "type-cover":"video",
+    "in_progress":"false",
+    "item-img-add-class":"scale",
+    "preview-img":"media/blocks/8/preview-8.mp4",
+    "cover-img":"media/blocks/8/cover-8.mp4",
+    "price-title":"от 1660 ₽ в месяц",
+    "price-description":"или сразу 19 900 ₽",
+    "title":"2D стилизация",
+    "description":"Научимся превращать 3Д модели в 2Д (разумеется, лишь визуально), разберем основы стилизации формы и объема, а еще изучим инструмент Grease Pencil",
+    "lessons":"12",
+    "time":"5 ч 10 мин",
+    "level":"Средняя",
+    "category": [
+        "animation",
+        "texturing",
+        "another-speaker",
+        "for-illustrators"
+    ],
+    "icons":[
+        "blender"
+    ],
+    "teachers":[
+        {
+            "name":"Никита Никитин",
+            "prof":"",
+            "avatar":"media/images/teachers/small/mad.jpg"
+        },
+        {
+            "name":"Ксения Чуйко",
+            "prof":"",
+            "avatar":"media/images/teachers/small/ksenia.jpg"
+        }
+    ],
+    "timeline":[
+        {
+            "title":"Стилизация цвета и формы",
+            "description":"Разберем нюансы и особенности стилизации формы и свето-тени для имитации 2D рисунка",
+            "tags":["софт скиллз","логика"],
+            "img":"media/blocks/8/timeline/1.mp4"
+        },
+        {
+            "title":"Моделинг",
+            "description":"Замоделим стилизованную модель автомобиля<br> и разберем особенности работы с сеткой для<br> 2д стилизации",
+            "tags":["моделинг","сетка","хитрости"],
+            "img":"media/blocks/8/timeline/2.mp4"
+        },
+        {
+            "title":"Настройка шейдера",
+            "description":"Настроим стилизованный мультяшный материал<br> на модели машины и добавим текстуры",
+            "tags":["развертка","свет","логика"],
+            "img":"media/blocks/8/timeline/3.mp4"
+        },
+        {
+            "title":"Grease Pencil",
+            "description":"Разберем основы работы с Grease Pencil и сравним его с другими инструментом 2д стилизации<br> в Blender",
+            "tags":["материалы","логика","софт скиллз"],
+            "img":"media/blocks/8/timeline/4.mp4"
+        },
+        {
+            "title":"Работа с контуром",
+            "description":"Настроим контур для машинки и закрепим<br> на практике работу с инструментом Grease Pencil",
+            "tags":["материалы","логика","софт скиллз"],
+            "img":"media/blocks/8/timeline/5.mp4"
+        },
+        {
+            "title":"Рендер",
+            "description":"Зарендерим анимацию вращения и решим проблему лесенки на контуре с помощью метода SSAA (Supersample anti-aliasing)",
+            "tags":["хитрости","логика","софт скиллз"],
+            "img":"media/blocks/8/timeline/6.mp4"
+        },
+        {
+            "title":"Фишки Grease Pencil",
+            "description":"Рассмотрим дополнительные возможности<br> из арсенала, который дает инструмент Grease Pencil",
+            "tags":["материалы","логика","софт скиллз"],
+            "img":"media/blocks/8/timeline/7.mp4"
+        }
+    ]
+}

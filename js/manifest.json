@@ -1,0 +1,10 @@
+{
+  "version": "1.0",
+  "api_version": 1,
+  "layout":
+    {
+    "logo": "media/images/main/preview-yandex-zakladki.png",
+    "color": "#0077ff",
+    "show_title": false
+    }
+  }
