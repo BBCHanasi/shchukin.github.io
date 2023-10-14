@@ -5532,10 +5532,10 @@ img.logo-workshop {
 			background-color: transparent;
 			border: none;
 			box-shadow: inset 0 0 0 1px #808080;
-			border-radius: 12px;
+			border-radius: 10px;
 			font-family: inherit;
-			font-size: 18px;
-			line-height: 24px;
+			font-size: 16px;
+			line-height: 22px;
 			color: #FFFFFF;
 			text-align: center;
 			text-decoration: none;
@@ -5560,11 +5560,11 @@ img.logo-workshop {
 			min-width: 80px;
 			padding: 10px 16px;
 			background-color: transparent;
-			border-radius: 12px;
+			border-radius: 10px;
 			border: none;
 			font-family: inherit;
-			font-size: 18px;
-			line-height: 24px;
+			font-size: 16px;
+			line-height: 22px;
 			color: #FFFFFF;
 			text-align: center;
 			text-decoration: none;
@@ -5583,7 +5583,7 @@ img.logo-workshop {
 			cursor: default;
 		}
 
-		
+
 @media (min-width: 1024px) {
 
 	.filter {
@@ -5591,7 +5591,7 @@ img.logo-workshop {
 		padding-right: 100px;
 	}
 		.filter__list {
-			max-width: 900px; /* Переносим "Мэд Робот" на вторую строку */
+			max-width: 840px; /* Переносим "Мэд Робот" на вторую строку */
 		}
 			.filter__reset {
 				position: absolute; /* Относительно .filter, а не .filter__list */
