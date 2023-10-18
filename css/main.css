@@ -940,6 +940,13 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	height: 522px;
 }
 
+.promo-gif__video {
+	vertical-align: top;
+	width: 100%;
+	max-width: 522px;
+	aspect-ratio: 1 / 1;
+}
+
 .promo-descr {
 	width: 50%;
 	margin-left: 15px;
@@ -3860,6 +3867,10 @@ img.logo-workshop {
 		height: 400px;
 	}
 
+	.promo-gif__video {
+		height: 400px;
+	}
+
 	.promo-buttons .button:first-child {
 		width: 100%;
 	}
@@ -4436,6 +4447,10 @@ img.logo-workshop {
 	.promo-gif img {
 		height: 248px;
 		object-fit: cover;
+	}
+
+	.promo-gif__video {
+		height: 248px;
 	}
 
 	.promo-descr {
