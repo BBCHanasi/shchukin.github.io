@@ -268,9 +268,9 @@
 }
 @media only screen and (min-width: 1024px) {
 
-	.new-item-chapter:hover .chapter-cover video, 
+	.new-item-chapter:hover .chapter-cover video,
 	.new-item-chapter:hover .chapter-cover img{
-		transform: scale(1.1);
+		transform: scale(1.10062);
 		transition: all 0.2s ease;
 	}
 }
@@ -309,7 +309,7 @@
 }
 
 @media only screen and (max-width: 550px) {
-	
+
 	.new-item-chapters-wrapper{
 		grid-template-columns: repeat(1, 1fr);
 	}
