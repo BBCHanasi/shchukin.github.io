@@ -4756,6 +4756,12 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	/* payment */
 }
 
+@media (max-width: 649px) {
+	.action_50:before {
+		left: 145px;
+		top: 12px;
+	}
+}
 @media (max-width: 599px) {
 	.flickity-page-dots {
 		display: flex;
@@ -4995,12 +5001,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	}
 }
 
-@media (max-width: 649px) {
-	.action_50:before {
-		left: 145px;
-		top: 12px;
-	}
-}
 
 @media (max-width: 359px) {
 
