@@ -1144,9 +1144,11 @@ input[type="text"].custom-input:focus ~ .custom-label {
 .teacher-header img {
 	/* max-width: 110px;
 	max-height: 110px; */
-	/* border-radius: 20px; */
+	border-radius: 27px;
 	max-width: 100%;
 	width: 261px;
+	height: 315px;
+	background-color: #2A46A7;
 }
 
 .teacher-header-info {
