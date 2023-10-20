@@ -4430,11 +4430,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	/*	max-width: 420px;*/
 	/*}*/
 
-	/* Popup */
-
-	.popup-cookie > .text > br {
-		display: none;
-	}
 }
 
 @media (max-width: 649px) {

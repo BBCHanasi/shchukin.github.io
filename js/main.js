@@ -719,8 +719,8 @@ function deleteCookie(name) {
 // нажатие на подтверждение согласия на размещение куки
 function cookie_accept() {
   setCookie("cookie_acc", "ok", { "max-age": 31536000 });
-  $(".popup-cookie-info").addClass("popup-hidden");
-  $(".popup-cookie-info").removeClass("popup-visible");
+  $(".cookie").addClass("cookie--hidden");
+  $(".cookie").removeClass("cookie--visible");
 }
 
 // // открытие попапов с селектором ind
@@ -744,8 +744,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
   var acc = getCookie("cookie_acc");
 
   if (acc !== "ok") {
-    $(".popup-cookie-info").removeClass("popup-hidden");
-    $(".popup-cookie-info").addClass("popup-visible");
+    $(".cookie").removeClass("cookie--hidden");
+    $(".cookie").addClass("cookie--visible");
   }
 
   // Попап при старте "До конца недели скидка...".

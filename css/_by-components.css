@@ -1251,46 +1251,13 @@
 }
 
 
-/* Попап "cookie" -- не совсем попап, небольшой popover скорее */
 
-.popup {
+/* cookie */
+
+.cookie {
     position: fixed;
     display: flex;
     z-index: 15;
-}
-
-.popup-hidden {
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0s var(--transition-default), opacity var(--transition-default);
-}
-
-.popup-visible {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity var(--transition-default);
-}
-
-.popup .title {
-    font-size: 20px;
-}
-
-.popup .text {
-    font-size: 12px;
-    line-height: 16px;
-}
-
-.popup .text > a {
-    text-decoration: underline;
-    color: inherit;
-    transition: var(--transition-default);
-}
-
-.popup .text > a:hover {
-    color: #ffcc6b;
-}
-
-.popup-cookie-info {
     left: 50%;
     margin-left: -627px;
     bottom: 32px;
@@ -1302,37 +1269,54 @@
 }
 
 @media (max-width: 1439px) {
-    .popup-cookie-info {
+    .cookie {
         margin-left: 0;
         left: calc(2 * var(--container-padding));
     }
 }
 
-.popup-cookie-info > .text {
-    margin-right: 70px;
-    margin-left: 10px;
-    max-width: 500px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
+.cookie--hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s var(--transition-default), opacity var(--transition-default);
 }
 
-.popup-cookie-info span {
-    text-decoration: line-through;
+.cookie--visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity var(--transition-default);
 }
 
-.popup-cookie-info .button.gray {
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 20px;
-    text-transform: uppercase;
-}
+    .cookie .text {
+        margin-right: 70px;
+        margin-left: 10px;
+        max-width: 500px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+    }
+        .cookie a {
+            text-decoration: underline;
+            color: inherit;
+            transition: var(--transition-default);
+        }
+
+        .cookie a:hover {
+            color: #ffcc6b;
+        }
+
+        .cookie .button {
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 20px;
+            text-transform: uppercase;
+        }
 
 
 
 @media (max-width: 767px) {
 
-    .popup-cookie-info {
+    .cookie {
         display: block;
         max-width: none;
         padding: var(--container-padding);
@@ -1344,9 +1328,14 @@
         margin: 0;
     }
 
-    .popup-cookie-info > .text {
+    .cookie .text {
         margin-bottom: 16px;
         margin-left: 0;
         margin-right: 0;
     }
+
+    .cookie br {
+        display: none;
+    }
 }
+
