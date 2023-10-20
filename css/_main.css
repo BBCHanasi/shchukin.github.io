@@ -513,8 +513,9 @@ input[type="radio"]:checked + label:after {
 input[type="text"].custom-input:valid + .custom-label,
 input[type="text"].custom-input:focus ~ .custom-label {
 	display: block;
+	font-size: 13px;
 	color: #a9a9a9;
-	transform: translateX(0) translateY(-11px) scale(0.87);
+	transform: translateX(0) translateY(-11px);
 	transform-origin: left top;
 }
 
