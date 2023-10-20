@@ -78,7 +78,7 @@ body {
 
 /* General */
 
-.bone {
+.bone { /* Аналог .container */
 	--max-width: 1330px;
 	--space: max(48px, calc((100% - var(--max-width)) / 2));
 	padding-left: var(--space);
