@@ -44,7 +44,7 @@ html {
 }
 
 body {
-	overflow-x: hidden; /* Обрезаем карусель */
+	overflow-x: hidden; /* Обрезаем карусели */
 	background-color: #101010;
 	color: #ffffff;
 	font-size: 16px;
@@ -58,10 +58,6 @@ body {
 	font-family: "Onest", sans-serif;
 }
 
-img {
-	display: block;
-}
-
 p {
 	font-variant-ligatures: no-common-ligatures;
 	-moz-font-feature-settings: "liga" 0, "clig" 0;
@@ -69,14 +65,15 @@ p {
 	font-feature-settings: "liga" 0, "clig" 0;
 }
 
+img {
+	display: block;
+}
 
-/* stylelint-disable property-no-unknown */
+
 .hide-scrollbar {
 	scrollbar-width: none; /* hide scrollbar in Firefox */
 	-ms-overflow-style: none; /* hide scrollbar in Edge */
 }
-
-/* stylelint-enable */
 
 .hide-scrollbar::-webkit-scrollbar { /* hide scrollbar in webkit based browsers */
 	display: none;
@@ -149,32 +146,6 @@ p {
 	box-sizing: border-box;
 }
 
-.pos_15 {
-	object-position: 15%;
-}
-
-.pos_33 {
-	object-position: 33%;
-}
-
-.popup .title {
-	font-size: 20px;
-}
-
-.popup .text {
-	font-size: 12px;
-	line-height: 16px;
-}
-
-.popup .text > a {
-	text-decoration: underline;
-	color: inherit;
-	transition: var(--transition-default);
-}
-
-.popup .text > a:hover {
-	color: #ffcc6b;
-}
 
 /* Кнопки */
 
@@ -3377,6 +3348,25 @@ img.logo-workshop {
     position: fixed;
     display: flex;
     z-index: 15;
+}
+
+.popup .title {
+	font-size: 20px;
+}
+
+.popup .text {
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.popup .text > a {
+	text-decoration: underline;
+	color: inherit;
+	transition: var(--transition-default);
+}
+
+.popup .text > a:hover {
+	color: #ffcc6b;
 }
 
 .popup-cookie-info {
