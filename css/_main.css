@@ -49,6 +49,19 @@ body {
 	-webkit-tap-highlight-color: #0000;
 }
 
+/* stylelint-disable property-no-unknown */
+.hide-scrollbar {
+	scrollbar-width: none; /* hide scrollbar in Firefox */
+	-ms-overflow-style: none; /* hide scrollbar in Edge */
+}
+
+/* stylelint-enable */
+
+.hide-scrollbar::-webkit-scrollbar { /* hide scrollbar in webkit based browsers */
+	display: none;
+}
+
+
 /* General */
 
 .bone { /* Аналог .container */
@@ -3151,11 +3164,6 @@ img.logo-workshop {
 	height: 100%;
 }
 
-.faq_rs_body::-webkit-scrollbar {
-	width: 0;
-	height: 0;
-}
-
 .faq_item {
 	width: 100%;
 	display: flex;
@@ -3804,10 +3812,6 @@ img.logo-workshop {
 		margin-right: -24px;
 	}
 
-	/*Убрать полосу прокрутки у элемента*/
-	.additional-info::-webkit-scrollbar {
-		display: none;
-	}
 	/* New-Chapters */
 	.new-item-chapters-wrapper{
 		grid-template-columns: repeat(2, 1fr);
