@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "Onest";
 	src: url("../fonts/Onest/WOFF/Onest-Regular.woff") format("woff"),
-	url("../fonts/Onest/TTF/Onest-Regular.ttf") format("truetype");
+		 url("../fonts/Onest/TTF/Onest-Regular.ttf") format("truetype");
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -10,7 +10,7 @@
 @font-face {
 	font-family: "Onest";
 	src: url("../fonts/Onest/WOFF/Onest-Medium.woff") format("woff"),
-	url("../fonts/Onest/TTF/Onest-Medium.ttf") format("truetype");
+		 url("../fonts/Onest/TTF/Onest-Medium.ttf") format("truetype");
 	font-weight: 500;
 	font-style: normal;
 	font-display: swap;
@@ -19,7 +19,7 @@
 @font-face {
 	font-family: "Onest";
 	src: url("../fonts/Onest/WOFF/Onest-Bold.woff") format("woff"),
-	url("../fonts/Onest/TTF/Onest-Bold.ttf") format("truetype");
+		 url("../fonts/Onest/TTF/Onest-Bold.ttf") format("truetype");
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -39,16 +39,12 @@
 	}
 }
 
-/* Only ios */
-* {
-	-webkit-locale: auto;
-}
-
 html {
 	color-scheme: dark;
 }
 
 body {
+	overflow-x: hidden; /* Обрезаем карусель */
 	background-color: #101010;
 	color: #ffffff;
 	font-size: 16px;
@@ -56,7 +52,6 @@ body {
 	margin: 0;
 	counter-reset: block;
 	min-width: 320px;
-	/* хз */
 	text-rendering: optimizelegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -74,14 +69,6 @@ p {
 	font-feature-settings: "liga" 0, "clig" 0;
 }
 
-html,
-body {
-	max-width: 100vw;
-	box-sizing: border-box;
-	overflow-x: clip;
-	overflow-x: hidden;
-	-webkit-tap-highlight-color: #0000;
-}
 
 /* stylelint-disable property-no-unknown */
 .hide-scrollbar {
