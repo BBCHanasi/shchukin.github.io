@@ -3691,7 +3691,7 @@ img.logo-workshop {
 		display: none;
 	}
 }
-@media (min-width:1024px) and (max-width: 1179px) {
+@media (min-width: 1024px) and (max-width: 1179px) {
 	.faq_item{
 		padding: 40px 48px 40px 90px;
 	}
@@ -3720,7 +3720,7 @@ img.logo-workshop {
 	/*	margin-right: auto;*/
 	/*}*/
 }
-@media (min-width:1024px) and (max-width:1119px) {
+@media (min-width: 1024px) and (max-width: 1119px) {
 	.promo-descr{
 		width:60%;
 	}

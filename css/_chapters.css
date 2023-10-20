@@ -357,7 +357,7 @@
 	outline: 1px solid #fff;
 	transition: all 0.2s ease;
 }
-@media (max-width:1379px) {
+@media (max-width: 1379px) {
 	.chapters-header,
 	.new-item-chapters-wrapper{
 		--max-width: 1330px;
@@ -366,7 +366,7 @@
 		padding-right: var(--space);
 	}
 }
-@media (min-width:1024px) and (max-width:1279px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
 	.new-item-chapters-wrapper{
 		grid-template-columns: repeat(3, 1fr);
 	}
