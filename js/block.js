@@ -59,6 +59,37 @@ $('#sale-modal').on( "click","#copy-btn", function() {
 
 });
 
+
+/*
+ * Блокирование окна с сохранением позиции скролбара
+ */
+
+let documentWidthWithScroll = 0;
+let documentWidthWithoutScroll = 0;
+let scrollWidth = 0;
+
+const $html = $('html');
+const $header = $('.header');
+
+function lockPage() {
+  if (!$html.hasClass('scroll-lock')) {
+    documentWidthWithScroll = $(window).width();
+    $html.addClass('scroll-lock');
+    documentWidthWithoutScroll = $(window).width();
+    $html.css('padding-right', (documentWidthWithoutScroll - documentWidthWithScroll) + 'px');
+    $header.css('right', (documentWidthWithoutScroll - documentWidthWithScroll) + 'px');
+  }
+}
+
+function unlockPage() {
+  if ($html.hasClass('scroll-lock')) {
+    $html.css('padding-right', '');
+    $header.css('right', '');
+    $html.removeClass('scroll-lock');
+  }
+}
+
+
 ////I-modal - модальные окна
 $('body').on( "click",".i-modal-btn", function() {
   open_imodal(this);
@@ -71,16 +102,20 @@ $('.i-modal').on( "click", function(e) {
 }});
 
 function open_imodal(item){
-  $('html').addClass("scroll-lock");
+  lockPage();
   let popupId = $(item).attr('data-popup-id');
-  $(`#${popupId}`).delay(50).fadeIn(500);
+  $(`#${popupId}`).fadeIn(250);
+
+  // Раньше здесь был небольшой delay. Зачем?
+  // $(`#${popupId}`).delay(50).fadeIn(200);
 };
 
 function close_imodal(){
-  // $('html').css('overflow-y','auto');
-  $('html').removeClass("scroll-lock");
-  $('.i-modal').fadeOut();
-  setTimeout(() => $('.i-modal').scrollTop(0), 400);
+  $('.i-modal').fadeOut(250);
+  setTimeout(() => {
+      unlockPage();
+      $('.i-modal').scrollTop(0);
+  }, 250);
 };
 
 //Отслеживаем клик по блоку на главной странице

@@ -357,15 +357,7 @@
 	outline: 1px solid #fff;
 	transition: all var(--transition-short);
 }
-@media (max-width: 1379px) {
-	.chapters-header,
-	.new-item-chapters-wrapper{
-		--max-width: 1330px;
-		--space: max(24px, calc((100% - var(--max-width)) / 2));
-		padding-left: var(--space);
-		padding-right: var(--space);
-	}
-}
+
 @media (min-width: 1024px) and (max-width: 1279px) {
 	.new-item-chapters-wrapper{
 		grid-template-columns: repeat(3, 1fr);
@@ -387,7 +379,8 @@
 	}
 
 	.new-chapters{
-		padding: 64px 0px 32px 0px;
+		padding-top: 64px;
+		padding-bottom: 32px;
 	}
 
 	.chapter-cover{
@@ -402,14 +395,12 @@
 	}
 
 	.new-chapters{
-		padding: 84px 24px 24px 24px;
+		padding-top: 84px;
+		padding-bottom: 24px;
 	}
 
 	.new-item-chapters-wrapper{
 		padding: 0;
-	}
-	.chapters-header{
-		padding:0px;
 	}
 }
 
@@ -420,6 +411,7 @@
 	}
 
 	.new-chapters{
-		padding: 84px 24px 24px 24px;
+		padding-top: 84px;
+		padding-bottom: 24px;
 	}
 }

@@ -2,6 +2,13 @@
 	--transition-short: 0.2s;
 	--transition-default: 0.3s;
 	--transition-long: 0.4s;
+	--container-padding: 48px;
+}
+
+@media (max-width: 1375px) {
+	:root {
+		--container-padding: 24px;
+	}
 }
 
 /* Only ios */
@@ -63,16 +70,13 @@ body {
 
 /* General */
 
-.bone { /* Аналог .container */
-	--max-width: 1330px;
-	--space: max(48px, calc((100% - var(--max-width)) / 2));
-	padding-left: var(--space);
-	padding-right: var(--space);
+.container {
+	max-width: 1330px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
 }
-
-/*.wide {*/
-/*	--max-width: 1330px;*/
-/*}*/
 
 .header-text {
 	font-size: 40px;
@@ -325,6 +329,10 @@ https://flickity.metafizzy.co
 /* ---- previous/next buttons ---- */
 
 .flickity-prev-next-button {
+	position: absolute;
+	right: 0;
+	bottom: 100%;
+	margin-bottom: 32px;
 	width: 35px;
 	height: 35px;
 	border-radius: 9px;
@@ -333,38 +341,11 @@ https://flickity.metafizzy.co
 }
 
 .flickity-prev-next-button.previous {
-	right: max(-1242px, calc((-100vw + var(--space) / 2) + 155px));
+	margin-right: 43px;
 }
 
 .flickity-prev-next-button.next {
-	right: max(-1250px, calc((-100vw + var(--space) / 2) + 145px));
-}
 
-.information .flickity-prev-next-button {
-	top: -616px;
-}
-
-.examples .flickity-prev-next-button {
-	top: -561px;
-}
-
-.testimonials .flickity-prev-next-button {
-	top: -862px;
-}
-
-.student-work .flickity-prev-next-button {
-	top: -255px;
-}
-
-/* right to left */
-
-.flickity-rtl .flickity-prev-next-button.previous {
-	left: auto;
-	right: 10px;
-}
-.flickity-rtl .flickity-prev-next-button.next {
-	right: auto;
-	left: 10px;
 }
 
 .flickity-prev-next-button .flickity-button-icon {
@@ -557,6 +538,8 @@ input[type="text"].custom-input:focus ~ .custom-label {
 .header {
 	position: fixed;
 	padding-top: 10px;
+	left: 0;
+	right: 0;
 	top: -82px;
 	width: -webkit-fill-available;
 	width: -moz-available;
@@ -1139,10 +1122,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	flex-flow: wrap;
 	justify-content: space-between; */
 	margin-top: 32px;
-}
-
-.teachers-content .flickity-prev-next-button {
-	top: -413px;
 }
 
 /* .teachers-wrapper { */
@@ -3495,13 +3474,21 @@ img.logo-workshop {
 }
 
 .popup-cookie-info {
+	left: 50%;
+	margin-left: -627px;
 	bottom: 32px;
+	max-width: calc(100% - 6 * var(--container-padding));
 	background-color: #282828;
 	border-radius: 20px;
 	align-items: center;
-	--max-width: 1255px;
-	margin: 0px max(48px, calc((100% - var(--max-width)) / 2));
 	padding: 16px 24px;
+}
+
+@media (max-width: 1439px) {
+	.popup-cookie-info {
+		margin-left: 0;
+		left: calc(2 * var(--container-padding));
+	}
 }
 
 .popup-cookie-info > .text {
@@ -3579,14 +3566,6 @@ img.logo-workshop {
 	.promo-base {
 		background: url("../media/images/bg/bg-web.png") no-repeat center;
 		background-size: cover;
-	}
-}
-@media (max-width: 1375px) {
-	.bone {
-		--max-width: 1330px;
-		--space: max(24px, calc((100% - var(--max-width)) / 2));
-		padding-left: var(--space);
-		padding-right: var(--space);
 	}
 }
 @media (max-width: 1179px) {
@@ -4081,11 +4060,6 @@ img.logo-workshop {
 	.pp_ls_block_description {
 		flex-direction: column;
 	}
-
-	/* Coockie */
-	.popup-cookie-info {
-		left: 0;
-	}
 }
 
 @media (max-width: 969px) {
@@ -4122,12 +4096,6 @@ img.logo-workshop {
 	.max-width-block-4 {
 		max-width: 300px;
 	}
-
-	/* Popup */
-
-	/* .popup-cookie-info {
-		bottom: max(50px, calc(100% - 670px));
-	} */
 }
 
 @media (max-width: 919px) {
@@ -4474,7 +4442,6 @@ img.logo-workshop {
 	} */
 
 	.examples-body {
-		--max-width: 0;
 		padding: 84px 24px 0px 24px;
 	}
 
@@ -4672,7 +4639,8 @@ img.logo-workshop {
 
 	.popup-cookie-info {
 		display: block;
-		padding-top: 24px;
+		max-width: none;
+		padding: var(--container-padding);
 		left: 0;
 		right: 0;
 		bottom: 0;

@@ -751,6 +751,8 @@ document.addEventListener("DOMContentLoaded", function (e) {
   // Попап при старте "До конца недели скидка...".
   // Сейчас кампания не запущена. Для запуска раскомментировать:
   // setTimeout(() => open_imodal("#sale-modal"), 5000);
+  // Алсо важно проверить код, который будет закрывать это окно, если хотя бы раз было открыто.
+  // Ищем поиском openedSaleModal
 
   // setTimeout(() => $("#small_preview_salebot").css('zIndex',900), 5000);
   // setTimeout(() => $("#parent_frame").css('zIndex',900), 5000);
