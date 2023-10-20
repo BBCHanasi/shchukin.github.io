@@ -9,10 +9,9 @@
 	-webkit-locale: auto;
 }
 
-html{
-	overflow-y: overlay;
+html {
+	color-scheme: dark;
 }
-/* Main */
 
 body {
 	background-color: #101010;
