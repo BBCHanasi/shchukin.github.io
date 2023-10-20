@@ -86,7 +86,7 @@
     border-radius: 22px;
     margin-bottom: 64px;
     padding:16px 24px;
-   
+
     font-weight: 400;
 }
 
@@ -133,7 +133,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     margin-bottom: 86px;
-  
+
     width: 100%;
 }
 
@@ -201,8 +201,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 16px; 
-    color: #808080;   
+    line-height: 16px;
+    color: #808080;
 }
 
 .inside-item {
@@ -298,7 +298,7 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    
+
     height: 46px;
     width: 100%;
 
@@ -317,7 +317,7 @@
 
 .return-btn:hover{
    color:#fff;
-   transition: all 0.3s ease; 
+   transition: all 0.3s ease;
 }
 
 .buy-btn {
@@ -325,7 +325,7 @@
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
-    
+
     height: 46px;
     width: 100%;
 
@@ -538,7 +538,7 @@
         max-height: 610px;
         padding: 0;
     }
-    
+
     .course-content {
         max-width: 100%;
         padding: 0 48px;
@@ -668,12 +668,12 @@
         flex-direction: column;
         margin-bottom: 76px;
     }
-    
+
     .course-additional-info .course-description {
         width: 100%;
         margin-bottom: 36px;
     }
-   
+
     .teachers-wrapper {
         display: flex;
         flex-direction: column;
@@ -684,7 +684,7 @@
         line-height: 34px;
         margin-bottom: 16px;
     }
-    
+
     .course-description .description {
         font-size: 18px;
         line-height: 26px;
