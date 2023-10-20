@@ -49,7 +49,7 @@
 			white-space: nowrap;
 			cursor: pointer;
 			user-select: none;
-			transition: all 0.2s ease;
+			transition: all var(--transition-short);
 		}
 
 		.filter__item:hover,
@@ -78,7 +78,7 @@
 			white-space: nowrap;
 			cursor: pointer;
 			user-select: none;
-			transition: all 0.2s ease;
+			transition: all var(--transition-short);
 		}
 
 		.filter__reset:hover {
@@ -124,7 +124,7 @@
     height: min-content;
     background-repeat: no-repeat;
     background-size: cover;
-	transition: all 0.2s ease;
+	transition: all var(--transition-short);
 	cursor: pointer;
 }
 
@@ -302,13 +302,13 @@
 .chapter-cover img{
 	width: 100%;
 	height: 100%;
-	transition: all 0.2s ease;
+	transition: all var(--transition-short);
 }
 
 .chapter-cover video{
 	width:100%;
 	height: 100%;
-	transition: all 0.2s ease;
+	transition: all var(--transition-short);
 }
 
 .price-wrapper{
@@ -349,13 +349,13 @@
 	color:#fff;
 	text-decoration: none;
 	border-radius: 12px;
-	transition:  all 0.2s ease;
+	transition:  all var(--transition-short);
 }
 
 .chapters-btn .btn:hover{
 	background-color: #0000;
 	outline: 1px solid #fff;
-	transition: all 0.2s ease;
+	transition: all var(--transition-short);
 }
 @media (max-width: 1379px) {
 	.chapters-header,
@@ -376,7 +376,7 @@
 	.new-item-chapter:hover .chapter-cover video,
 	.new-item-chapter:hover .chapter-cover img{
 		transform: scale(1.10062);
-		transition: all 0.2s ease;
+		transition: all var(--transition-short);
 	}
 }
 

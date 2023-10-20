@@ -1,3 +1,9 @@
+:root {
+	--transition-short: 0.2s;
+	--transition-default: 0.3s;
+	--transition-long: 0.4s;
+}
+
 * {
 	scrollbar-width: none;
 	scrollbar-color: #101010 #1d1d1d;
@@ -16,28 +22,26 @@
 	background-color: #101010;
 	border-radius: 20px;
 	border: 3px solid transparent;
-	transition: all 0.2s;
+	transition: all var(--transition-short);
   }
   *::-webkit-scrollbar-thumb:hover {
 	background-color: #f7ce7a;
 	border-radius: 20px;
 	border: 3px solid #f7ce7a;
-	transition: all 0.2s;
+	transition: all var(--transition-short);
   }
 
 /* Only ios */
 * {
 	-webkit-locale: auto;
 }
+
 html{
 	overflow-y: overlay;
 }
 /* Main */
 
 body {
-	--trans-time: 0.3s;
-	---acc-trans-time: 0.4s;
-
 	background-color: #101010;
 	color: #ffffff;
 	font-size: 16px;
@@ -49,7 +53,6 @@ body {
 	text-rendering: optimizelegibility;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	/* font */
 	font-family: "Onest", sans-serif;
 }
 
@@ -162,7 +165,7 @@ body {
 .popup .text > a {
 	text-decoration: underline;
 	color: inherit;
-	transition: var(--trans-time);
+	transition: var(--transition-default);
 }
 
 .popup .text > a:hover {
@@ -187,7 +190,7 @@ body {
 	justify-content: center;
 	text-decoration: none;
 	color: #000;
-	transition: all var(--trans-time) ease-in-out;
+	transition: all var(--transition-default) ease-in-out;
 }
 
 .button.lego-smile::before {
@@ -200,7 +203,7 @@ body {
 	box-sizing: border-box;
 	position: relative;
 	top: -1px;
-	transition: var(--trans-time);
+	transition: var(--transition-default);
 }
 
 .button.big {
@@ -459,7 +462,7 @@ input[type="radio"]:not(:checked) + label:before {
 	top: 0px;
 	/* background: #464F5580 0% 0% no-repeat padding-box; */
 	/* box-shadow: inset 0px 3px 8px #000000; */
-	transition: all var(--trans-time) ease;
+	transition: all var(--transition-default);
 }
 
 /* input[type="checkbox"]:checked + label:before,
@@ -496,7 +499,7 @@ input[type="radio"]:checked + label:after,
 input[type="radio"]:not(:checked) + label:after {
 	content: "";
 	position: absolute;
-	transition: all var(--trans-time) ease;
+	transition: all var(--transition-default);
 }
 
 /* Галочки и точки */
@@ -558,7 +561,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	line-height: 15px;
 	font-weight: 400;
 	color: #a9a9a9;
-	transition: all 0.5s ease;
+	transition: all var(--transition-default);
 	pointer-events: none;
 }
 
@@ -617,7 +620,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	border-radius: 12px;
 	cursor: pointer;
 	letter-spacing: 1px;
-	transition: all var(--trans-time);
+	transition: all var(--transition-default);
 }
 
 .header-item.active {
@@ -660,7 +663,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 .header-socials-item-src:hover {
 	fill: #ffffff;
-	transition: fill var(--trans-time);
+	transition: fill var(--transition-default);
 }
 
 .hamburger {
@@ -671,7 +674,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	cursor: pointer;
 	background: rgba(62, 62, 62, 0.6);
 	border-radius: 12px;
-	transition: all var(--trans-time);
+	transition: all var(--transition-default);
 }
 
 .hamburger span {
@@ -1398,12 +1401,12 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	color:#fff;
 	text-decoration: none;
 	border-radius: 12px;
-	transition:  all 0.2s ease;
+	transition:  all var(--transition-time-short);
 }
 .chapters-btn .btn:hover{
 	background-color: #0000;
 	outline: 1px solid #fff;
-	transition: all 0.2s ease;
+	transition: all var(--transition-time-short);
 } */
 
 /* Chapters */
@@ -1834,7 +1837,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 	cursor: pointer;
 
-	transition: all var(--trans-time);
+	transition: all var(--transition-default);
 }
 
 .example-footer-bottom:hover {
@@ -2129,7 +2132,7 @@ img.logo-workshop {
 	width: 100%;
 	cursor: pointer;
 	padding: 12px 24px;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 	position: relative;
 }
 
@@ -2154,7 +2157,7 @@ img.logo-workshop {
 	margin-top: auto;
 	margin-bottom: auto;
 	border-radius: 18px;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 }
 
 .pp_ls_block_picture::before {
@@ -2170,7 +2173,7 @@ img.logo-workshop {
 	transform: translate(-50%, -50%);
 	z-index: 1;
 	opacity: 0;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 }
 
 .pp_ls_block_picture::after {
@@ -2192,7 +2195,7 @@ img.logo-workshop {
 	border-radius: 18px;
 	width: 72px;
 	height: 72px;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 }
 
 .pp_ls_img_border > picture img {
@@ -2206,7 +2209,7 @@ img.logo-workshop {
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 24px;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 	position: relative;
 }
 /*
@@ -2234,7 +2237,7 @@ img.logo-workshop {
 .pp_ls_block_descr_left_obj_group {
 	display: flex;
 	align-items: center;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 }
 .pp_ls_block_descr_left_obj_group .time-icon::before, .pp_ls_block_descr_left_obj_group .lessons-icon::before{
 	background-color: #808080;
@@ -2311,7 +2314,7 @@ img.logo-workshop {
 	font-weight: 500;
 	line-height: 20px;
 	margin-right: 16px;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 }
 
 .pp_ls_block_descr_price_text_li.crossed {
@@ -2341,7 +2344,7 @@ img.logo-workshop {
 	display: flex;
 	width: 100%;
 	align-self: center;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 	margin-bottom: 6px;
 }
 
@@ -2360,7 +2363,7 @@ img.logo-workshop {
 	flex-wrap: wrap;
 	width: 100%;
 	align-self: center;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 }
 
 .pp_ls_block_descr_lable {
@@ -2679,7 +2682,7 @@ img.logo-workshop {
 	padding: 12px 12px 10px 12px;
 	border-radius: 14px;
 	cursor: pointer;
-	transition: all var(--trans-time) ease;
+	transition: all var(--transition-default);
 }
 .pp_rs_pay_choicer .sale-flash{
 	display: none!important;
@@ -2883,12 +2886,12 @@ img.logo-workshop {
 
 .pp_rs_ui_input_block_field > input:hover {
 	border: 1px solid #808080;
-	transition: border 0.3s ease;
+	transition: border var(--transition-default) ease;
 }
 
 .pp_rs_ui_input_block_field > input:focus {
 	border: 1px solid #f7ce7a;
-	transition: border 0.3s ease;
+	transition: border var(--transition-default) ease;
 	outline: none;
 }
 
@@ -2915,7 +2918,7 @@ img.logo-workshop {
 	margin-top: 4px;
 	background-color: #1e1e1e;
 	border-radius: 17px;
-	transition: background-color var(--trans-time) ease;
+	transition: background-color var(--transition-default);
 }
 
 .pp_rs_pay_additional_info_text:hover {
@@ -2942,7 +2945,7 @@ img.logo-workshop {
 	margin-right: 8px;
 	border: 1px solid #fff;
 	border-radius: 5px;
-	transition: var(--trans-time);
+	transition: var(--transition-default);
 	margin-top:1px;
 	box-sizing: border-box;
 }
@@ -2957,7 +2960,7 @@ img.logo-workshop {
 	width: auto;
 	height: 100%;
 	display: flex;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 }
 .pp_body.sale-active .checkbox-sale > .pp_rs_pay_checkbox,
 .pp_rs_pay_additional_info_text.active > .pp_rs_pay_checkbox {
@@ -2977,7 +2980,7 @@ img.logo-workshop {
 	max-width: 370px;
 	text-underline-offset: 2.5px;
     text-decoration-skip-ink: none;
-	transition: all var(---acc-trans-time);
+	transition: all var(--transition-long);
 }
 
 .pp_rs_pay_additional_info_text.active > .pp_rs_pay_additional_info_text_li {
@@ -2987,7 +2990,7 @@ img.logo-workshop {
 .pp_rs_pay_additional_info_text > .pp_rs_pay_additional_info_text_li > a {
 	color: #fff;
 	text-decoration: underline;
-	transition: color var(--trans-time);
+	transition: color var(--transition-default);
 }
 
 .pp_rs_pay_additional_info_text.active > .pp_rs_pay_additional_info_text_li > a {
@@ -3026,7 +3029,7 @@ img.logo-workshop {
 .pp_rs_pay_agreement_text_li > a {
 	color: #b5b5b5;
 	text-decoration: underline;
-	transition: var(--trans-time);
+	transition: var(--transition-default);
 }
 
 .pp_rs_pay_agreement_text_li > a:hover {
@@ -3190,7 +3193,7 @@ img.logo-workshop {
 	border-radius: 25px;
 	height: fit-content;
 	padding: 40px 48px 40px 160px;
-	transition:all 0.2s ease-in-out;
+	transition:all var(--transition-short) ease-in-out;
 	overflow: hidden;
 	margin-bottom: 10px;
 	cursor: pointer;
@@ -3230,7 +3233,7 @@ img.logo-workshop {
 .faq_item_active .faq_item_body_text{
 	max-height: max-content;
 	height: max-content;
-	transition:all 0.2s ease-in-out;
+	transition:all var(--transition-short) ease-in-out;
 }
 .faq_item_top {
 	display: flex;
@@ -3265,12 +3268,12 @@ img.logo-workshop {
 
 .faq_item_button {
 	border-radius: 10px;
-	transition: all calc(var(---acc-trans-time) - 0.2s);
+	transition: all var(--transition-short);
 }
 
 .faq_item_button_label {
 	display: flex;
-	transition: all calc(var(---acc-trans-time) - 0.2s);
+	transition: all var(--transition-short);
 }
 
 .faq_item_body_text {
@@ -3279,7 +3282,7 @@ img.logo-workshop {
 	max-height: 0px;
 	height: max-content;
 	overflow: hidden;
-	transition:all 0.2s ease-in-out;
+	transition:all var(--transition-short) ease-in-out;
 }
 .faq_img_wrapper{
 	width: 380px;
@@ -3500,7 +3503,7 @@ img.logo-workshop {
 	height: 32px;
 	margin-left: auto;
 	margin-right: auto;
-	transition: all var(--trans-time);
+	transition: all var(--transition-default);
 }
 
 /* Popup */
@@ -3694,7 +3697,7 @@ img.logo-workshop {
 		top: 0;
 		bottom: 0;
 		background-color: #1d1d1d;
-		transition: background-color 0.3s ease-in-out;
+		transition: background-color var(--transition-default) ease-in-out;
 		position: fixed;
 		z-index: 12;
 	}
@@ -5312,13 +5315,13 @@ img.logo-workshop {
 .popup-hidden {
 	opacity: 0;
 	visibility: hidden;
-	transition: visibility 0s var(--trans-time), opacity var(--trans-time);
+	transition: visibility 0s var(--transition-default), opacity var(--transition-default);
 }
 
 .popup-visible {
 	opacity: 1;
 	visibility: visible;
-	transition: opacity var(--trans-time);
+	transition: opacity var(--transition-default);
 }
 
 /* helpers general class */
@@ -5337,7 +5340,7 @@ img.logo-workshop {
 	left: 16px;
 	bottom: 16px;
 	margin-bottom: 0;
-	transition: all 0.3s ease-in-out;
+	transition: all var(--transition-default) ease-in-out;
 	visibility: hidden;
 	opacity: 0;
 }

@@ -311,13 +311,13 @@
 
     background-color: transparent;
     color:#7d7d7d;
-    transition: all 0.3s ease;
+    transition: all var(--transition-default);
     cursor: pointer;
 }
 
 .return-btn:hover{
    color:#fff;
-   transition: all 0.3s ease;
+   transition: all var(--transition-default);
 }
 
 .buy-btn {
@@ -338,14 +338,14 @@
     background-color: #019EFF;
     border: 1px solid #019EFF;
     border-radius: 12px;
-    transition: all 0.2s ease;
+    transition: all var(--transition-short);
 
     cursor: pointer;
 }
 
 .buy-btn:hover{
     border: 1px solid #fff;
-    transition: all 0.2s ease;
+    transition: all var(--transition-short);
     background-color: #0000;
 }
 
@@ -373,7 +373,7 @@
 .buy-btn.active {
     background-color: #0000;
     border: 1px solid #fff;
-    transition: all 0.2s ease;
+    transition: all var(--transition-short);
 }
 .buy-btn.active::before {
     -webkit-mask: url(../media/images/icons/check-icon.svg) no-repeat 50% 50%;
@@ -480,13 +480,13 @@
     background-color: #019EFF;
     border: 1px solid #019EFF;
     border-radius: 12px;
-    transition: all 0.2s ease;
+    transition: all var(--transition-short);
     cursor: pointer;
     z-index: 1000;
 }
 .sale-modal-wrapper .btn.active, .sale-modal-wrapper .btn:hover{
     border: 1px solid #fff;
-    transition: all 0.2s ease;
+    transition: all var(--transition-short);
     background-color: #0000;
 }
 .sale-modal-wrapper .btn::before{
