@@ -805,43 +805,9 @@
 .buy-btn.active::after {
     content: 'Добавлен в корзину';
 }
-.i-modal{
-    position: fixed;
-    display: none;
-    z-index: 1000;
-    overflow-y: auto;
-    overflow-y: overlay;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    /* backdrop-filter: blur(10px); */
-}
 
-.close-i-modal-btn-wrapper {
-    display: flex;
-    position: absolute;
-    top:30px;
-    right: 30px;
-    padding: 10px;
-    z-index: 1000;
-    cursor: pointer;
-}
 
-.close-i-modal-btn{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    width: 32px;
-    height: 32px;
-    background: rgba(62, 62, 62, 0.6);
-    border-radius: 12px;
-    z-index: 100;
-    pointer-events: none;
-}
+
 .sale-modal-wrapper{
     display: flex;
     align-items: center;
@@ -1005,11 +971,6 @@
         flex-wrap: wrap;
     }
 
-    .close-i-modal-btn-wrapper{
-        top:22px;
-        right: 22px;
-    }
-
     .show-xxl{
         display: none;
     }
@@ -1171,10 +1132,6 @@
         margin: 0px 10px 0px 0px;
     }
 
-    .close-i-modal-btn-wrapper{
-        top: 6px;
-        right: 6px;
-    }
 }
 
 @media (max-width: 749px) {
@@ -1201,6 +1158,63 @@
 }
 
 
+
+/* i-modal */
+
+.i-modal {
+    position: fixed;
+    display: none;
+    z-index: 1000;
+    overflow-y: auto;
+    overflow-y: overlay;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* backdrop-filter: blur(10px); */
+}
+
+.close-i-modal-btn-wrapper {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    padding: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.close-i-modal-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    background: rgba(62, 62, 62, 0.6);
+    border-radius: 12px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+
+    .close-i-modal-btn-wrapper {
+        top: 22px;
+        right: 22px;
+    }
+}
+
+@media (max-width: 767px) {
+
+
+    .close-i-modal-btn-wrapper {
+        top: 6px;
+        right: 6px;
+    }
+}
 
 
 /* button_fixed */
@@ -1233,5 +1247,106 @@
     .button_fixed {
         right: 24px;
         left: 24px;
+    }
+}
+
+
+/* Попап "cookie" -- не совсем попап, небольшой popover скорее */
+
+.popup {
+    position: fixed;
+    display: flex;
+    z-index: 15;
+}
+
+.popup-hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s var(--transition-default), opacity var(--transition-default);
+}
+
+.popup-visible {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity var(--transition-default);
+}
+
+.popup .title {
+    font-size: 20px;
+}
+
+.popup .text {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.popup .text > a {
+    text-decoration: underline;
+    color: inherit;
+    transition: var(--transition-default);
+}
+
+.popup .text > a:hover {
+    color: #ffcc6b;
+}
+
+.popup-cookie-info {
+    left: 50%;
+    margin-left: -627px;
+    bottom: 32px;
+    max-width: calc(100% - 6 * var(--container-padding));
+    background-color: #282828;
+    border-radius: 20px;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+@media (max-width: 1439px) {
+    .popup-cookie-info {
+        margin-left: 0;
+        left: calc(2 * var(--container-padding));
+    }
+}
+
+.popup-cookie-info > .text {
+    margin-right: 70px;
+    margin-left: 10px;
+    max-width: 500px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.popup-cookie-info span {
+    text-decoration: line-through;
+}
+
+.popup-cookie-info .button.gray {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+
+
+@media (max-width: 767px) {
+
+    .popup-cookie-info {
+        display: block;
+        max-width: none;
+        padding: var(--container-padding);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        margin: 0;
+    }
+
+    .popup-cookie-info > .text {
+        margin-bottom: 16px;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
