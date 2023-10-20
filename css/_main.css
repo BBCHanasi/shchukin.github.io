@@ -85,9 +85,9 @@ body {
 	padding-right: var(--space);
 }
 
-.wide {
-	--max-width: 1330px;
-}
+/*.wide {*/
+/*	--max-width: 1330px;*/
+/*}*/
 
 .header-text {
 	font-size: 40px;
