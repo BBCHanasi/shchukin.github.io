@@ -3,6 +3,7 @@
 	--transition-default: 0.3s;
 	--transition-long: 0.4s;
 	--container-padding: 48px;
+	--image-fallback: #363636;
 }
 
 @media (max-width: 1375px) {
@@ -1148,7 +1149,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	max-width: 100%;
 	width: 261px;
 	height: 315px;
-	background-color: #2A46A7;
+	background-color: var(--image-fallback);
 }
 
 .teacher-header-info {
@@ -1218,6 +1219,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	border-radius: 22px;
 	width: 100%;
 	height: 100%;
+	background-color: var(--image-fallback);
 }
 
 .information-head video {
@@ -1749,6 +1751,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	min-width: 324px;
 	max-height: 354px;
 	min-height: 354px;
+	background-color: var(--image-fallback);
 	border-radius: 22px;
 }
 
@@ -1758,6 +1761,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	max-height: 354px;
 	min-height: 354px;
 	object-fit: cover;
+	background-color: var(--image-fallback);
 	border-radius: 22px;
 }
 
@@ -1779,6 +1783,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 .example-footer-top > picture img {
 	max-width: 64px;
 	max-height: 64px;
+	background-color: var(--image-fallback);
 	border-radius: 20px;
 }
 
@@ -1878,6 +1883,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 .testimonial-header img {
 	max-width: 64px;
 	max-height: 64px;
+	background-color: var(--image-fallback);
 	border-radius: 20px;
 }
 
@@ -2161,6 +2167,7 @@ img.logo-workshop {
 	border-radius: 18px;
 	width: 72px;
 	height: 72px;
+	background-color: var(--image-fallback);
 	transition: all var(--transition-long);
 }
 
@@ -3252,6 +3259,7 @@ img.logo-workshop {
 .faq_img_wrapper img {
 	max-width: 100%;
 	height: auto;
+	background-image: var(--image-fallback);
 	border-radius: 15px;
 }
 
