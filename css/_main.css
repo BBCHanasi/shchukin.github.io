@@ -70,6 +70,13 @@ img {
 }
 
 
+/* General */
+
+.scroll-lock {
+	overflow-y: hidden;
+}
+
+
 .hide-scrollbar {
 	scrollbar-width: none; /* hide scrollbar in Firefox */
 	-ms-overflow-style: none; /* hide scrollbar in Edge */
@@ -79,8 +86,6 @@ img {
 	display: none;
 }
 
-
-/* General */
 
 .container {
 	max-width: 1330px;
@@ -146,6 +151,33 @@ img {
 	box-sizing: border-box;
 }
 
+
+.no-margin-right {
+	margin-right: 0px;
+}
+
+.hidden {
+	display: none;
+}
+
+.unselectable {
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Chrome/Safari/Opera */
+	-khtml-user-select: none; /* Konqueror */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none; /* Non-prefixed version, currently not supported by any browser */
+}
+
+
+/* helpers general class */
+.highlight-text {
+	color: #ffcc6b;
+}
+
+.underlined {
+	border-bottom: 1px solid;
+}
 
 /* Кнопки */
 
@@ -374,31 +406,9 @@ input[type="radio"]:checked + label:after {
 	opacity: 1;
 }
 
-/* Кастомизация полей для ввода текста */
-input[type="text"].custom-input:valid + .custom-label,
-input[type="text"].custom-input:focus ~ .custom-label {
-	display: block;
-	font-size: 13px;
-	color: #a9a9a9;
-	transform: translateX(0) translateY(-11px);
-	transform-origin: left top;
-}
 
-.custom-label {
-	position: absolute;
-	left: 16px;
-	top: 20px;
-	/* top: 50%; */
-	/* transform: translateY(-50%); */
-	font-size: 15px;
-	line-height: 15px;
-	font-weight: 400;
-	color: #a9a9a9;
-	transition: all var(--transition-default);
-	pointer-events: none;
-}
 
-/* Блоки документа */
+/* Секции документа */
 
 /* Header */
 
@@ -974,6 +984,76 @@ input[type="text"].custom-input:focus ~ .custom-label {
 /*	min-width: 700px;*/
 /*}*/
 
+/* Information */
+
+.information {
+	padding-top: 120px;
+}
+
+.information-header .header-text {
+	max-width: 760px;
+}
+
+.information-container {
+	margin-top: 32px;
+}
+
+.information-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	/* background-color: #1d1d1d; */
+	box-sizing: border-box;
+	width: 438px;
+	height: 520px;
+	border-radius: 24px;
+	margin-right: 8px;
+}
+
+.information-head {
+	max-height: 285px;
+	box-sizing: border-box;
+    /* overflow: hidden; */
+    border-radius: 22px;
+	margin-bottom:8px;
+	height:250px;
+}
+
+.information-head img,
+.information-head video {
+	border-radius: 22px;
+	width: 100%;
+	height: 100%;
+	background-color: var(--image-fallback);
+}
+
+.information-head video {
+	object-fit: cover;
+}
+
+.information-body {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	padding: 32px 28px;
+	background-color: #1d1d1d;
+	border-radius: 24px;
+	height: 100%;
+
+}
+.information-body .title{
+	color: #fff;
+    font-size: 24px;
+    line-height: 28px;
+	margin-bottom:18px;
+}
+.information-body .description{
+	color: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
 /* Teachers */
 
 .teachers {
@@ -1045,75 +1125,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 /*	margin-top: 10px;*/
 /*}*/
 
-/* Information */
 
-.information {
-	padding-top: 120px;
-}
-
-.information-header .header-text {
-	max-width: 760px;
-}
-
-.information-container {
-	margin-top: 32px;
-}
-
-.information-item {
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	/* background-color: #1d1d1d; */
-	box-sizing: border-box;
-	width: 438px;
-	height: 520px;
-	border-radius: 24px;
-	margin-right: 8px;
-}
-
-.information-head {
-	max-height: 285px;
-	box-sizing: border-box;
-    /* overflow: hidden; */
-    border-radius: 22px;
-	margin-bottom:8px;
-	height:250px;
-}
-
-.information-head img,
-.information-head video {
-	border-radius: 22px;
-	width: 100%;
-	height: 100%;
-	background-color: var(--image-fallback);
-}
-
-.information-head video {
-	object-fit: cover;
-}
-
-.information-body {
-	font-weight: 400;
-	font-size: 18px;
-	line-height: 24px;
-	padding: 32px 28px;
-	background-color: #1d1d1d;
-	border-radius: 24px;
-	height: 100%;
-
-}
-.information-body .title{
-	color: #fff;
-    font-size: 24px;
-    line-height: 28px;
-	margin-bottom:18px;
-}
-.information-body .description{
-	color: #fff;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-}
 /* New-Chapters*/
 /* .new-item-chapters-wrapper{
 	display: grid;
@@ -2702,6 +2714,7 @@ img.logo-workshop {
 	position: relative;
 }
 
+/* Инпуты */
 .pp_rs_ui_input_block_field > input {
 	background-color: #3e3e3e;
 	border: 1px solid #535353;
@@ -2732,6 +2745,31 @@ img.logo-workshop {
 	border: 1px solid #f7ce7a;
 	transition: border var(--transition-default) ease;
 	outline: none;
+}
+
+
+/* Лейблы инпутов */
+input[type="text"].custom-input:valid + .custom-label,
+input[type="text"].custom-input:focus ~ .custom-label {
+	display: block;
+	font-size: 13px;
+	color: #a9a9a9;
+	transform: translateX(0) translateY(-11px);
+	transform-origin: left top;
+}
+
+.custom-label {
+	position: absolute;
+	left: 16px;
+	top: 20px;
+	/* top: 50%; */
+	/* transform: translateY(-50%); */
+	font-size: 15px;
+	line-height: 15px;
+	font-weight: 400;
+	color: #a9a9a9;
+	transition: all var(--transition-default);
+	pointer-events: none;
 }
 
 .pp_rs_pay_additional_info_title {
@@ -3342,12 +3380,26 @@ img.logo-workshop {
 	transition: all var(--transition-default);
 }
 
-/* Popup */
+
+
+/* Попап "cookie" -- не совсем попап, небольшой popover скорее */
 
 .popup {
     position: fixed;
     display: flex;
     z-index: 15;
+}
+
+.popup-hidden {
+	opacity: 0;
+	visibility: hidden;
+	transition: visibility 0s var(--transition-default), opacity var(--transition-default);
+}
+
+.popup-visible {
+	opacity: 1;
+	visibility: visible;
+	transition: opacity var(--transition-default);
 }
 
 .popup .title {
@@ -3457,7 +3509,8 @@ img.logo-workshop {
 
 
 
-/* Адаптив */
+/* Несколько мелких десктопных медиа-запросов */
+
 @media (max-width: 1439px) {
 	.promo-base {
 		background: url("../media/images/bg/bg-web.png") no-repeat center;
@@ -3503,6 +3556,10 @@ img.logo-workshop {
 		width:60%;
 	}
 }
+
+
+/* Главный медиа-запрос отделяющий мобильные версии от десктопных */
+
 @media (max-width: 1023px) {
 	.header-socials {
 		display: none;
@@ -3958,6 +4015,9 @@ img.logo-workshop {
 	}
 }
 
+
+/* Несколько мелких планшетных медиа-запросов */
+
 @media (max-width: 969px) {
 	/* Header */
 
@@ -3982,17 +4042,17 @@ img.logo-workshop {
 	}
 }
 
-@media (max-width: 949px) {
+/*@media (max-width: 949px) {*/
 	/* Chapters */
 
-	.max-width-block-2 {
-		max-width: 300px;
-	}
+	/*.max-width-block-2 {*/
+	/*	max-width: 300px;*/
+	/*}*/
 
-	.max-width-block-4 {
-		max-width: 300px;
-	}
-}
+	/*.max-width-block-4 {*/
+	/*	max-width: 300px;*/
+	/*}*/
+/*}*/
 
 @media (max-width: 919px) {
 	/* Chapters */
@@ -4551,6 +4611,9 @@ img.logo-workshop {
 		margin-right: 0;
 	}
 }
+
+
+/* Пачка медиа-запросов специфичных для смартфонов */
 
 @media (max-width: 699px) {
 	/* Trailer */
@@ -5124,72 +5187,6 @@ img.logo-workshop {
 	}
 }
 
-/* Useful */
-
-.no-margin-right {
-	margin-right: 0px;
-}
-
-/* .no-bottom-radius > img {
-	border-bottom-left-radius: 0px;
-	border-bottom-right-radius: 0px;
-} */
-
-.hidden {
-	display: none;
-}
-
-.unselectable {
-	-webkit-touch-callout: none; /* iOS Safari */
-	-webkit-user-select: none; /* Chrome/Safari/Opera */
-	-khtml-user-select: none; /* Konqueror */
-	-moz-user-select: none; /* Firefox */
-	-ms-user-select: none; /* Internet Explorer/Edge */
-	user-select: none; /* Non-prefixed version, currently not supported by any browser */
-}
-
-.scroll-lock {
-	overflow-y: hidden;
-}
-
-.popup-hidden {
-	opacity: 0;
-	visibility: hidden;
-	transition: visibility 0s var(--transition-default), opacity var(--transition-default);
-}
-
-.popup-visible {
-	opacity: 1;
-	visibility: visible;
-	transition: opacity var(--transition-default);
-}
-
-/* helpers general class */
-.highlight-text {
-	color: #ffcc6b;
-}
-
-.underlined {
-	border-bottom: 1px solid;
-}
-
-.button_fixed {
-	z-index: 11;
-	position: fixed;
-	right: 16px;
-	left: 16px;
-	bottom: 16px;
-	margin-bottom: 0;
-	transition: all var(--transition-default) ease-in-out;
-	visibility: hidden;
-	opacity: 0;
-}
-
-.button_fixed--visible {
-	visibility: visible;
-	opacity: 1;
-}
-
 .crossed:before {
 	content: '';
 	display: flex;
@@ -5214,30 +5211,15 @@ img.logo-workshop {
 	line-height: 20px;
 }
 
-
-@media (max-width: 1023px) {
-	.button_fixed {
-		right: 48px;
-		left: 48px;
-	}
-}
-
-@media (max-width: 767px) {
-	.button_fixed {
-		right: 24px;
-		left: 24px;
-	}
-}
-
 @media (max-width: 649px) {
 	.action_50:before {
 		left: 145px;
 		top: 12px;
 	}
-
 }
 
 @media (max-width: 359px) {
+
 	/* General */
 	.br-hidden {
 		display: none;
