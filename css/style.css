@@ -1,5 +1,4 @@
-@import url('_modal.css');
-@import url('_flickity.css');
-@import url('_main.css');
-@import url('_course.css');
-@import url('_chapters.css');
+@import url('vendors/_flickity.css');
+@import url('vendors/_modal.css');
+@import url('_by-media-queries.css');
+@import url('_by-components.css');
