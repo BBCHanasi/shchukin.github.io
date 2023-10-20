@@ -223,13 +223,13 @@
 	-webkit-transform: translateZ(0px);
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 989px) {
 	.modal_portfolio_view_bone {
 		padding: 100px 30px 30px;
 	}
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 949px) {
 	.modal {
 		margin-top: 59px;
 	}
@@ -288,7 +288,7 @@
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 799px) {
 	.modal.video_m {
 		width: 600px;
 	}
@@ -298,7 +298,7 @@
 	}
 }
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
 	.modal.video_m {
 		width: 460px;
 	}
@@ -308,7 +308,7 @@
 	}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 599px) {
 	.modal.request {
 		width: 95%;
 	}
@@ -318,14 +318,14 @@
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 499px) {
 	.modal_portfolio_view_close {
 		top: 24px;
 		left: 24px;
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 	.modal.video_m {
 		width: 95%;
 	}
@@ -347,7 +347,7 @@
 	}
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 374px) {
 	.modal_goal {
 		padding-left: 24px;
 		padding-right: 24px;

@@ -3672,13 +3672,13 @@ img.logo-workshop {
 
 
 /* Адаптив */
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1439px) {
 	.promo-base {
 		background: url("../media/images/bg/bg-web.png") no-repeat center;
 		background-size: cover;
 	}
 }
-@media only screen and (max-width: 1376px) {
+@media only screen and (max-width: 1375px) {
 	.bone {
 		--max-width: 1330px;
 		--space: max(24px, calc((100% - var(--max-width)) / 2));
@@ -3686,17 +3686,17 @@ img.logo-workshop {
 		padding-right: var(--space);
 	}
 }
-@media (max-width: 1180px){
+@media (max-width: 1179px){
 	.header-left-side {
 		display: none;
 	}
 }
-@media (min-width:1023px) and (max-width: 1180px){
+@media (min-width:1024px) and (max-width: 1179px){
 	.faq_item{
 		padding: 40px 48px 40px 90px;
 	}
 }
-@media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1119px) {
 	/* Header */
 
 	/*.header-left-side {*/
@@ -3720,7 +3720,7 @@ img.logo-workshop {
 	/*	margin-right: auto;*/
 	/*}*/
 }
-@media (min-width:1024px) and (max-width:1120px){
+@media (min-width:1024px) and (max-width:1119px){
 	.promo-descr{
 		width:60%;
 	}
@@ -4189,7 +4189,7 @@ img.logo-workshop {
 	}
 }
 
-@media only screen and (max-width: 970px) {
+@media only screen and (max-width: 969px) {
 	/* Header */
 
 	.header-left-side {
@@ -4213,7 +4213,7 @@ img.logo-workshop {
 	}
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 949px) {
 	/* Chapters */
 
 	.max-width-block-2 {
@@ -5122,7 +5122,7 @@ img.logo-workshop {
 	/* payment */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 599px) {
 	.flickity-page-dots {
 		display: flex;
 	}
@@ -5182,7 +5182,7 @@ img.logo-workshop {
 	}
 }
 
-@media only screen and (max-width: 530px) {
+@media only screen and (max-width: 529px) {
 	.header {
 		position: absolute;
 		padding: 0;
@@ -5231,7 +5231,7 @@ img.logo-workshop {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 499px) {
 	/* Teachers */
 
 	/*.teacher-body br {*/
@@ -5260,7 +5260,7 @@ img.logo-workshop {
 	}
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 479px) {
 	/* Information */
 	.information-head {
 		min-height: 186px;
@@ -5339,7 +5339,7 @@ img.logo-workshop {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 399px) {
 	.pp_ls_block_duration_picture {
 		display: none;
 	}
