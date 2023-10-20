@@ -2963,6 +2963,7 @@ img.logo-workshop {
 .pp_rs_pay_additional_info_text > .pp_rs_pay_additional_info_text_li > a {
 	color: #fff;
 	text-decoration: underline;
+	text-decoration-thickness: 1px;
 	transition: color var(--transition-default);
 }
 
