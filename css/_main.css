@@ -2172,6 +2172,16 @@ img.logo-workshop {
 	line-height: 19px;
 }
 
+.crossed:before {
+	content: '';
+	display: flex;
+	height: 0px;
+	position: relative;
+	top: 9px;
+	left: 0px;
+	border-bottom: 1px solid red;
+}
+
 .pp_ls_block_indev_picture {
 	height: 15px;
 }
@@ -2208,6 +2218,21 @@ img.logo-workshop {
 	display: flex;
 	align-items: center;
 }
+
+.action_50:before {
+	content: '-10 000 ₽';
+	display: flex;
+	position: absolute;
+	left: 175px;
+	font-size: 12px;
+	text-transform: uppercase;
+	background: red 0% 0% no-repeat padding-box;
+	padding: 2px 10px 1px 10px;
+	border-radius: 20px;
+	font-weight: 500;
+	line-height: 20px;
+}
+
 
 .pp_ls_block_descr_bottom_line {
 	display: flex;
@@ -5185,30 +5210,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	.promo-title {
 		max-width: 280px;
 	}
-}
-
-.crossed:before {
-	content: '';
-	display: flex;
-	height: 0px;
-	position: relative;
-	top: 9px;
-	left: 0px;
-	border-bottom: 1px solid red;
-}
-
-.action_50:before {
-	content: '-10 000 ₽';
-	display: flex;
-	position: absolute;
-	left: 175px;
-	font-size: 12px;
-	text-transform: uppercase;
-	background: red 0% 0% no-repeat padding-box;
-	padding: 2px 10px 1px 10px;
-	border-radius: 20px;
-	font-weight: 500;
-	line-height: 20px;
 }
 
 @media (max-width: 649px) {
