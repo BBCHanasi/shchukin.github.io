@@ -748,10 +748,12 @@ document.addEventListener("DOMContentLoaded", function (e) {
     $(".popup-cookie-info").addClass("popup-visible");
   }
 
-  // Попап при старте
-  //setTimeout(() => open_imodal("#sale-modal"), 5000);
-  //setTimeout(() => $("#small_preview_salebot").css('zIndex',900), 5000);
-  //setTimeout(() => $("#parent_frame").css('zIndex',900), 5000);
+  // Попап при старте "До конца недели скидка...".
+  // Сейчас кампания не запущена. Для запуска раскомментировать:
+  // setTimeout(() => open_imodal("#sale-modal"), 5000);
+
+  // setTimeout(() => $("#small_preview_salebot").css('zIndex',900), 5000);
+  // setTimeout(() => $("#parent_frame").css('zIndex',900), 5000);
 });
 
 // window.addEventListener('load', (event) => {
