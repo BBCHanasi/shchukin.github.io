@@ -397,7 +397,7 @@
 }
 
 .close-i-modal-btn-wrapper {
-    display: none;
+    display: flex;
     position: absolute;
     top:30px;
     right: 30px;
@@ -583,7 +583,6 @@
     }
 
     .close-i-modal-btn-wrapper{
-        display: flex;
         top:22px;
         right: 22px;
     }
