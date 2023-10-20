@@ -17,14 +17,12 @@
 	border-radius: 20px;
 	border: 3px solid transparent;
 	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
   }
   *::-webkit-scrollbar-thumb:hover {
 	background-color: #f7ce7a;
 	border-radius: 20px;
 	border: 3px solid #f7ce7a;
 	transition: all 0.2s;
-	-webkit-transition: all 0.2s;
   }
 
 /* Only ios */
@@ -461,9 +459,6 @@ input[type="radio"]:not(:checked) + label:before {
 	top: 0px;
 	/* background: #464F5580 0% 0% no-repeat padding-box; */
 	/* box-shadow: inset 0px 3px 8px #000000; */
-	-webkit-transition: all var(--trans-time) ease;
-	-moz-transition: all var(--trans-time) ease;
-	-o-transition: all var(--trans-time) ease;
 	transition: all var(--trans-time) ease;
 }
 
@@ -501,9 +496,6 @@ input[type="radio"]:checked + label:after,
 input[type="radio"]:not(:checked) + label:after {
 	content: "";
 	position: absolute;
-	-webkit-transition: all var(--trans-time) ease;
-	-moz-transition: all var(--trans-time) ease;
-	-o-transition: all var(--trans-time) ease;
 	transition: all var(--trans-time) ease;
 }
 
@@ -586,12 +578,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	/* border-bottom: 1px solid #282828; */
 	/* padding: 5px 5px 5px 5px!important; */
 	z-index: 10;
-
-	/* -webkit-transition: all 0.5s;
-		-moz-transition: all 0.5s;
-		-o-transition: all 0.5s;
-		transition: all 0.5s;
-		transition-delay: 0.1s; */
 }
 
 .header.show {
@@ -631,9 +617,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	border-radius: 12px;
 	cursor: pointer;
 	letter-spacing: 1px;
-	-webkit-transition: all var(--trans-time);
-	-moz-transition: all var(--trans-time);
-	-o-transition: all var(--trans-time);
 	transition: all var(--trans-time);
 }
 
@@ -688,9 +671,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	cursor: pointer;
 	background: rgba(62, 62, 62, 0.6);
 	border-radius: 12px;
-	-webkit-transition: all var(--trans-time);
-	-moz-transition: all var(--trans-time);
-	-o-transition: all var(--trans-time);
 	transition: all var(--trans-time);
 }
 
@@ -1087,9 +1067,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 /*	width: 35px;*/
 /*	height: 35px;*/
 
-/*	-webkit-transition: all var(--trans-time);*/
-/*	-moz-transition: all var(--trans-time);*/
-/*	-o-transition: all var(--trans-time);*/
 /*	transition: all var(--trans-time);*/
 /*}*/
 
@@ -1142,9 +1119,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 /*	cursor: pointer;*/
 /*	z-index: 1;*/
 
-/*	-webkit-transition: all var(--trans-time);*/
-/*	-moz-transition: all var(--trans-time);*/
-/*	-o-transition: all var(--trans-time);*/
 /*	transition: all var(--trans-time);*/
 /*}*/
 
@@ -1485,9 +1459,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 /*	outline-offset: -2px;*/
 /*	margin-bottom: 8px;*/
 /*	overflow: hidden;*/
-/*	-webkit-transition: outline var(--trans-time);*/
-/*	-moz-transition: outline var(--trans-time);*/
-/*	-o-transition: outline var(--trans-time);*/
 /*	transition: outline var(--trans-time);*/
 /*}*/
 
@@ -1524,9 +1495,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 /*	opacity: 0;*/
 /*	z-index: -1;*/
 
-/*	-webkit-transition: opacity var(---acc-trans-time);*/
-/*	-moz-transition: opacity var(---acc-trans-time);*/
-/*	-o-transition: opacity var(---acc-trans-time);*/
 /*	transition: opacity var(---acc-trans-time);*/
 /*}*/
 
@@ -1664,9 +1632,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 /*	opacity: 0.8;*/
 /*	border-radius: 16px;*/
 /*	object-fit: cover;*/
-/*	-webkit-transition: opacity var(--trans-time);*/
-/*	-moz-transition: opacity var(--trans-time);*/
-/*	-o-transition: opacity var(--trans-time);*/
 /*	transition: opacity var(--trans-time);*/
 /*}*/
 
@@ -1681,9 +1646,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 /*	border-radius: 16px;*/
 /*	object-fit: cover;*/
 
-/*	-webkit-transition: opacity var(--trans-time);*/
-/*	-moz-transition: opacity var(--trans-time);*/
-/*	-o-transition: opacity var(--trans-time);*/
 /*	transition: opacity var(--trans-time);*/
 /*}*/
 
@@ -1872,9 +1834,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 	cursor: pointer;
 
-	-webkit-transition: all var(--trans-time);
-	-moz-transition: all var(--trans-time);
-	-o-transition: all var(--trans-time);
 	transition: all var(--trans-time);
 }
 
@@ -2170,9 +2129,6 @@ img.logo-workshop {
 	width: 100%;
 	cursor: pointer;
 	padding: 12px 24px;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 	position: relative;
 }
@@ -2198,9 +2154,6 @@ img.logo-workshop {
 	margin-top: auto;
 	margin-bottom: auto;
 	border-radius: 18px;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 }
 
@@ -2217,9 +2170,6 @@ img.logo-workshop {
 	transform: translate(-50%, -50%);
 	z-index: 1;
 	opacity: 0;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 }
 
@@ -2242,9 +2192,6 @@ img.logo-workshop {
 	border-radius: 18px;
 	width: 72px;
 	height: 72px;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 }
 
@@ -2259,9 +2206,6 @@ img.logo-workshop {
 	flex-direction: column;
 	justify-content: center;
 	margin-left: 24px;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 	position: relative;
 }
@@ -2290,9 +2234,6 @@ img.logo-workshop {
 .pp_ls_block_descr_left_obj_group {
 	display: flex;
 	align-items: center;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 }
 .pp_ls_block_descr_left_obj_group .time-icon::before, .pp_ls_block_descr_left_obj_group .lessons-icon::before{
@@ -2370,9 +2311,6 @@ img.logo-workshop {
 	font-weight: 500;
 	line-height: 20px;
 	margin-right: 16px;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 }
 
@@ -2403,9 +2341,6 @@ img.logo-workshop {
 	display: flex;
 	width: 100%;
 	align-self: center;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 	margin-bottom: 6px;
 }
@@ -2425,9 +2360,6 @@ img.logo-workshop {
 	flex-wrap: wrap;
 	width: 100%;
 	align-self: center;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 }
 
@@ -2747,9 +2679,6 @@ img.logo-workshop {
 	padding: 12px 12px 10px 12px;
 	border-radius: 14px;
 	cursor: pointer;
-	-webkit-transition: all var(--trans-time) ease;
-	-moz-transition: all var(--trans-time) ease;
-	-o-transition: all var(--trans-time) ease;
 	transition: all var(--trans-time) ease;
 }
 .pp_rs_pay_choicer .sale-flash{
@@ -3028,9 +2957,6 @@ img.logo-workshop {
 	width: auto;
 	height: 100%;
 	display: flex;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 }
 .pp_body.sale-active .checkbox-sale > .pp_rs_pay_checkbox,
@@ -3051,9 +2977,6 @@ img.logo-workshop {
 	max-width: 370px;
 	text-underline-offset: 2.5px;
     text-decoration-skip-ink: none;
-	-webkit-transition: all var(---acc-trans-time);
-	-moz-transition: all var(---acc-trans-time);
-	-o-transition: all var(---acc-trans-time);
 	transition: all var(---acc-trans-time);
 }
 
@@ -3267,8 +3190,6 @@ img.logo-workshop {
 	border-radius: 25px;
 	height: fit-content;
 	padding: 40px 48px 40px 160px;
-	/* transition-duration: var(---acc-trans-time);
-	transition-property: all; */
 	transition:all 0.2s ease-in-out;
 	overflow: hidden;
 	margin-bottom: 10px;
@@ -3359,7 +3280,6 @@ img.logo-workshop {
 	height: max-content;
 	overflow: hidden;
 	transition:all 0.2s ease-in-out;
-	/* transition: all calc(var(---acc-trans-time) - 0.05s); */
 }
 .faq_img_wrapper{
 	width: 380px;
