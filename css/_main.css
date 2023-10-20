@@ -1,3 +1,30 @@
+@font-face {
+	font-family: "Onest";
+	src: url("../fonts/Onest/WOFF/Onest-Regular.woff") format("woff"),
+	url("../fonts/Onest/TTF/Onest-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Onest";
+	src: url("../fonts/Onest/WOFF/Onest-Medium.woff") format("woff"),
+	url("../fonts/Onest/TTF/Onest-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Onest";
+	src: url("../fonts/Onest/WOFF/Onest-Bold.woff") format("woff"),
+	url("../fonts/Onest/TTF/Onest-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	--transition-short: 0.2s;
 	--transition-default: 0.3s;
