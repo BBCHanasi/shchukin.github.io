@@ -1229,11 +1229,11 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	text-align: center;
 }
 
-.teacher-body {
-	font-size: 15px;
-	line-height: 20px;
-	margin-top: 10px;
-}
+/*.teacher-body {*/
+/*	font-size: 15px;*/
+/*	line-height: 20px;*/
+/*	margin-top: 10px;*/
+/*}*/
 
 /* Information */
 
@@ -3882,9 +3882,9 @@ img.logo-workshop {
 		padding-bottom: 32px;
 	}
 
-	.teacher-body br {
-		display: none;
-	}
+	/*.teacher-body br {*/
+	/*	display: none;*/
+	/*}*/
 
 	/* Information */
 
@@ -4363,7 +4363,7 @@ img.logo-workshop {
 	} */
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
 	.additional {
 		padding: 7px 16px;
 		font-size: 15px;
@@ -4792,9 +4792,9 @@ img.logo-workshop {
 @media only screen and (max-width: 699px) {
 	/* Trailer */
 
-	.trailer .header-text {
-		max-width: 420px;
-	}
+	/*.trailer .header-text {*/
+	/*	max-width: 420px;*/
+	/*}*/
 
 	/* Popup */
 
@@ -4819,32 +4819,32 @@ img.logo-workshop {
 	/*	min-width: 415px;*/
 	/*}*/
 
-	.preview {
-		width: 50px;
-		height: 50px;
-		border-radius: 13px;
-	}
+	/*.preview {*/
+	/*	width: 50px;*/
+	/*	height: 50px;*/
+	/*	border-radius: 13px;*/
+	/*}*/
 
-	.preview > img {
-		border-radius: 13px;
-	}
+	/*.preview > img {*/
+	/*	border-radius: 13px;*/
+	/*}*/
 
-	.preview > img.play-icon {
-		position: relative;
-		width: 20px;
-		left: 16px;
-		bottom: 42px;
-	}
+	/*.preview > img.play-icon {*/
+	/*	position: relative;*/
+	/*	width: 20px;*/
+	/*	left: 16px;*/
+	/*	bottom: 42px;*/
+	/*}*/
 
-	.media-content {
-		max-width: 358px;
-	}
+	/*.media-content {*/
+	/*	max-width: 358px;*/
+	/*}*/
 
 	/* Payment */
 
-	.pp_custom_background > .elementor-background-overlay {
-		display: none;
-	}
+	/*.pp_custom_background > .elementor-background-overlay {*/
+	/*	display: none;*/
+	/*}*/
 
 	.pp_title {
 		width: 100%;
@@ -5234,9 +5234,9 @@ img.logo-workshop {
 @media only screen and (max-width: 500px) {
 	/* Teachers */
 
-	.teacher-body br {
-		display: none;
-	}
+	/*.teacher-body br {*/
+	/*	display: none;*/
+	/*}*/
 
 	/* FAQ */
 
