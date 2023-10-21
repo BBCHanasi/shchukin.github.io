@@ -52,8 +52,13 @@ function setItemImg(info){
     <div class="example-item">
         <div class="example-image">
         <picture>
-            <source srcset="${info.example}.png" type="image/png">
-            <img src="${info.example}.webp" alt="3д сцена мальчик с монстром">
+            <source srcset="${info.example}@3x.avif 3x, ${info.example}@2x.avif 2x, ${info.example}@1x.avif 1x" type="image/avif">
+            <img srcset="${info.example}@3x.jpg 3x, ${info.example}@2x.jpg 2x, ${info.example}@1x.jpg 1x" 
+                 src="${info.example}@1x.jpg" 
+                 width="324"
+                 height="354"
+                 alt="${info.description}"
+            >
         </picture>
     </div>
     <div class="example-footer">
