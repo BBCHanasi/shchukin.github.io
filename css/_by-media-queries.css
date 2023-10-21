@@ -459,65 +459,6 @@ input[type="radio"]:checked + label:after {
 	margin-top: 65px;
 }
 
-/* .mobile-info {
-	display: flex;
-	width: 100%;
-	border: 2px solid #393939;
-	border-radius: 25px;
-	padding: 5px;
-	margin-top: 20px;
-	box-sizing: border-box;
-	text-transform: none;
-	letter-spacing: normal;
-}
-
-.mobile-info-picture {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 25px;
-	min-width: 75px;
-	min-height: 75px;
-	max-width: 75px;
-	max-height: 75px;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-.mobile-info-picture > picture img {
-	height: 60px;
-	border-radius: 15px;
-}
-
-.mobile-info-message {
-	padding-left: 5px;
-	padding-top: 5px;
-	margin-top: auto;
-	margin-bottom: auto;
-}
-
-.mobile-info-title-text-li {
-	color: #fff;
-	font-size: 18px;
-	font-weight: normal;
-	line-height: normal;
-}
-
-.mobile-info-text-li {
-	color: #fff;
-	font-size: 14px;
-	font-weight: normal;
-	line-height: 18px;
-	letter-spacing: 0px;
-	padding-top: 5px;
-	max-width: 323px;
-}
-
-.mobile-info-text-li > a {
-	color: #ffcc6b;
-	text-decoration: none;
-} */
-
 .mobile-soc-buttons {
 	width: 100%;
 	display: flex;
