@@ -3594,10 +3594,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 	/* Payment */
 
-	/*.pp_custom_background > .elementor-background-overlay {*/
-	/*	display: none;*/
-	/*}*/
-
 	.pp_title {
 		width: 100%;
 		justify-content: flex-start;
