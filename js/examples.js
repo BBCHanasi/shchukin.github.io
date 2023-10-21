@@ -21,14 +21,12 @@ function setItemVideo(info){
     </div>
     <div class="example-footer">
         <div class="example-footer-top">
-            <picture>
-                <img srcset="${info.avatar}@3x.jpg 3x, ${info.avatar}@2x.jpg 2x, ${info.avatar}@1x.jpg 1x"
-                     src="${info.avatar}@1x.jpg" 
-                     width="64"
-                     height="64"
-                     alt="Аватар студента ${info.author}"
-                >
-            </picture>
+            <img srcset="${info.avatar}@3x.jpg 3x, ${info.avatar}@2x.jpg 2x, ${info.avatar}@1x.jpg 1x"
+                 src="${info.avatar}@1x.jpg" 
+                 width="64"
+                 height="64"
+                 alt="Аватар студента ${info.author}"
+            >
             <div class="example-footer-info">
                 <div class="info-title">${info.author}</div>
                 <div class="info-post-title">${info.description}</div>
@@ -67,14 +65,12 @@ function setItemImg(info){
     </div>
     <div class="example-footer">
         <div class="example-footer-top">
-            <picture>
-                <img srcset="${info.avatar}@3x.jpg 3x, ${info.avatar}@2x.jpg 2x, ${info.avatar}@1x.jpg 1x"
-                     src="${info.avatar}@1x.jpg" 
-                     width="64"
-                     height="64"
-                     alt="Аватар студента ${info.author}"
-                >
-            </picture>
+            <img srcset="${info.avatar}@3x.jpg 3x, ${info.avatar}@2x.jpg 2x, ${info.avatar}@1x.jpg 1x"
+                 src="${info.avatar}@1x.jpg" 
+                 width="64"
+                 height="64"
+                 alt="Аватар студента ${info.author}"
+            >
             <div class="example-footer-info">
                 <div class="info-title">${info.author}</div>
                 <div class="info-post-title">${info.description}</div>

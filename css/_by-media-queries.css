@@ -867,7 +867,7 @@ input[type="radio"]:checked + label:after {
 	flex-wrap: nowrap;
 }
 
-.example-footer-top > picture img {
+.example-footer-top img {
 	max-width: 64px;
 	max-height: 64px;
 	background-color: var(--image-fallback);
