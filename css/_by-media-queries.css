@@ -758,53 +758,6 @@ input[type="radio"]:checked + label:after {
 	margin-right: 16px;
 }
 
-/*.promo-footer {*/
-/*	display: flex;*/
-/*	margin-top: 20px;*/
-/*	width: 100%;*/
-/*	align-items: center;*/
-/*}*/
-
-/*.promo-footer-title {*/
-/*	max-width: 50%;*/
-/*	min-width: 50%;*/
-/*	text-align: right;*/
-/*	padding-right: 20px;*/
-/*	box-sizing: border-box;*/
-/*	width: 50%;*/
-/*}*/
-
-/*.promo-footer-items {*/
-/*	display: flex;*/
-/*	margin-left: 15px;*/
-/*	box-sizing: border-box;*/
-/*}*/
-
-/*.promo-footer-item {*/
-/*	display: flex;*/
-/*	align-items: center;*/
-/*	margin-right: 30px;*/
-/*	cursor: pointer;*/
-/*}*/
-
-/*.promo-footer-item-label {*/
-/*	position: relative;*/
-/*	top: 0px;*/
-/*	width: 35px;*/
-/*	height: 35px;*/
-
-/*	transition: all var(--trans-time);*/
-/*}*/
-
-/*.promo-footer-item:hover .promo-footer-item-label {*/
-/*	top: -5px;*/
-/*}*/
-
-/*.promo-footer-item-text {*/
-/*	margin-left: 10px;*/
-/*}*/
-
-
 /* Information */
 
 .information {
@@ -2796,23 +2749,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	/*.header-left-side {*/
 	/*	display: none;*/
 	/*}*/
-
-	/* Promo */
-
-	/*.promo-footer-title {*/
-	/*	display: flex;*/
-	/*	max-width: unset;*/
-	/*	min-width: unset;*/
-	/*	text-align: unset;*/
-	/*	padding-right: unset;*/
-	/*	width: unset;*/
-	/*	margin-left: auto;*/
-	/*}*/
-
-	/*.promo-footer-items {*/
-	/*	margin-left: 35px;*/
-	/*	margin-right: auto;*/
-	/*}*/
+	
 }
 @media (min-width: 1024px) and (max-width: 1119px) {
 	.promo-descr{
@@ -2967,10 +2904,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	.button.big {
 		padding: 8px 32px;
 		line-height: 30px;
-	}
-
-	.promo-footer {
-		display: none;
 	}
 
 	/* Teachers */
