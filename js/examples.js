@@ -22,8 +22,12 @@ function setItemVideo(info){
     <div class="example-footer">
         <div class="example-footer-top">
             <picture>
-                <source srcset="${info.avatar}.png" type="image/png">
-                <img class="lazy" src="${info.avatar}.webp" alt="аватар студента ${info.author}">
+                <img srcset="${info.avatar}@3x.jpg 3x, ${info.avatar}@2x.jpg 2x, ${info.avatar}@1x.jpg 1x"
+                     src="${info.avatar}@1x.jpg" 
+                     width="64"
+                     height="64"
+                     alt="Аватар студента ${info.author}"
+                >
             </picture>
             <div class="example-footer-info">
                 <div class="info-title">${info.author}</div>
@@ -64,8 +68,12 @@ function setItemImg(info){
     <div class="example-footer">
         <div class="example-footer-top">
             <picture>
-                <source srcset="${info.avatar}.png" type="image/png">
-                <img class="lazy" src="${info.avatar}.webp" alt="аватар студента ${info.author}">
+                <img srcset="${info.avatar}@3x.jpg 3x, ${info.avatar}@2x.jpg 2x, ${info.avatar}@1x.jpg 1x"
+                     src="${info.avatar}@1x.jpg" 
+                     width="64"
+                     height="64"
+                     alt="Аватар студента ${info.author}"
+                >
             </picture>
             <div class="example-footer-info">
                 <div class="info-title">${info.author}</div>
