@@ -923,6 +923,7 @@ input[type="radio"]:checked + label:after {
 	stroke: currentcolor;
 }
 
+
 /* Testimonials */
 
 .testimonials {
@@ -2608,14 +2609,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		padding: 40px 48px 40px 90px;
 	}
 }
-@media (max-width: 1119px) {
-	/* Header */
-
-	/*.header-left-side {*/
-	/*	display: none;*/
-	/*}*/
-
-}
 @media (min-width: 1024px) and (max-width: 1119px) {
 	.promo-descr{
 		width:60%;
@@ -2804,8 +2797,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		padding-top: 64px;
 	}
 
-	/* Examples */
-
 	/* Testimonials */
 
 	.testimonials {
@@ -2817,10 +2808,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	.student-work {
 		padding-top: 64px;
 	}
-
-	/* .student-work-container {
-		margin-bottom: 35px;
-	} */
 
 	/* Payment */
 
@@ -3056,38 +3043,15 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 
 @media (max-width: 849px) {
-	/* Teachers */
-
-	/* .teachers-wrapper {
-		width: 100%;
-		justify-content: space-around;
-		margin-bottom: 15px;
-	}
-
-	.teachers-item.margin-right {
-		margin: unset;
-	}
-
-	.teachers-item.margin-left {
-		margin: unset;
-	}
-
-	.teacher-header img {
-		max-width: 110px;
-		max-height: 110px;
-		border-radius: 30px;
-	} */
 
 	.information-body {
 		max-width: unset;
 	}
+
 	.promo-text.desktop {
 		padding-right: 25px;
 	}
 
-	/* .promo-item:first-child {
-		margin-right: 5px;
-	} */
 }
 
 @media (max-width: 767px) {
@@ -3119,6 +3083,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	.pp_body{
 		grid-template-columns:repeat(1,1fr)
 	}
+
 	/* Header */
 
 	.header {
@@ -3850,21 +3815,12 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		padding-left: 24px;
 		padding-right: 24px;
 	}
-	/* Examples */
-
-	/* .examples .additional-info {
-		max-width: 320px;
-	} */
 
 	/* Testimonials */
 
 	.testimonials .section-title {
 		max-width: 370px;
 	}
-
-	/* .testimonials-carousel .flickity-page-dots {
-		bottom: -30px;
-	} */
 
 	/* Student-work */
 
@@ -3952,13 +3908,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 }
 
 @media (max-width: 399px) {
-	/* Teachers */
-
-	/* .teacher-header img {
-		max-width: 90px;
-		max-height: 90px;
-		border-radius: 25px;
-	} */
 
 	.footer_ls_str_1_text_li > a img {
 		top: 2px;
