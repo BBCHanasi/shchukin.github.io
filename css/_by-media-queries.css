@@ -683,35 +683,30 @@ input[type="radio"]:checked + label:after {
 }
 
 .information-head {
-	max-height: 285px;
 	box-sizing: border-box;
-    /* overflow: hidden; */
-    border-radius: 22px;
-	margin-bottom:8px;
-	height:250px;
+	margin-bottom: 8px;
+	height: 250px;
+	flex-shrink: 0;
 }
 
 .information-head img,
 .information-head video {
-	border-radius: 22px;
+	vertical-align: top;
 	width: 100%;
 	height: 100%;
-	background-color: var(--image-fallback);
-}
-
-.information-head video {
 	object-fit: cover;
+	background-color: var(--image-fallback);
+	border-radius: 22px;
 }
 
 .information-body {
+	flex-grow: 1;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 24px;
 	padding: 32px 28px;
 	background-color: #1d1d1d;
 	border-radius: 24px;
-	height: 100%;
-
 }
 .information-body .title{
 	color: #fff;
@@ -3203,18 +3198,18 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		margin-top: 42px;
 	}
 
-	/* .information-item {
-			height: 374px;
-		} */
+	.information-item {
 
-	 .information-head {
-		height: auto;
 	}
 
-	/* .information-head img,
+	.information-head {
+
+	}
+
+	.information-head img,
 	.information-head video {
-		height: 162px;
-	} */
+
+	}
 
 	.information-body {
 		font-size: 18px;
@@ -3222,7 +3217,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		padding: 32px 24px;
 	}
 	.information-item{
-		height: 510px;
+
 	}
 	.information-body .description{
 		font-size: 16px;
@@ -3443,8 +3438,11 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		max-width: 420px;
 	}
 	.information-item {
-		height:510px;
+		height: 440px;
 	}
+		.information-head {
+			height: 216px;
+		}
 
 	/* Payment */
 
@@ -3769,7 +3767,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	}
 
 	.information-item {
-		height:480px;
+
 	}
 
 	/* Payment */
@@ -3876,8 +3874,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	}
 
 	.information-item {
-		width: 100%;
-		height: 430px;
+
 	}
 }
 
@@ -3926,7 +3923,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 @media (max-width: 359px) {
 	.information-item {
-		height: 450px;
+
 	}
 
 	/* Promo */
