@@ -707,17 +707,6 @@ function cookie_accept() {
   $(".cookies").removeClass("cookies--visible");
 }
 
-// // открытие попапов с селектором ind
-// function popup_open(ind) {
-//   $(ind).removeClass("popup-hidden");
-//   $('html').addClass("scroll-lock");
-// }
-//
-// // закрытие попапов с селектором ind
-// function popup_close(ind) {
-//   $(ind).addClass("popup-hidden");
-//   $('html').removeClass("scroll-lock");
-// }
 
 document.addEventListener("DOMContentLoaded", function (e) {
   // инициализация стартового набора блоков для покупки
