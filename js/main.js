@@ -737,16 +737,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
   // setTimeout(() => open_imodal("#sale-modal"), 5000);
   // Алсо важно проверить код, который будет закрывать это окно, если хотя бы раз было открыто.
   // Ищем поиском openedSaleModal
-
-  // setTimeout(() => $("#small_preview_salebot").css('zIndex',900), 5000);
-  // setTimeout(() => $("#parent_frame").css('zIndex',900), 5000);
 });
-
-// window.addEventListener('load', (event) => {
-
-//   $("#small_preview_salebot").css('zIndex',900);
-//   $("#parent_frame").css('zIndex',900);
-// });
 
 // блок с преподавателями
 $(".teachers-carousel").flickity({
