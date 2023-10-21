@@ -499,6 +499,7 @@ input[type="radio"]:checked + label:after {
 	padding-right: 2px;
 }
 
+
 /* Promo */
 
 .promo-base {
@@ -654,6 +655,7 @@ input[type="radio"]:checked + label:after {
 	margin-right: 16px;
 }
 
+
 /* Information */
 
 .information {
@@ -724,6 +726,7 @@ input[type="radio"]:checked + label:after {
     line-height: 24px;
 }
 
+
 /* Teachers */
 
 .teachers {
@@ -788,12 +791,6 @@ input[type="radio"]:checked + label:after {
 	line-height: 20px;
 	text-align: center;
 }
-
-/*.teacher-body {*/
-/*	font-size: 15px;*/
-/*	line-height: 20px;*/
-/*	margin-top: 10px;*/
-/*}*/
 
 
 /* Examples */
@@ -2781,10 +2778,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		padding-bottom: 32px;
 	}
 
-	/*.teacher-body br {*/
-	/*	display: none;*/
-	/*}*/
-
 	/* Information */
 
 	.information {
@@ -3887,11 +3880,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 }
 
 @media (max-width: 499px) {
-	/* Teachers */
-
-	/*.teacher-body br {*/
-	/*	display: none;*/
-	/*}*/
 
 	/* FAQ */
 
