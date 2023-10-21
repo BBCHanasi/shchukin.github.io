@@ -96,21 +96,6 @@ function go_to_link(url) {
   window.open("https://" + url);
 }
 
-// переключение контента с описанием частей курса
-$(document).on("click", ".media-selector", function () {
-  var index = $(this).attr("select-index");
-  var chapter_item = $(this).closest(".chapters-left-side");
-  var objects = $(chapter_item).find(".media-content");
-
-  for (var i = 0; i < objects.length; i++) {
-    if (i == index - 1) {
-      objects[i].classList.add("active");
-      $(objects[i]).parent().css("height", objects[i].scrollHeight);
-    } else {
-      objects[i].classList.remove("active");
-    }
-  }
-});
 // окончание проигрывания любого видео
 $("video").on("ended", function () {
   this.currentTime = 0;
