@@ -131,6 +131,6 @@ function complete(){
             setGallerySize: true,
             watchCSS: false,
             wrapAround: false,
-          }); 
+          });
     }
 }
