@@ -1637,8 +1637,6 @@ input[type="radio"]:checked + label:after {
 }
 
 .testimonial-header img {
-	max-width: 64px;
-	max-height: 64px;
 	background-color: var(--image-fallback);
 	border-radius: 20px;
 }
