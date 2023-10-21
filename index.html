@@ -2516,7 +2516,7 @@
     </section>
 	</section>
 
-	<section class="i-modal" id="sale-modal" data-popup-id="sale-modal">
+	<section class="i-modal" id="sale-modal" data-popup-id="sale-modal" style="display: block">
 		<div class="sale-modal-wrapper">
 			<div class="sale-modal-content">
 				<div class="pretitle">
@@ -2531,7 +2531,22 @@
 					Хватай, а то убежит
 				</div>
 				<div class="btn" id="copy-btn"></div>
-				<img src="/media/images/modal/popup.png" id="sale-modal-img" alt="">
+				<picture>
+					<source srcset="media/sale-modal/sale-modal@3x.avif 3x,
+									media/sale-modal/sale-modal@2x.avif 2x,
+									media/sale-modal/sale-modal@1x.avif 1x"
+							type="image/avif"
+					>
+					<img id="sale-modal-img"
+						 srcset="media/sale-modal/sale-modal@3x.png 3x,
+								 media/sale-modal/sale-modal@2x.png 2x,
+								 media/sale-modal/sale-modal@1x.png 1x"
+						 src="media/sale-modal/sale-modal@1x.png"
+						 width="404"
+						 height="253"
+						 alt=""
+					>
+				</picture>
 			</div>
 		</div>
 	</section>
