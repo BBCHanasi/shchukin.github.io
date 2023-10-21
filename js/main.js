@@ -179,7 +179,6 @@ $(document).ready(function () {
     // Положение странички при скролле
     lastScrollpos = window.pageYOffset;
     // Положение второго блока
-    //minScrollPos = $('.trailer').offset().top - 82;
     minScrollPos = 100;
 
     // Если не дошли до второго блока, постоянно показываем хедер

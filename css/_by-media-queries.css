@@ -804,63 +804,6 @@ input[type="radio"]:checked + label:after {
 /*	margin-left: 10px;*/
 /*}*/
 
-/* Trailer */
-
-/*.trailer {*/
-/*	padding: 0px;*/
-/*	background: linear-gradient(#171717 50%, #101010 50%);*/
-/*}*/
-
-/*.trailer-layer {*/
-/*	background-color: #000;*/
-/*	border-radius: 45px;*/
-/*}*/
-
-/*.trailer-body {*/
-/*	padding-top: 30px;*/
-/*}*/
-
-/*.trailer-header {*/
-/*	margin-top: 80px;*/
-/*	padding-top: 30px;*/
-/*	position: relative;*/
-/*}*/
-
-/*.trailer .header-text {*/
-/*	max-width: 600px;*/
-/*}*/
-
-/*.trailer-content {*/
-/*	display: flex;*/
-/*	justify-content: space-around;*/
-/*	align-items: center;*/
-/*	border-radius: 25px;*/
-/*	margin-top: 30px;*/
-/*	overflow: hidden;*/
-/*}*/
-
-/*.trailer-play {*/
-/*	position: absolute;*/
-/*	width: 100px;*/
-/*	cursor: pointer;*/
-/*	z-index: 1;*/
-
-/*	transition: all var(--trans-time);*/
-/*}*/
-
-/*.trailer-play:hover {*/
-/*	width: 110px;*/
-/*}*/
-
-/*.trailer-play-bg {*/
-/*	display: flex;*/
-/*	width: 100%;*/
-/*	max-height: 100%;*/
-/*	object-fit: cover;*/
-/*	border-radius: 25px;*/
-/*	max-height: 500px;*/
-/*	min-width: 700px;*/
-/*}*/
 
 /* Information */
 
@@ -4141,21 +4084,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		width: auto;
 	}
 
-	.trailer-layer {
-		border-radius: 25px;
-	}
-
-	.trailer-body {
-		padding: 30px 0px 0px;
-	}
-
-	.trailer-header {
-		padding: 15px 30px 0px;
-	}
-
-	.trailer-content {
-		margin-top: -20px;
-	}
 
 	/* Teachers */
 
@@ -4419,15 +4347,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 
 /* Пачка медиа-запросов специфичных для смартфонов */
-
-@media (max-width: 699px) {
-	/* Trailer */
-
-	/*.trailer .header-text {*/
-	/*	max-width: 420px;*/
-	/*}*/
-
-}
 
 @media (max-width: 649px) {
 	/* Information */
@@ -4933,13 +4852,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	}
 }
 
-@media (max-width: 447px) {
-	/* Trailer */
-
-	.trailer-content {
-		margin-top: -64px;
-	}
-}
 
 @media (max-width: 429px) {
 	.br-hidden--400 {
