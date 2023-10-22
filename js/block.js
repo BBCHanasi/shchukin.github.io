@@ -342,8 +342,13 @@ function setItemTypeVideo(data, i){
   let item = `
   <div class="new-item-chapter ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}" data-category="${data['category'].join(', ')}">
     <div class="chapter-cover">
-      <video preload="auto" muted="muted" loop autoplay playsinline>
-        <source src="${data['preview-img']}" alt="Видео загружается...">
+      <video class="retina-density-video" autoplay playsinline muted loop>
+        <source src="${data['preview-img']}@2x.webm" type="video/webm">
+        <source src="${data['preview-img']}@2x.mp4" type="video/mp4">
+      </video>
+      <video class="default-density-video" autoplay playsinline muted loop>
+        <source src="${data['preview-img']}@1x.webm" type="video/webm">
+        <source src="${data['preview-img']}@1x.mp4" type="video/mp4">
       </video>
     </div>  
 
