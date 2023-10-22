@@ -3874,7 +3874,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	}
 
 	.information-item {
-
+		width: 100%;
 	}
 }
 
