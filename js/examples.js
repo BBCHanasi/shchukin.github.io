@@ -15,8 +15,8 @@ function setItemVideo(info){
     let exampleItem = `<div class="examples-wrapper examples-carousel-cell">
     <div class="example-item">
         <div class="example-image">
-            <video src="${info.example}" autoplay playsinline muted loop>
-                <source src="${info.example}" type="video/mp4">
+            <video autoplay playsinline muted loop>
+                <source src="${info.example}" type="video/webm">
             </video>
     </div>
     <div class="example-footer">
