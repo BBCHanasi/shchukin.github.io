@@ -98,7 +98,7 @@ $('.examples-carousel').append(exampleItem);
 }
 
 function complete(){
-    if(window.innerWidth > 767){
+    if(window.innerWidth >= 768){
     $(".examples-carousel").flickity({
         accessibility: true,
         adaptiveHeight: false,
@@ -122,7 +122,7 @@ function complete(){
         watchCSS: false,
         wrapAround: false,
       });
-    }else if(window.innerWidth <= 767){
+    }else if(window.innerWidth < 768){
         $(".examples-carousel").flickity({
             accessibility: true,
             adaptiveHeight: false,

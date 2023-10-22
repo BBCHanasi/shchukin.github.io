@@ -755,7 +755,7 @@ $(".teachers-carousel").flickity({
 // подключение скроллера flickity
 
 // блок с информацией о курсе
-if(window.innerWidth > 767){
+if(window.innerWidth >= 768){
 
 
 $(".information-carousel").flickity({
@@ -1088,7 +1088,7 @@ $(".chapters-mobile-carousel").flickity({
 // });
 
 // блок отзывов
-if(window.innerWidth > 767){
+if(window.innerWidth >= 768){
 $(".testimonials-carousel").flickity({
   accessibility: true,
   adaptiveHeight: false,
@@ -1112,7 +1112,7 @@ $(".testimonials-carousel").flickity({
   watchCSS: false,
   wrapAround: false,
 });
-}else if(window.innerWidth <= 767){
+}else if(window.innerWidth < 768){
   $(".testimonials-carousel").flickity({
     accessibility: true,
     adaptiveHeight: false,
@@ -1138,7 +1138,7 @@ $(".testimonials-carousel").flickity({
   });
 }
 // блок логотипов компаний
-if(window.innerWidth > 767){
+if(window.innerWidth >= 768){
 $(".student-work-carousel").flickity({
   accessibility: true,
   adaptiveHeight: false,
@@ -1162,7 +1162,7 @@ $(".student-work-carousel").flickity({
   watchCSS: false,
   wrapAround: false,
 });
-}else if(window.innerWidth <= 767){
+}else if(window.innerWidth < 768){
   $(".student-work-carousel").flickity({
     accessibility: true,
     adaptiveHeight: false,
