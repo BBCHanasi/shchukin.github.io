@@ -281,7 +281,15 @@ function setItemTypeImg(data, i){
   let item = `
   <div class="new-item-chapter ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}" data-category="${data['category'].join(', ')}">
     <div class="chapter-cover">
-						<img class="lazy" src="${data['preview-img']}" alt="${data['title']}">
+      <picture>
+        <source srcset="${data['preview-img']}@3x.avif 3x, ${data['preview-img']}@2x.avif 2x, ${data['preview-img']}@1x.avif 1x" type="image/avif">
+        <img srcset="${data['preview-img']}@3x.jpg 3x, ${data['preview-img']}@2x.jpg 2x, ${data['preview-img']}@1x.jpg 1x" 
+          src="${data['preview-img']}@1x.jpg" 
+          width="328"
+          height="328"
+          alt="${data['title']}"
+        >
+      </picture>
     </div>
     
     <div class="item-content bl-${i}">
