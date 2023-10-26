@@ -898,16 +898,15 @@ input[type="radio"]:checked + label:after {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	color: #808080;
+	color: #FFFFFF;
+	opacity: 0.43806; /* #808080 */
 	margin-top: 8px;
-
 	cursor: pointer;
-
 	transition: all var(--transition-default);
 }
 
 .example-footer-bottom:hover {
-	color: #fff;
+	opacity: 1;
 }
 
 .example-link {
@@ -915,16 +914,18 @@ input[type="radio"]:checked + label:after {
 	padding-left: 7px;
 	padding-right: 7px;
 }
-
-.example-tg-svg {
-	width: 15px;
-	padding-top: 2px;
-}
-
-.example-tg-svg-colors {
-	fill: currentcolor;
-	stroke: currentcolor;
-}
+	.example-footer-bottom::after {
+		content: "";
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 6px;
+		width: 15px;
+		height: 13px;
+		background-image: url("../media/images/css/telegram.svg");
+		background-size: 15px 13px;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
 
 
 /* Testimonials */
