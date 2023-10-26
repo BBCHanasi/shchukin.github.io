@@ -15,11 +15,11 @@ function setItemVideo(info){
     let exampleItem = `<div class="examples-wrapper examples-carousel-cell">
     <div class="example-item">
         <div class="example-image">
-            <video class="retina-density-video" autoplay playsinline muted loop>
+            <video class="retina-density-video" autoplay playsinline muted loop preload="auto">
                 <source src="${info.example}@2x.webm" type="video/webm">
                 <source src="${info.example}@2x.mp4" type="video/mp4">
             </video>
-            <video class="default-density-video" autoplay playsinline muted loop>
+            <video class="default-density-video" autoplay playsinline muted loop preload="auto">
                 <source src="${info.example}@1x.webm" type="video/webm">
                 <source src="${info.example}@1x.mp4" type="video/mp4">
             </video>
