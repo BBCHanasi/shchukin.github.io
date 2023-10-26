@@ -408,7 +408,7 @@ input[type="radio"]:checked + label:after {
 	right: 8px;
 	height: 2px;
 	background: #fff;
-	transition: transform 0.3s, -webkit-transform 0.3s, -moz-transform 0.3s;
+	transform-origin: center center;
 }
 
 .hamburger span:last-child {
@@ -2719,7 +2719,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	}
 
 	.header.active .hamburger span:last-child {
-		transform: rotate(-45deg) translate(2px, -2px);
+		transform: rotate(-45deg) translate(2.5px, -2px);
 	}
 
 	.header.active .mobile-menu {
