@@ -506,11 +506,19 @@ input[type="radio"]:checked + label:after {
 	padding-top: 115px;
 	padding-bottom: 70px;
 	background-color: #202020;
-	background: url("../media/images/bg/1920.png") no-repeat center;
+	background-image: url("../media/images/bg/bg-1920.png");
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
 	border-bottom-left-radius: 45px;
 	border-bottom-right-radius: 45px;
 	overflow: hidden;
+}
+
+@media (min-resolution: 2dppx) {
+	.promo-base {
+		background-image: url("../media/images/bg/bg-1920@2x.png");
+	}
 }
 
 .promo-deck {
@@ -2593,6 +2601,12 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		background: url("../media/images/bg/bg-web.png") no-repeat center;
 		background-size: cover;
 	}
+
+	@media (min-resolution: 2dppx) {
+		.promo-base {
+			background-image: url("../media/images/bg/bg-web@2x.png");
+		}
+	}
 }
 @media (max-width: 1179px) {
 	.header-left-side {
@@ -2705,6 +2719,12 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 	.promo-base {
 		background-image: url("../media/images/bg/bg-tablet.png");
+	}
+
+	@media (min-resolution: 2dppx) {
+		.promo-base {
+			background-image: url("../media/images/bg/bg-tablet@2x.png");
+		}
 	}
 
 	.promo-body {
@@ -3812,6 +3832,12 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		background-image: url("../media/images/bg/bg-mobile.png");
 		padding-left: 24px;
 		padding-right: 24px;
+	}
+
+	@media (min-resolution: 2dppx) {
+		.promo-base {
+			background-image: url("../media/images/bg/bg-mobile@2x.png");
+		}
 	}
 
 	/* Testimonials */
