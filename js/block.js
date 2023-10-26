@@ -224,7 +224,7 @@ $(document).ready(function() {
       }
 
       // Установить и скачать всё содержимое модалок при открытии:
-      setInfo(data, inCart = false, i);
+      // setInfo(data, inCart = false, i);
     });
   }
 
