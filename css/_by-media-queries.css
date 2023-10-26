@@ -2585,6 +2585,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 .footer_rs_soc_img > img {
 	display: flex;
+	width: 32px;
 	height: 32px;
 	margin-left: auto;
 	margin-right: auto;
