@@ -143,9 +143,18 @@ async function setInfo(info, inCart, blockNumber){
 
     if(info['type-cover'] == 'video'){
       cover = `
-      <video class="cover" preload="auto" muted="muted" loop autoplay playsinline>
-        <source src="${info['cover-img']}"></source>
-      </video>`
+        <div class="cover">
+            <video class="retina-density-video" autoplay playsinline muted loop>
+              <source src="${info['cover-img']}@2x.webm" type="video/webm">
+              <source src="${info['cover-img']}@2x.mp4" type="video/mp4">
+            </video>
+            <video class="default-density-video" autoplay playsinline muted loop>
+              <source src="${info['cover-img']}@1x.webm" type="video/webm">
+              <source src="${info['cover-img']}@1x.mp4" type="video/mp4">
+            </video>
+          </div>  
+        </div>
+      `;
     }else{
       cover = `<img class="cover" src="${info['cover-img']}">`
     }
