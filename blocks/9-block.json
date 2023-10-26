@@ -27,12 +27,12 @@
         {
             "name":"Никита Никитин",
             "prof":"",
-            "avatar":"media/images/teachers/small/mad.jpg"
+            "avatar":"media/blocks/avatars/block-ava-nikita-nikitin"
         },
         {
             "name":"Денис Бондарев",
             "prof":"",
-            "avatar":"media/images/teachers/small/bondarev.jpg"
+            "avatar":"media/blocks/avatars/block-ava-denis-bondarev"
         }
     ],
     "timeline":[

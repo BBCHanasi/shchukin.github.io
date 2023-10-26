@@ -135,7 +135,7 @@ async function setInfo(info, inCart, blockNumber){
     //Добавляем иконки
     item.find('.icons-wrapper').html('')
     info['icons'].forEach(function (e) {
-        i = `<div class="icon ${e}-icon"></div>`;
+        let i = `<div class="icon ${e}-icon"></div>`;
         item.find('.icons-wrapper').append(i);
     })
 
@@ -143,9 +143,14 @@ async function setInfo(info, inCart, blockNumber){
     item.find('.teachers-wrapper').html('')
 
     info['teachers'].forEach(function (e) {
-        i = `
+        let i = `
         <div class="teacher-item">
-        <img src="${e['avatar']}" alt="">
+            <img srcset="${e.avatar}@3x.jpg 3x, ${e.avatar}@2x.jpg 2x, ${e.avatar}@1x.jpg 1x"
+                src="${e['avatar']}@1x.jpg" 
+                width="40"
+                height="40"
+                alt=""
+            >
             <div class="teacher-info">
                 <div class="title">${e['name']}</div>
                 <div class="description">${e['prof']}</div>
@@ -166,7 +171,7 @@ async function setInfo(info, inCart, blockNumber){
             tags+=`<div class="tag">${e}</div>`
         });
         //Вставляем инфу
-        i = `<div class="inside-item">
+        let i = `<div class="inside-item">
                 <div class="inside-item-content">
                     <div class="title">
                         ${e['title']}

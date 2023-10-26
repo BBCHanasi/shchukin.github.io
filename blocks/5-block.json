@@ -26,12 +26,12 @@
         {
             "name":"Никита Никитин",
             "prof":"",
-            "avatar":"media/images/teachers/small/mad.jpg"
+            "avatar":"media/blocks/avatars/block-ava-nikita-nikitin"
         },
         {
             "name":"Екатерина Петрова",
             "prof":"",
-            "avatar":"media/images/teachers/small/ekaterina.jpg"
+            "avatar":"media/blocks/avatars/block-ava-ekaterina-petrova"
         }
     ],
     "timeline":[

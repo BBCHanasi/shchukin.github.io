@@ -26,12 +26,12 @@
         {
             "name":"Никита Никитин",
             "prof":"",
-            "avatar":"media/images/teachers/small/mad.jpg"
+            "avatar":"media/blocks/avatars/block-ava-nikita-nikitin"
         },
         {
             "name":"Ксения Чуйко",
             "prof":"",
-            "avatar":"media/images/teachers/small/ksenia.jpg"
+            "avatar":"media/blocks/avatars/block-ava-kseniya-chuyka"
         }
     ],
     "timeline":[

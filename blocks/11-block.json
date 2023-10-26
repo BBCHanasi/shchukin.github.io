@@ -30,17 +30,17 @@
         {
             "name":"Никита Никитин",
             "prof":"",
-            "avatar":"media/images/teachers/small/mad.jpg"
+            "avatar":"media/blocks/avatars/block-ava-nikita-nikitin"
         },
         {
             "name":"Кирилл Цой",
             "prof":"",
-            "avatar":"media/images/teachers/small/empty.jpg"
+            "avatar":"media/blocks/avatars/block-ava-empty"
         },
         {
             "name":"Александра Mellis",
             "prof":"",
-            "avatar":"media/images/teachers/small/mellis.jpg"
+            "avatar":"media/blocks/avatars/block-ava-alexandra-mellis"
         }
     ],
     "timeline":[
