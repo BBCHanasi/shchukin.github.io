@@ -222,6 +222,8 @@ $(document).ready(function() {
       }else{
         setItemTypeImg(data, i);
       }
+
+      // Установить и скачать всё содержимое модалок при открытии:
       setInfo(data, inCart = false, i);
     });
   }
