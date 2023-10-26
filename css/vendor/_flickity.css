@@ -70,6 +70,12 @@ https://github.com/metafizzy/flickity
     border-radius: 9px;
     background-color: #2a2a2a;
     color: #c5c5c5;
+    transition: opacity var(--transition-default);
+}
+
+.flickity-prev-next-button:disabled {
+    opacity: 0.5;
+    cursor: default;
 }
 
 .flickity-prev-next-button.previous {
