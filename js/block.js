@@ -192,10 +192,8 @@ async function setInfo(info, inCart, blockNumber){
     $('.buy-btn').attr(`data-block`,blockNumber);
     if(inCart == true){
         $('.buy-btn').addClass('active');
-        console.log('1')
     }else{
         $('.buy-btn').removeClass('active');
-        console.log('2')
     }
 
 }
