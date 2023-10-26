@@ -712,10 +712,6 @@
     margin-bottom: 64px;
 }
 
-.btn{
-    cursor: pointer;
-}
-
 .return-btn{
     display: flex;
     align-items: center;
@@ -807,100 +803,6 @@
 }
 
 
-
-.sale-modal-wrapper{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-    height: 100%;
-}
-.sale-modal-content{
-    background-color: #1D1D1D;
-    background: no-repeat url("../media/images/modal/BGgrid.png");
-    background-size: cover;
-    border-radius: 30px;
-    width: 680px;
-    height: 250px;
-    padding: 25px 40px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-}
- .sale-modal-wrapper .pretitle{
-    font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 1.3;
-    font-weight: 500;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    z-index: 1000;
-}
-.sale-modal-wrapper .title{
-    font-size: 30px;
-    font-weight: bold;
-    line-height: 32px;
-    margin-bottom: 15px;
-    z-index: 1000;
-}
-.sale-modal-wrapper .description{
-    font-size: 20px;
-    margin-bottom: 20px;
-    max-width: 405px;
-    z-index: 1000;
-}
-.sale-modal-wrapper .btn{
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-    height: 46px;
-    width: 100%;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 20px;
-    letter-spacing: 0.03rem;
-    background-color: #019EFF;
-    border: 1px solid #019EFF;
-    border-radius: 12px;
-    transition: all var(--transition-short);
-    cursor: pointer;
-    z-index: 1000;
-}
-.sale-modal-wrapper .btn.active, .sale-modal-wrapper .btn:hover{
-    border: 1px solid #fff;
-    transition: all var(--transition-short);
-    background-color: #0000;
-}
-.sale-modal-wrapper .btn::before{
-    content: "забрать место";
-    position: relative;
-    top: 1px;
-}
-.sale-modal-wrapper .btn.active::before{
-    content: "получено";
-}
-#sale-modal-img{
-    position: absolute;
-    right: -4.1%;
-    bottom: 8%;
-    z-index: 100;
-}
-#video-modal-sale{
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top:0;
-    z-index: 10;
-    height: 100%;
-    object-fit: cover;
-}
 .through{
     text-decoration: line-through;
 }
@@ -975,38 +877,10 @@
         display: none;
     }
 }
-@media (max-width: 939px) {
-    #sale-modal-img{
-        right: -2%;
-    }
-    #video-modal-sale{
-        height: 100%;
-        object-fit: cover;
-    }
-}
-@media (max-width: 819px) {
-    /* .sale-modal-wrapper{
-        align-items: flex-end;
-    } */
-    /* .sale-modal-content{
-        border-radius: 30px 30px 0px 0px;
-    } */
-    #sale-modal-img{
-        right: -15%;
-    }
-}
+
+
 @media (max-width: 767px) {
-    .sale-modal-wrapper .title{
-        font-size:28px;
-        line-height: 32px;
-    }
-    .sale-modal-content .title br{
-        display: none;
-    }
-    .sale-modal-content{
-        height: fit-content;
-        padding:18px 28px;
-    }
+
     .course-content br{
         display: none;
     }
@@ -1132,29 +1006,6 @@
         margin: 0px 10px 0px 0px;
     }
 
-}
-
-@media (max-width: 749px) {
-    #sale-modal-img, #video-modal-sale{
-        display: none;
-    }
-}
-
-@media (max-width: 679px) {
-    .sale-modal-wrapper{
-        align-items: flex-end;
-    }
-    .sale-modal-content{
-        border-radius: 30px 30px 0px 0px;
-        /* height: 300px; */
-    }
-    #sale-modal .description{
-        margin-bottom: 40px;
-    }
-    #sale-modal .title{
-        font-size: 28px;
-        line-height: 36px;
-    }
 }
 
 

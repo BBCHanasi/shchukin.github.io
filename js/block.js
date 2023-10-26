@@ -3,61 +3,6 @@ $(document).ready(function() {
   sessionStorage.setItem('openedSaleModal', '0')
 });
 
-// $(document).mouseleave(function(e){
-// //$(document).bind('mouseleave touchmove touchstart', function(e){
-//   if (e.clientY < 10 && sessionStorage.getItem('openedSaleModal') !='1') {
-//     let modal = $('#sale-modal')
-//     open_imodal(modal);
-//     sessionStorage.setItem('openedSaleModal', '1')
-//   }
-// });
-
-// if (matchMedia("screen and (max-width: 1023px)").matches) {
-
-//   document.addEventListener("DOMContentLoaded", function (e) {
-
-//     if (sessionStorage.getItem('openedSaleModal') != '1') {
-//       let modal = $('#sale-modal')
-//       open_imodal(modal);
-//       sessionStorage.setItem('openedSaleModal', '1')
-//     }
-
-//   });
-
-// }
-
-// //Отслеживаем клик по блоку на главной странице
-$('#sale-modal').on( "click","#copy-btn", function() {
-
-  $(this).addClass("active");
-
-  // копирование промокода в буфер обмена
-
-  // let $temp = $("<input>");
-  // $("body").append($temp);
-  // $temp.val('Madmotion').select();
-  // document.execCommand("copy");
-  // $temp.remove();
-
-  // закрываем окно с попапом
-  close_imodal();
-
-
-  // "уезжаем" к разделу заказа блоков
-  var scroll_el = $(".pp_base");
-  var header_heigth = $(".header").outerHeight();
-  if ($(scroll_el).length != 0) {
-    $("html, body").animate(
-      { scrollTop: $(scroll_el).offset().top - header_heigth },
-      500
-    );
-  }
-
-  // добавляем 8 блок в корзину
-  blockchange('BBC', 'Part_8');
-
-
-});
 
 
 /*
@@ -96,7 +41,7 @@ $('body').on( "click",".i-modal-btn", function() {
 });
 
 $('.i-modal').on( "click", function(e) {
-  if(e.target==this||$(e.target).hasClass('close-i-modal-btn-wrapper')||$(e.target).hasClass('return-btn')||$(e.target).hasClass('sale-modal-wrapper')){
+  if(e.target==this||$(e.target).hasClass('close-i-modal-btn-wrapper')||$(e.target).hasClass('return-btn')){
     e.stopPropagation();
     close_imodal();
 }});
@@ -106,7 +51,7 @@ function open_imodal(item){
   let popupId = $(item).attr('data-popup-id');
   $(`#${popupId}`).fadeIn(250);
 
-  // Раньше здесь был небольшой delay. Зачем?
+  // Раньше здесь был небольшой delay. Зачем? Если не разобрались зачем, то удаляем.
   // $(`#${popupId}`).delay(50).fadeIn(200);
 };
 

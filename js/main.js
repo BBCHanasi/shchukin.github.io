@@ -720,12 +720,6 @@ document.addEventListener("DOMContentLoaded", function (e) {
     $(".cookies").removeClass("cookies--hidden");
     $(".cookies").addClass("cookies--visible");
   }
-
-  // Попап при старте "До конца недели скидка...".
-  // Сейчас кампания не запущена. Для запуска раскомментировать:
-  // setTimeout(() => open_imodal("#sale-modal"), 5000);
-  // Алсо важно проверить код, который будет закрывать это окно, если хотя бы раз было открыто.
-  // Ищем поиском openedSaleModal
 });
 
 // блок с преподавателями
