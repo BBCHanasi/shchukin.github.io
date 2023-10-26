@@ -2299,12 +2299,25 @@ input[type="text"].custom-input:focus ~ .custom-label {
 }
 
 .faq_item > .faq_item_top > .faq_item_button {
+	width: 34px;
+	height: 34px;
 	background-color: #474747;
 	color: #fff;
 }
 
 .faq_item > .faq_item_top > .faq_item_button > .faq_item_button_label {
-	transform: translateY(10%) translateX(10%) rotate(0deg);
+	width: 100%;
+	height: 100%;
+	background-image: url("../media/images/css/plus-white.svg");
+	background-size: 20px 20px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	transform: rotate(0deg);
+	transform-origin: 50% 50%;
+}
+
+.faq_item_active > .faq_item_top > .faq_item_button > .faq_item_button_label {
+	transform: rotate(225deg);
 }
 
 .faq_item_active {
@@ -2319,10 +2332,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 
 .faq_item_active > .faq_item_top > .faq_item_button {
 	color: #fff;
-}
-
-.faq_item_active > .faq_item_top > .faq_item_button > .faq_item_button_label {
-	transform: translateY(15%) translateX(0%) rotate(45deg);
 }
 .faq_item_active .faq_item_body_text{
 	max-height: max-content;
