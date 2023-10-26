@@ -794,7 +794,7 @@ $(".information-carousel").flickity({
   friction: 0.5,
   // smaller number = easier to flick farther
 
-  groupCells: false,
+  groupCells: 1,
   // group cells together in slides
 
   initialIndex: 1,
@@ -1094,7 +1094,7 @@ $(".testimonials-carousel").flickity({
   dragThreshold: 10,
   freeScroll: false,
   friction: 0.5,
-  groupCells: false,
+  groupCells: 2,
   initialIndex: 1,
   lazyLoad: true,
   percentPosition: true,
@@ -1144,8 +1144,8 @@ $(".student-work-carousel").flickity({
   dragThreshold: 10,
   freeScroll: false,
   friction: 0.5,
-  groupCells: false,
-  initialIndex: 2,
+  groupCells: 3,
+  initialIndex: 1,
   lazyLoad: true,
   percentPosition: true,
   prevNextButtons: true,

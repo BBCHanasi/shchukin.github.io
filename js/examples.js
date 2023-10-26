@@ -96,7 +96,7 @@ function complete(){
         dragThreshold: 10,
         freeScroll: false,
         friction: 0.5,
-        groupCells: false,
+        groupCells: 3,
         initialIndex: 1,
         lazyLoad: true,
         percentPosition: true,
