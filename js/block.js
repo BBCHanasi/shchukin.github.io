@@ -144,19 +144,36 @@ async function setInfo(info, inCart, blockNumber){
     if(info['type-cover'] == 'video'){
       cover = `
         <div class="cover">
-            <video class="retina-density-video" autoplay playsinline muted loop>
-              <source src="${info['cover-img']}@2x.webm" type="video/webm">
-              <source src="${info['cover-img']}@2x.mp4" type="video/mp4">
-            </video>
-            <video class="default-density-video" autoplay playsinline muted loop>
-              <source src="${info['cover-img']}@1x.webm" type="video/webm">
-              <source src="${info['cover-img']}@1x.mp4" type="video/mp4">
-            </video>
+          <video class="retina-density-video" autoplay playsinline muted loop>
+            <source src="${info['cover-img']}@2x.webm" type="video/webm">
+            <source src="${info['cover-img']}@2x.mp4" type="video/mp4">
+          </video>
+          <video class="default-density-video" autoplay playsinline muted loop>
+            <source src="${info['cover-img']}@1x.webm" type="video/webm">
+            <source src="${info['cover-img']}@1x.mp4" type="video/mp4">
+          </video>
           </div>  
         </div>
       `;
     }else{
-      cover = `<img class="cover" src="${info['cover-img']}">`
+      cover = `
+        <div class="cover">
+            <picture>
+            
+                <source srcset="${info['cover-img']}-large@3x.avif 3x, ${info['cover-img']}-large@2x.avif 2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-large@3x.jpg 3x, ${info['cover-img']}-large@2x.jpg 2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
+                
+                <source srcset="${info['cover-img']}-small@3x.avif 3x, ${info['cover-img']}-small@2x.avif 2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-small@3x.jpg 3x, ${info['cover-img']}-small@2x.jpg 2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
+                
+                <img src="${info['cover-img']}-large@1x.jpg" 
+                  width="1010"
+                  height="478"
+                  alt="${info['title']}"
+                >
+              </picture>
+        </div>
+        `
     }
 
     item.find('.cover').remove();
