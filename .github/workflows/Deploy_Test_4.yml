@@ -1,0 +1,19 @@
+name: Deploy_Test_4
+
+on:
+  push:
+    branches:
+    - test4
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    # Setup key
+    - run: set -eu
+    - run: mkdir "$HOME/.ssh"
+    - run: echo "${{ secrets.key }}" > "$HOME/.ssh/key"
+    - run: chmod 600 "$HOME/.ssh/key"
+    # Deploy
+    - run: rsync -e "ssh -p 22 -i $HOME/.ssh/key -o StrictHostKeyChecking=no" --archive --compress --delete . root@193.176.79.124:/usr/local/lsws/Test_4
