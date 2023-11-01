@@ -9,7 +9,7 @@ function setExample(data){
             setItemImg(e);
         }
     });
-    complete();
+    completeExample();
 }
 function setItemVideo(info){
     let exampleItem = `<div class="examples-wrapper examples-carousel-cell">
@@ -79,7 +79,7 @@ function setItemImg(info){
 $('.examples-carousel').append(exampleItem);
 }
 
-function complete(){
+function completeExample(){
     if(window.innerWidth >= 768){
     $(".examples-carousel").flickity({
         accessibility: true,
