@@ -234,7 +234,7 @@ $(document).ready(function() {
   // (1) Фоновое кеширование. По блоку раз в две секунды.
   // Раньше этот код выполнялся в цикле выше и страница висла
   modalCachingInterval = setInterval(function () {
-    $.getJSON(`/blocks/${modalCachingStep}-block.json`, function (data) {
+    $.getJSON(`../data/blocks/${modalCachingStep}-block.json`, function (data) {
       setInfo(data, inCart = false, modalCachingStep);
     });
 
