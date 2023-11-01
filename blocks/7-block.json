@@ -38,55 +38,55 @@
             "title":"Композиция и цвет",
             "description":"Узнаем как цвет и композиция влияет на итоговое освещение и результат",
             "tags":["софт скиллз","логика"],
-            "img":"media/blocks/7/timeline/1.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_1"
         },
         {
             "title":"Настройка освещения BDSM",
             "description":"Воссоздадим с нуля освещение из сцены BDSM, научимся работать с референсами",
             "tags":["свет"," софт скиллз","логика"],
-            "img":"media/blocks/7/timeline/2.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_2"
         },
         {
             "title":"Альтернативные варианты освещения",
             "description":"Рассмотрим альтернативные варианты освещения этой сцены, научимся менять настроение и посыл сцены при помощи разных схем освещения",
             "tags":["свет","софт скиллз","логика"],
-            "img":"media/blocks/7/timeline/3.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_3"
         },
         {
             "title":"Настройка освещения в 1984",
             "description":"Воссоздадим с нуля освещение из сцены 1984, узнаем как настраивать свет в больших помещениях",
             "tags":["свет","софт скиллз","логика"],
-            "img":"media/blocks/7/timeline/4.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_4"
         },
         {
             "title":"Камера туман и спецэффекты",
             "description":"Узнаем как использовать фокусное расстояние, туман и спецэффекты, чтобы улучшить результат<br> на выходе",
             "tags":["свет","софт скиллз","камера"],
-            "img":"media/blocks/7/timeline/5.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_5"
         },
         {
             "title":"Сцена ROOM",
             "description":"Воссоздадим с нуля освещение из сцены ROOM, узнаем как настраивать свет в интерьерных сценах",
             "tags":["свет","софт скиллз","логика"],
-            "img":"media/blocks/7/timeline/6.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_6"
         },
         {
             "title":"Свет из окна",
             "description":"Узнаем как улучшить освещение в интерьерных сценах за счет настройки света снаружи",
             "tags":["свет","софт скиллз","логика"],
-            "img":"media/blocks/7/timeline/7.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_7"
         },
         {
             "title":"Окружение",
             "description":"В этом уроке мы рассмотрим три варианта как как создать окружение для персонажа и выгодно подчеркнуть его светом",
             "tags":["свет","софт скиллз","логика"],
-            "img":"media/blocks/7/timeline/8.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_8"
         },
         {
             "title":"LEGO MOVIE",
             "description":"Разберем как воссоздать освещение из сцены Emmet's apartment и сделаем постобработку",
             "tags":["свет","софт скиллз","логика"],
-            "img":"media/blocks/7/timeline/9.mp4"
+            "img":"media/blocks/timelines/page_block_7/page_block_7_9"
         }
     ]
 }

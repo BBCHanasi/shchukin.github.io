@@ -48,67 +48,67 @@
             "title":"Матчасть",
             "description":"Разберемся в интерфейсе режима скульптинга и познакомимся со всем функциями, которые пригодятся нам в процессе работы",
             "tags":["логика"],
-            "img":"media/blocks/11/timeline/1.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_1"
         },
         {
             "title":"Кисти",
             "description":"Узнаем как работают кисти для скульптинга, подробно разберем чем они отличаются и рассмотрим ситуации, в которых они нам пригодятся",
             "tags":["логика"],
-            "img":"media/blocks/11/timeline/2.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_2"
         },
         {
             "title":"Пайплайн",
             "description":"Разберем разные пайплайны скульптинга и выясним какие детали лучше скульптить, а какие оставлять на этап текстур",
             "tags":["логика", "софтскиллз"],
-            "img":"media/blocks/11/timeline/3.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_3"
         },
         {
             "title":"Работа с референсами",
             "description":"Научимся скульптить сложные анатомические формы без знания анатомии, ориентируясь по референсу и светотеневому рисунку",
             "tags":["софт скиллз", "моделинг"],
-            "img":"media/blocks/11/timeline/4.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_4"
         },
         {
             "title":"Блокинг",
             "description":"Сделаем блокинг персонажа двумя способами, проведем сравнительный анализ и выберем самый лучший способ",
             "tags":["софт скиллз", "моделинг"],
-            "img":"media/blocks/11/timeline/5.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_5"
         },
         {
             "title":"Скульптинг",
             "description":"Закрепим на практике все изученное нами ранее, уточним силуэт персонажа и проработаем крупные формы персонажа",
             "tags":["логика", "моделинг"],
-            "img":"media/blocks/11/timeline/6.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_6"
         },
         {
             "title":"Детализация",
             "description":"Добавим детализации, узнаем как можно оптимизировать процесс работы и сделаем высокодетализированную версию Патрика",
             "tags":["логика", "моделинг"],
-            "img":"media/blocks/11/timeline/7.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_7"
         },
         {
             "title":"UV развертка",
             "description":"Научимся делать UV развертку сложных органических форм и узнаем как правильно ставить швы на моделях с кривой сеткой",
             "tags":["логика", "текстуринг"],
-            "img":"media/blocks/11/timeline/8.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_8"
         },
         {
             "title":"Запечка",
             "description":"Разберемся как, а главное, зачем запекать детали со скульптинга и выясним что делать, чтобы на модели не вылезали артефакты",
             "tags":["логика", "текстуринг"],
-            "img":"media/blocks/11/timeline/9.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_9"
         },
         {
             "title":"Текстуры",
             "description":"Научимся анализировать текстуры с реальных фотографий, узнаем, что такое субдермальные цвета и научимся текстурить кожу персонажей на таком уровне, чтобы у зрителей мурашки шли по коже",
             "tags":["софт скиллз", "текстуринг"],
-            "img":"media/blocks/11/timeline/10.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_10"
         },
         {
             "title":"Рендер и пост обработка",
             "description":"Настроим свет, узнаем как усилить контраст итогового рендера и выясним, что делать в ситуациях, когда рендер получается не очень",
             "tags":["логика", "софт скиллз"],
-            "img":"media/blocks/11/timeline/11.mp4"
+            "img":"media/blocks/timelines/page_block_11/page_block_11_11"
         }
     ]
 }

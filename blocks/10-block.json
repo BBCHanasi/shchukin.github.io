@@ -38,25 +38,25 @@
             "title":"Моделинг",
             "description":"Замоделим 4 популярных типа стилизованных рук, начиная от совсем мультяшных до приближенных к&nbsp;реалистичным аналогам",
             "tags":["моделинг", "сетка"],
-            "img":"media/blocks/10/timeline/1.mp4"
+            "img":"media/blocks/timelines/page_block_10/page_block_10_1"
         },
         {
             "title":"Дизайн",
             "description":"Изучим фишки и приемы стилизации формы рук из&nbsp;арсенала профессиональных дизайнеров&nbsp;персонажей",
             "tags":["хитрости", "софт скиллз"],
-            "img":"media/blocks/10/timeline/2.mp4"
+            "img":"media/blocks/timelines/page_block_10/page_block_10_2"
         },
         {
             "title":"Риг и развесовка",
             "description":"Разберем процесс риггинга всех замоделенных ранее рук, а также поработаем с развесовкой, чтобы ладонь и пальцы корректно сгибались",
             "tags":["риггинг", "логика", "хитрости"],
-            "img":"media/blocks/10/timeline/3.mp4"
+            "img":"media/blocks/timelines/page_block_10/page_block_10_3"
         },
         {
             "title":"Позы и анимация",
             "description":"Научимся выставлять руки в позы, которые используются при анимации персонажей, и&nbsp;создадим свою библиотеку поз",
             "tags":["риггинг", "логика"],
-            "img":"media/blocks/10/timeline/4.mp4"
+            "img":"media/blocks/timelines/page_block_10/page_block_10_4"
         }
     ]
 }
