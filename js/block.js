@@ -89,13 +89,9 @@ async function setInfo(info, inCart, blockNumber){
     if(info['type-cover'] == 'video'){
       cover = `
         <div class="cover">
-          <video class="retina-density-video" autoplay playsinline muted loop>
-            <source src="${info['cover-img']}@2x.webm" type="video/webm">
-            <source src="${info['cover-img']}@2x.mp4" type="video/mp4">
-          </video>
-          <video class="default-density-video" autoplay playsinline muted loop>
-            <source src="${info['cover-img']}@1x.webm" type="video/webm">
-            <source src="${info['cover-img']}@1x.mp4" type="video/mp4">
+          <video autoplay playsinline muted loop>
+            <source src="${info['cover-img']}${pixelDensity}.webm" type="video/webm">
+            <source src="${info['cover-img']}${pixelDensity}.mp4" type="video/mp4">
           </video>
           </div>  
         </div>
@@ -184,13 +180,9 @@ async function setInfo(info, inCart, blockNumber){
                     </div>
                 </div>
                 <div class="inside-item-img">
-                    <video class="retina-density-video" preload="auto" playsinline autoplay muted loop>
-                        <source src="${e['img']}@2x.webm" type="video/webm">
-                        <source src="${e['img']}@2x.mp4" type="video/mp4">
-                    </video>
-                    <video class="default-density-video" preload="auto" playsinline autoplay muted loop>
-                        <source src="${e['img']}@1x.webm" type="video/webm">
-                        <source src="${e['img']}@1x.mp4" type="video/mp4">
+                    <video preload="auto" playsinline autoplay muted loop>
+                        <source src="${e['img']}${pixelDensity}.webm" type="video/webm">
+                        <source src="${e['img']}${pixelDensity}.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>
@@ -331,13 +323,9 @@ function setItemTypeVideo(data, i){
   let item = `
   <div class="new-item-chapter ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}" data-category="${data['category'].join(', ')}">
     <div class="chapter-cover">
-      <video class="retina-density-video" autoplay playsinline muted loop preload="auto">
-        <source src="${data['preview-img']}@2x.webm" type="video/webm">
-        <source src="${data['preview-img']}@2x.mp4" type="video/mp4">
-      </video>
-      <video class="default-density-video" autoplay playsinline muted loop preload="auto">
-        <source src="${data['preview-img']}@1x.webm" type="video/webm">
-        <source src="${data['preview-img']}@1x.mp4" type="video/mp4">
+      <video autoplay playsinline muted loop preload="auto">
+        <source src="${data['preview-img']}${pixelDensity}.webm" type="video/webm">
+        <source src="${data['preview-img']}${pixelDensity}.mp4" type="video/mp4">
       </video>
     </div>  
 

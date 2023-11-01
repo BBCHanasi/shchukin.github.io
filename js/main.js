@@ -1,3 +1,11 @@
+let pixelDensity;
+
+if (window.matchMedia("(min-resolution: 1.5dppx)").matches) {
+  pixelDensity = '@2x';
+} else {
+  pixelDensity = '@1x';
+}
+
 (function () {
   function logElementEvent(eventName, element) {
     console.log(Date.now(), eventName, element.getAttribute("data-src"));
