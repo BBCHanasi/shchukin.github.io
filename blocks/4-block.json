@@ -45,37 +45,37 @@
             "title":"Стилизация форм",
             "description":"Узнаем что такое стилизация, как ее делать и зачем она нужна",
             "tags":["моделинг","стилизация","софт скиллз"],
-            "img":"media/blocks/4/timeline/1.mp4"
+            "img":"media/blocks/timelines/page_block_4/page_block_4_1"
         },
         {
             "title":"Стилизованный персонаж",
             "description":"Научимся моделировать стилизованных персонажей и работать с пропорциями",
             "tags":["моделинг","стилизация","софт скиллз"],
-            "img":"media/blocks/4/timeline/2.mp4"
+            "img":"media/blocks/timelines/page_block_4/page_block_4_2"
         },
         {
             "title":"Дизайн объектов",
             "description":"Разберем что такое удачный, а что такое неудачный дизайн стилизованного объекта",
             "tags":["моделинг","стилизация","софт скиллз"],
-            "img":"media/blocks/4/timeline/3.mp4"
+            "img":"media/blocks/timelines/page_block_4/page_block_4_3"
         },
         {
             "title":"Риггинг — 1",
             "description":"Познакомимся с риггом, разберемся как работают кости, научимся выставлять персонажа в любую позу и освоим работу с constraint",
             "tags":["риггинг","логика"],
-            "img":"media/blocks/4/timeline/4.mp4"
+            "img":"media/blocks/timelines/page_block_4/page_block_4_4"
         },
         {
             "title":"Риггинг — 2",
             "description":"Глубже копнем в тему риггинга, разберем способы как можно упростить процесс риггинга<br> в больших сценах",
             "tags":["риггинг","логика","хитрости"],
-            "img":"media/blocks/4/timeline/5.mp4"
+            "img":"media/blocks/timelines/page_block_4/page_block_4_5"
         },
         {
             "title":"Развесовка",
             "description":"Разберем что такое развесовка,<br> как и зачем ее делать",
             "tags":["риггинг","логика"],
-            "img":"media/blocks/4/timeline/6.mp4"
+            "img":"media/blocks/timelines/page_block_4/page_block_4_76"
         }
     ]
 }

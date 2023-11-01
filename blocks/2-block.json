@@ -38,37 +38,37 @@
             "title":"Subdiv моделирование",
             "description":"На примере LEGO мини-фигурки продолжим изучать тонкости и нюансы Subdiv моделирования. Будет весело (но это не точно)",
             "tags":["моделинг","сетка"],
-            "img":"media/blocks/2/timeline/1.mp4"
+            "img":"media/blocks/timelines/page_block_2/page_block_2_1"
         },
         {
             "title":"Топология — 1",
             "description":"Научимся изящно склеивать элементы объекта<br> в цельный меш и узнаем почему н-гоны<br> не всегда страшны",
             "tags":["моделинг","сетка","хитрости "],
-            "img":"media/blocks/2/timeline/2.mp4"
+            "img":"media/blocks/timelines/page_block_2/page_block_2_2"
         },
         {
             "title":"Топология — 2",
             "description":"Поработаем с цилиндрическими формами<br> и разберемся в каких случаях от натяжений<br> на модели не обязательно избавляться",
             "tags":["моделинг","сетка","хитрости"],
-            "img":"media/blocks/2/timeline/3.mp4"
+            "img":"media/blocks/timelines/page_block_2/page_block_2_3"
         },
         {
             "title":"Ретопология",
             "description":"Освоим новый подход для моделирование сложных форм и узнаем почему без ретопологии в 3д нечего делать",
             "tags":["моделинг","сетка","хитрости"],
-            "img":"media/blocks/2/timeline/4.mp4"
+            "img":"media/blocks/timelines/page_block_2/page_block_2_4"
         },
         {
             "title":"Рефакторинг",
             "description":"Научимся отделять общее от частного и упрощать сложные формы без потери привлекательности",
             "tags":["моделинг","сетка","стилизация"],
-            "img":"media/blocks/2/timeline/5.mp4"
+            "img":"media/blocks/timelines/page_block_2/page_block_2_5"
         },
         {
             "title":"Презентация",
             "description":"Добавим материалы и наклейки, используем студийное освещение, чтобы фигурка смотрелась как настоящая",
             "tags":["материалы","развертка","свет"],
-            "img":"media/blocks/2/timeline/6.mp4"
+            "img":"media/blocks/timelines/page_block_2/page_block_2_6"
         }
     ]
 }
