@@ -1,4 +1,4 @@
-$.getJSON(`/js/example.json`,function(data){
+$.getJSON(`../data/example.json`,function(data){
  setExample(data);
 });
 function setExample(data){
@@ -9,19 +9,15 @@ function setExample(data){
             setItemImg(e);
         }
     });
-    complete();
+    completeExample();
 }
 function setItemVideo(info){
     let exampleItem = `<div class="examples-wrapper examples-carousel-cell">
     <div class="example-item">
         <div class="example-image">
-            <video class="retina-density-video" autoplay playsinline muted loop preload="auto">
-                <source src="${info.example}@2x.webm" type="video/webm">
-                <source src="${info.example}@2x.mp4" type="video/mp4">
-            </video>
-            <video class="default-density-video" autoplay playsinline muted loop preload="auto">
-                <source src="${info.example}@1x.webm" type="video/webm">
-                <source src="${info.example}@1x.mp4" type="video/mp4">
+            <video autoplay playsinline muted loop preload="auto">
+                <source src="${info.example}${pixelDensity}.webm" type="video/webm">
+                <source src="${info.example}${pixelDensity}.mp4" type="video/mp4">
             </video>
         </div>
         <div class="example-footer">
@@ -83,7 +79,7 @@ function setItemImg(info){
 $('.examples-carousel').append(exampleItem);
 }
 
-function complete(){
+function completeExample(){
     if(window.innerWidth >= 768){
     $(".examples-carousel").flickity({
         accessibility: true,

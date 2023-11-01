@@ -129,24 +129,3 @@ img {
 .underlined {
     border-bottom: 1px solid;
 }
-
-
-
-.default-density-video {
-    display: inline-block;
-}
-
-.retina-density-video {
-    display: none;
-}
-
-@media (min-resolution: 1.5dppx) {
-
-    .default-density-video {
-        display: none;
-    }
-
-    .retina-density-video {
-        display: inline-block;
-    }
-}
