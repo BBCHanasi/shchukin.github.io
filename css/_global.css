@@ -129,3 +129,8 @@ img {
 .underlined {
     border-bottom: 1px solid;
 }
+
+
+.carousel-cutter {
+    overflow: hidden;
+}
