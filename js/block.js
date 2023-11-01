@@ -75,7 +75,7 @@ $('.new-item-chapters-wrapper').on( "click",".new-item-chapter", function() {
     }
 
     //Получаем json
-    $.getJSON(`/blocks/${blockNumber}-block.json`,function(data){
+    $.getJSON(`../data/blocks/${blockNumber}-block.json`,function(data){
         setInfo(data, inCart, blockNumber);
     });
 
@@ -213,7 +213,7 @@ $(document).ready(function() {
 
   let itemsCount = 11; // Тут нужно подумать как тянуть число json файлов
   for (let i = 1; i <= itemsCount; i++) {
-    $.getJSON(`/blocks/${i}-block.json`,function(data){
+    $.getJSON(`../data/blocks/${i}-block.json`,function(data){
       if(data['type-preview'] == "video"){
         setItemTypeVideo(data, i)
       }else{

@@ -1,4 +1,4 @@
-$.getJSON(`/js/example.json`,function(data){
+$.getJSON(`../data/example.json`,function(data){
  setExample(data);
 });
 function setExample(data){

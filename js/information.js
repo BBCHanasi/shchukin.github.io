@@ -1,4 +1,4 @@
-$.getJSON(`/js/information.json`,function(data){
+$.getJSON(`../data/information.json`,function(data){
     setInformation(data);
 });
 function setInformation(data){
