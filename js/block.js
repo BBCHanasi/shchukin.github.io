@@ -74,6 +74,9 @@ $('.new-item-chapters-wrapper').on( "click",".new-item-chapter", function() {
         inCart = true;
     }
 
+    /* Отменяем фоновое кеширование, чтобы не перезатереть содержимое текущей модалки (1) */
+    clearInterval(modalCachingInterval);
+
     //Получаем json
     $.getJSON(`/blocks/${blockNumber}-block.json`,function(data){
         setInfo(data, inCart, blockNumber);
@@ -216,22 +219,39 @@ $(".buy-btn").click(function(e) {
     $(`.pp_ls_block[data-block="${blockNumber}"]`).click();
 });
 
+
+
+let modalCachingInterval;
+let modalCachingStep = 1;
+
+
 //Создание карточек на главной странице
 $(document).ready(function() {
 
   let itemsCount = 11; // Тут нужно подумать как тянуть число json файлов
   for (let i = 1; i <= itemsCount; i++) {
-    $.getJSON(`/blocks/${i}-block.json`,function(data){
+    $.getJSON(`/blocks/${i}-block.json`,function(data) {
       if(data['type-preview'] == "video"){
         setItemTypeVideo(data, i)
       }else{
         setItemTypeImg(data, i);
       }
-
-      // Установить и скачать всё содержимое модалок при открытии:
-      setInfo(data, inCart = false, i);
     });
   }
+
+  // (1) Фоновое кеширование. По блоку раз в две секунды.
+  // Раньше этот код выполнялся в цикле выше и страница висла
+  modalCachingInterval = setInterval(function () {
+    $.getJSON(`/blocks/${modalCachingStep}-block.json`, function (data) {
+      setInfo(data, inCart = false, modalCachingStep);
+    });
+
+    if (modalCachingStep === 11) {
+      clearInterval(modalCachingInterval);
+    }
+
+    modalCachingStep++;
+  }, 2000);
 
 });
 
