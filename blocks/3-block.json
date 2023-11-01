@@ -38,31 +38,31 @@
             "title":"Моделинг",
             "description":"Разберем еще пару интересных особенностей моделирования цилиндрических форм",
             "tags":["моделинг","сетка","хитрости"],
-            "img":"media/blocks/3/timeline/1.mp4"
+            "img":"media/blocks/timelines/page_block_3/page_block_3_1"
         },
         {
             "title":"UV развертка",
             "description":"Подробно поговорим про развертку и подготовим модель к импорту в Substance Painter",
             "tags":["развертка","логика"],
-            "img":"media/blocks/3/timeline/2.mp4"
+            "img":"media/blocks/timelines/page_block_3/page_block_3_2"
         },
         {
             "title":"Текстуринг",
             "description":"Рассмотрим интерфейс и логику работы Substance Painter, научимся создавать в ней реалистичные текстуры",
             "tags":["материалы","текстуры","логика"],
-            "img":"media/blocks/3/timeline/3.mp4"
+            "img":"media/blocks/timelines/page_block_3/page_block_3_3"
         },
         {
             "title":"Освещение",
             "description":"Научимся настраивать свет для цилиндрических объектов так, чтобы достичь максимального объема",
             "tags":["софт скиллз","свет"],
-            "img":"media/blocks/3/timeline/4.mp4"
+            "img":"media/blocks/timelines/page_block_3/page_block_3_4"
         },
         {
             "title":"Постобработка",
             "description":"Избавимся от некрасивых теней и добьемся сочного результата на выходе",
             "tags":["софт скиллз","хитрости"],
-            "img":"media/blocks/3/timeline/5.mp4"
+            "img":"media/blocks/timelines/page_block_3/page_block_3_5"
         }
     ]
 }

@@ -183,9 +183,14 @@ async function setInfo(info, inCart, blockNumber){
                         ${tags}
                     </div>
                 </div>
-                <div class="inside-item-img ${info['item-img-add-class']}">
-                    <video preload="auto" autoplay loop muted playsinline>
-                      <source src="${e['img']}"></source>
+                <div class="inside-item-img">
+                    <video class="retina-density-video" preload="auto" playsinline autoplay muted loop>
+                        <source src="${e['img']}@2x.webm" type="video/webm">
+                        <source src="${e['img']}@2x.mp4" type="video/mp4">
+                    </video>
+                    <video class="default-density-video" preload="auto" playsinline autoplay muted loop>
+                        <source src="${e['img']}@1x.webm" type="video/webm">
+                        <source src="${e['img']}@1x.mp4" type="video/mp4">
                     </video>
                 </div>
             </div>

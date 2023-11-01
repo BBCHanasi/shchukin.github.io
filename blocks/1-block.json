@@ -36,31 +36,31 @@
             "title":"Основы Блендер",
             "description":"Рассмотрим интерфейс и логику работы программы, узнаем как работают привязки и постараемся<br> не уснуть в процессе",
             "tags":["логика","интерфейс"],
-            "img":"media/blocks/1/timeline/1.mp4"
+            "img":"media/blocks/timelines/page_block_1/page_block_1_1"
         },
         {
             "title":"Базовый моделинг",
             "description":"На объектах различных форм разберем различные техники полигонального моделирования.<br> Узнаем как надо и как не надо моделировать",
             "tags":["моделинг","сетка","логика"],
-            "img":"media/blocks/1/timeline/2.mp4"
+            "img":"media/blocks/timelines/page_block_1/page_block_1_2"
         },
         {
             "title":"Топология и сетка",
             "description":"Изучим основы работы с сеткой и Subdiv моделирование. Закрепим знания на интересных<br> и в меру сложных примерах",
             "tags":["моделинг","сетка "],
-            "img":"media/blocks/1/timeline/3.mp4"
+            "img":"media/blocks/timelines/page_block_1/page_block_1_3"
         },
         {
             "title":"Композиция",
             "description":"Расставим объекты сцены так, чтобы получить интересную естественную композицию",
             "tags":["софт скиллз","логика"],
-            "img":"media/blocks/1/timeline/4.mp4"
+            "img":"media/blocks/timelines/page_block_1/page_block_1_4"
         },
         {
             "title":"Освещение",
             "description":"Назначим объектам материалы, выставим камеру, настроим освещение и добьемся сочного результата на выходе",
             "tags":["материалы","софт скиллз","камера"],
-            "img":"media/blocks/1/timeline/5.mp4"
+            "img":"media/blocks/timelines/page_block_1/page_block_1_5"
         }
     ]
 }

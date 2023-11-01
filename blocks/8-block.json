@@ -39,43 +39,43 @@
             "title":"Стилизация цвета и формы",
             "description":"Разберем нюансы и особенности стилизации формы и свето-тени для имитации 2D рисунка",
             "tags":["софт скиллз","логика"],
-            "img":"media/blocks/8/timeline/1.mp4"
+            "img":"media/blocks/timelines/page_block_8/page_block_8_1"
         },
         {
             "title":"Моделинг",
             "description":"Замоделим стилизованную модель автомобиля<br> и разберем особенности работы с сеткой для<br> 2д стилизации",
             "tags":["моделинг","сетка","хитрости"],
-            "img":"media/blocks/8/timeline/2.mp4"
+            "img":"media/blocks/timelines/page_block_8/page_block_8_2"
         },
         {
             "title":"Настройка шейдера",
             "description":"Настроим стилизованный мультяшный материал<br> на модели машины и добавим текстуры",
             "tags":["развертка","свет","логика"],
-            "img":"media/blocks/8/timeline/3.mp4"
+            "img":"media/blocks/timelines/page_block_8/page_block_8_3"
         },
         {
             "title":"Grease Pencil",
             "description":"Разберем основы работы с Grease Pencil и сравним его с другими инструментом 2д стилизации<br> в Blender",
             "tags":["материалы","логика","софт скиллз"],
-            "img":"media/blocks/8/timeline/4.mp4"
+            "img":"media/blocks/timelines/page_block_8/page_block_8_4"
         },
         {
             "title":"Работа с контуром",
             "description":"Настроим контур для машинки и закрепим<br> на практике работу с инструментом Grease Pencil",
             "tags":["материалы","логика","софт скиллз"],
-            "img":"media/blocks/8/timeline/5.mp4"
+            "img":"media/blocks/timelines/page_block_8/page_block_8_5"
         },
         {
             "title":"Рендер",
             "description":"Зарендерим анимацию вращения и решим проблему лесенки на контуре с помощью метода SSAA (Supersample anti-aliasing)",
             "tags":["хитрости","логика","софт скиллз"],
-            "img":"media/blocks/8/timeline/6.mp4"
+            "img":"media/blocks/timelines/page_block_8/page_block_8_6"
         },
         {
             "title":"Фишки Grease Pencil",
             "description":"Рассмотрим дополнительные возможности<br> из арсенала, который дает инструмент Grease Pencil",
             "tags":["материалы","логика","софт скиллз"],
-            "img":"media/blocks/8/timeline/7.mp4"
+            "img":"media/blocks/timelines/page_block_8/page_block_8_7"
         }
     ]
 }
