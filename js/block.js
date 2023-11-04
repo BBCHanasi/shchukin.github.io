@@ -200,6 +200,166 @@ async function setInfo(info, inCart, blockNumber){
 
 }
 
+// Устанавливаем основную инфу блока в modal -- это оригинальная функция setInfo.
+// Раньше она вызывалась не только при открытии модалки, но ещё и при загрузки страницы,
+// от чего сайт сильно тормозил и в плане скорости загрузки, и в плане производительности.
+// Сейчас для второго используется функция setPartialInfo
+async function setInfo(info, inCart, blockNumber){
+    let item = $('#block-modal');
+    let cover = ''; //переменная с html содержимым обложки
+
+    if(info['type-cover'] == 'video'){
+      cover = `
+        <div class="cover">
+          <video autoplay playsinline muted loop>
+            <source src="${info['cover-img']}${pixelDensity}.webm" type="video/webm">
+            <source src="${info['cover-img']}${pixelDensity}.mp4" type="video/mp4">
+          </video>
+          </div>  
+        </div>
+      `;
+    }else{
+      cover = `
+        <div class="cover">
+            <picture>
+            
+                <source srcset="${info['cover-img']}-large@3x.avif 3x, ${info['cover-img']}-large@2x.avif 2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-large@3x.jpg 3x, ${info['cover-img']}-large@2x.jpg 2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
+                
+                <source srcset="${info['cover-img']}-small@3x.avif 3x, ${info['cover-img']}-small@2x.avif 2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-small@3x.jpg 3x, ${info['cover-img']}-small@2x.jpg 2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
+                
+                <img src="${info['cover-img']}-large@1x.jpg" 
+                  width="1010"
+                  height="478"
+                  alt="${info['title']}"
+                >
+              </picture>
+        </div>
+        `
+    }
+
+    item.find('.cover').remove();
+    item.find('.course-cover').append(cover);
+
+    item.find('.course-short-info').find('.number-lessons').children('.title').text(info['lessons']);
+    item.find('.course-short-info').find('.time').children('.title').text(info['time']);
+    item.find('.course-short-info').find('.level').children('.title').text(info['level']);
+
+    item.find('.course-description').children('.title').html(info['title']);
+    item.find('.course-description').children('.description').html(info['description']);
+
+
+    //Добавляем иконки
+    item.find('.icons-wrapper').html('')
+    info['icons'].forEach(function (e) {
+        let i = `<div class="icon ${e}-icon"></div>`;
+        item.find('.icons-wrapper').append(i);
+    })
+
+    //Добавляем преподавателей
+    item.find('.teachers-wrapper').html('')
+
+    info['teachers'].forEach(function (e) {
+        let i = `
+        <div class="teacher-item">
+            <img srcset="${e.avatar}@3x.jpg 3x, ${e.avatar}@2x.jpg 2x, ${e.avatar}@1x.jpg 1x"
+                src="${e['avatar']}@1x.jpg" 
+                width="40"
+                height="40"
+                alt=""
+            >
+            <div class="teacher-info">
+                <div class="title">${e['name']}</div>
+                <div class="description">${e['prof']}</div>
+            </div>
+        </div>
+        `;
+        item.find('.teachers-wrapper').append(i);
+    })
+
+
+    //Добавляем этапы обучений
+    item.find('.course-inside-info').html('')
+
+    info['timeline'].forEach(function (e) {
+        //Получаем тэги
+        let tags = ``;
+        e['tags'].forEach(function (e) {
+            tags+=`<div class="tag">${e}</div>`
+        });
+        //Вставляем инфу
+        let i = `<div class="inside-item">
+                <div class="inside-item-content">
+                    <div class="title">
+                        ${e['title']}
+                    </div>
+                    <div class="description">
+                        ${e['description']}
+                    </div>
+                    <div class="tags-wrapper">
+                        ${tags}
+                    </div>
+                </div>
+                <div class="inside-item-img">
+                    <video preload="auto" playsinline autoplay muted loop>
+                        <source src="${e['img']}${pixelDensity}.webm" type="video/webm">
+                        <source src="${e['img']}${pixelDensity}.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        `;
+        //Добавляем в html
+        item.find('.course-inside-info').append(i);
+    })
+    //Добавляем кнопку
+    $('.buy-btn').attr(`data-block`,blockNumber);
+    if(inCart == true){
+        $('.buy-btn').addClass('active');
+    }else{
+        $('.buy-btn').removeClass('active');
+    }
+}
+
+async function setPartialInfo(info, inCart, blockNumber){
+    let item = $('#block-modal');
+    let cover = ''; //переменная с html содержимым обложки
+
+    if(info['type-cover'] == 'video'){
+      cover = `
+        <div class="cover">
+          <video autoplay playsinline muted loop>
+            <source src="${info['cover-img']}${pixelDensity}.webm" type="video/webm">
+            <source src="${info['cover-img']}${pixelDensity}.mp4" type="video/mp4">
+          </video>
+          </div>  
+        </div>
+      `;
+    }else{
+      cover = `
+        <div class="cover">
+            <picture>
+            
+                <source srcset="${info['cover-img']}-large@3x.avif 3x, ${info['cover-img']}-large@2x.avif 2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-large@3x.jpg 3x, ${info['cover-img']}-large@2x.jpg 2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
+                
+                <source srcset="${info['cover-img']}-small@3x.avif 3x, ${info['cover-img']}-small@2x.avif 2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-small@3x.jpg 3x, ${info['cover-img']}-small@2x.jpg 2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
+                
+                <img src="${info['cover-img']}-large@1x.jpg" 
+                  width="1010"
+                  height="478"
+                  alt="${info['title']}"
+                >
+              </picture>
+        </div>
+        `
+    }
+
+    item.find('.cover').remove();
+    item.find('.course-cover').append(cover);
+}
+
 ///// Работа кнопки
 $(".buy-btn").click(function(e) {
     e.preventDefault();
@@ -220,8 +380,8 @@ $(document).ready(function() {
         setItemTypeImg(data, i);
       }
 
-      // Установить и скачать всё содержимое модалок при открытии:
-      setInfo(data, inCart = false, i);
+      // Раньше здесь вызывалась SetInfo, что очень тормозило сайт, но теперь только обложки:
+      setPartialInfo(data, inCart = false, i);
     });
   }
 
