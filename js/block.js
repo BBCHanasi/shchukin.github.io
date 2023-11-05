@@ -55,6 +55,12 @@ $('.i-modal').on( "click", function(e) {
     close_imodal();
 }});
 
+$(document).on('keydown', function (event) {
+    if (event.key === "Escape") {
+        close_imodal();
+    }
+})
+
 
 function open_imodal(item){
   clearTimeout(removingTimeout);
