@@ -46,7 +46,10 @@ let removingTimeout; // Устанавливается при закрытии �
                      // используем таймаут, можно и отменить закрытие окна тоже.
 
 $('body').on( "click",".i-modal-btn", function() {
-  open_imodal(this);
+    if( $(this).hasClass('locked') ) {
+        return;
+    }
+    open_imodal(this);
 });
 
 $('.i-modal').on( "click", function(e) {
@@ -76,6 +79,7 @@ function open_imodal(item){
 function close_imodal() {
 
   $('.i-modal').fadeOut(250);
+
   removingTimeout = setTimeout(() => {
     removeInfo();
     unlockPage();
@@ -87,7 +91,11 @@ function close_imodal() {
 //Отслеживаем клик по блоку на главной странице
 $('.new-item-chapters-wrapper').on( "click",".new-item-chapter", function() {
 
-  let blockNumber = $(this).attr('data-block');
+    if ($(this).hasClass('locked')) {
+        return;
+    }
+
+    let blockNumber = $(this).attr('data-block');
     let inCart = false;
 
     //Узнаем добавлен ли блок в корзину
@@ -428,7 +436,7 @@ $(document).ready(function() {
         setItemTypeImg(data, i);
       }
 
-      // Раньше здесь вызывалась SetInfo, что очень тормозило сайт, но теперь только обложки:
+      // Раньше здесь вызывалась SetInfo, что очень тормозило сайт, но теперь только обложки через setPartialInfo:
       setPartialInfo(data, inCart = false, i);
     });
   }
@@ -460,7 +468,7 @@ function setItemTypeImg(data, i){
   }
 
   let item = `
-  <div class="new-item-chapter ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}" data-category="${data['category'].join(', ')}">
+  <div class="new-item-chapter ${ data['available'] ? '' : 'locked' } ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}" data-category="${data['category'].join(', ')}">
     <div class="chapter-cover">
       <picture>
         <source srcset="${data['preview-img']}@3x.avif 3x, ${data['preview-img']}@2x.avif 2x, ${data['preview-img']}@1x.avif 1x" type="image/avif">
@@ -488,10 +496,10 @@ function setItemTypeImg(data, i){
       
       <div class="price-wrapper">
         <div class="title">
-        ${strInstPrice}
+          ${ ! data['available'] ? '' : strInstPrice}
         </div>
         <div class="post-title">
-        ${strFullPrice}
+          ${ ! data['available'] ? '' : strFullPrice}
         </div>
       </div>
 
@@ -529,7 +537,7 @@ function setItemTypeVideo(data, i){
   }
 
   let item = `
-  <div class="new-item-chapter ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}" data-category="${data['category'].join(', ')}">
+  <div class="new-item-chapter ${ data['available'] ? '' : 'locked' } ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}" data-category="${data['category'].join(', ')}">
     <div class="chapter-cover">
       <video autoplay playsinline muted loop preload="auto">
         <source src="${data['preview-img']}${pixelDensity}.webm" type="video/webm">
@@ -550,10 +558,10 @@ function setItemTypeVideo(data, i){
       
       <div class="price-wrapper">
         <div class="title">
-          ${strInstPrice}
+          ${ ! data['available'] ? '' : strInstPrice}
         </div>
         <div class="post-title">
-          ${strFullPrice}
+          ${ ! data['available'] ? '' : strFullPrice}
         </div>
       </div>
 
@@ -613,117 +621,3 @@ $(document).ready(function () {
     }
 
 });
-
-
-// function setItemTypeImg(data, i){
-//   let progress = '';
-//   if(data['in_progress'] == 'true'){
-//     progress = 'in_progress';
-//   }
-//   let item = `
-//   <div class="new-item-chapter ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}">
-//     <div class="chapter-cover">
-// 						<img class="lazy" src="${data['preview-img']}" alt="${data['title']}">
-//     </div>
-
-//     <div class="item-content">
-
-//       <div class="item-chapter-header">
-//         <div class="info-wrapper">
-
-//             <div class="pretitle">Блок ${i}</div>
-//             <div class="lessons-icon"><span class="icon-text">${data['lessons']}</span></div>
-//             <div class="time-icon"><span class="icon-text">${data['time']}</span></div>
-
-//         </div>
-//         <div class="title">${data['title']}</div>
-//       </div>
-
-//       <div class="price-wrapper">
-//         <div class="title">
-//           ${data['price-title']}
-//         </div>
-//         <div class="post-title">
-//           ${data['price-description']}
-//         </div>
-//       </div>
-
-//     </div>
-
-//   </div>
-//   `;
-
-//   $('.new-item-chapters-wrapper').append(item);
-
-// };
-// function setItemTypeVideo(data, i){
-//   let progress = '';
-//   if(data['in_progress'] == 'true'){
-//     progress = 'in-progress';
-//   }
-//   let item = `
-//   <div class="new-item-chapter ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}">
-//     <div class="chapter-cover">
-//       <video preload="auto" muted="muted" loop autoplay playsinline>
-//         <source src="${data['preview-img']}" alt="Видео загружается...">
-//       </video>
-//     </div>
-
-//     <div class="item-content">
-//       <div class="item-chapter-header">
-//         <div class="info-wrapper">
-//             <div class="pretitle">Блок ${i}</div>
-//             <div class="lessons-icon"> <span class="icon-text">${data['lessons']}<span class="icon-text"></div>
-//             <div class="time-icon"><span class="icon-text">${data['time']}</span></div>
-//         </div>
-//         <div class="title">${data['title']}</div>
-//       </div>
-
-//       <div class="price-wrapper">
-//         <div class="title">
-//           ${data['price-title']}
-//         </div>
-//         <div class="post-title">
-//           ${data['price-description']}
-//         </div>
-//       </div>
-
-//     </div>
-
-//   </div>
-//   `;
-
-//   $('.new-item-chapters-wrapper').append(item);
-
-// };
-
-
-/////////////////
-//Massonry-grid// этот скрипт для 1 варианта верстки блоков
-/////////////////
-// function get_minHeight_massonry(){
-//     let minHeight_massonry = [];
-//     $('.new-item-chapter').each(function() {
-//       minHeight_massonry.push( $(this).height());
-//     });
-//     return Math.min.apply(null,minHeight_massonry);
-//   }
-
-//   $('.new-item-chapter').each(function() {
-//     // let gridRow = Math.round($(this).height() / 20);
-//     // console.log(gridRow);
-//     // $(this).css('grid-row',`span ${gridRow}`);
-//     if($( this ).height() > get_minHeight_massonry()){
-//       $(this).addClass('grid-control');
-//     }
-//   });
-
-//   $(window).bind('resize', function(){
-//     $('.new-item-chapter').each(function() {
-//       if($( this ).height() > get_minHeight_massonry()){
-//         $(this).addClass('grid-control');
-//       }else{
-//         $(this).removeClass('grid-control');
-//       }
-//     })
-//   });

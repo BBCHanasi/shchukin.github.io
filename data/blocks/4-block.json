@@ -1,6 +1,7 @@
 {
+    "available": false,
     "text-color":"white",
-    "type-preview":"video",
+    "type-preview":"img",
     "type-cover":"img",
     "in_progress":"false",
     "item-img-add-class":"scale",

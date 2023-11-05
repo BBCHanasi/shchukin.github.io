@@ -126,7 +126,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     transition: all var(--transition-short);
+}
+
+.new-item-chapter:not(.locked) {
     cursor: pointer;
+}
+
+.new-item-chapter.locked {
+    filter: saturate(0) brightness(0.72);
 }
 
 .new-item-chapter.in-progress {
@@ -367,8 +374,8 @@
 
 @media (min-width: 1024px) {
 
-    .new-item-chapter:hover .chapter-cover video,
-    .new-item-chapter:hover .chapter-cover img {
+    .new-item-chapter:not(.locked):hover .chapter-cover video,
+    .new-item-chapter:not(.locked):hover .chapter-cover img {
         transform: scale(1.10062);
         transition: all var(--transition-short);
     }
