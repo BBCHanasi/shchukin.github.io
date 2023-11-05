@@ -36,6 +36,15 @@ function unlockPage() {
 
 
 ////I-modal - модальные окна
+
+let removingTimeout; // Устанавливается при закрытии модалки, сбрасывается при открытии.
+                     // Модалка запрограммирована так, что при открытии она заполняется контентом,
+                     // а при закрытии очищается. Но если закрывать и открывать модалку слишком быстро,
+                     // то можно словить баг, когда открывается пустая модалка: старая закрыла быстрее,
+                     // чем открылась новая. Если это происходит, то делаем clearTimeout(removingTimeout);
+                     // Главным образом это нужно для отмены вызова функции removeInfo(), но раз уж всё-равно
+                     // используем таймаут, можно и отменить закрытие окна тоже.
+
 $('body').on( "click",".i-modal-btn", function() {
   open_imodal(this);
 });
@@ -46,7 +55,9 @@ $('.i-modal').on( "click", function(e) {
     close_imodal();
 }});
 
+
 function open_imodal(item){
+  clearTimeout(removingTimeout);
   lockPage();
   let popupId = $(item).attr('data-popup-id');
   $(`#${popupId}`).fadeIn(250);
@@ -55,13 +66,17 @@ function open_imodal(item){
   // $(`#${popupId}`).delay(50).fadeIn(200);
 };
 
-function close_imodal(){
+
+function close_imodal() {
+
   $('.i-modal').fadeOut(250);
-  setTimeout(() => {
-      unlockPage();
-      $('.i-modal').scrollTop(0);
+  removingTimeout = setTimeout(() => {
+    removeInfo();
+    unlockPage();
+    $('.i-modal').scrollTop(0);
   }, 250);
-};
+
+}
 
 //Отслеживаем клик по блоку на главной странице
 $('.new-item-chapters-wrapper').on( "click",".new-item-chapter", function() {
@@ -359,6 +374,33 @@ async function setPartialInfo(info, inCart, blockNumber){
     item.find('.cover').remove();
     item.find('.course-cover').append(cover);
 }
+
+function removeInfo(){
+    let item = $('#block-modal');
+
+    item.find('.cover').remove();
+
+    item.find('.course-short-info').find('.number-lessons').children('.title').text('');
+    item.find('.course-short-info').find('.time').children('.title').text('');
+    item.find('.course-short-info').find('.level').children('.title').text('');
+
+    item.find('.course-description').children('.title').html('');
+    item.find('.course-description').children('.description').html('');
+
+
+    //Удаляем иконки
+    item.find('.icons-wrapper').html('')
+
+    //Удаляем преподавателей
+    item.find('.teachers-wrapper').html('')
+
+    //Удаляем этапы обучений
+    item.find('.course-inside-info').html('')
+
+    //Удаляем кнопку
+    $('.buy-btn').remove()
+}
+
 
 ///// Работа кнопки
 $(".buy-btn").click(function(e) {
