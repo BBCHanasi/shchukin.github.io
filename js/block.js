@@ -487,9 +487,10 @@ function setItemTypeImg(data, i){
         <div class="info-wrapper">
             <div class="presale-title">предпродажа</div> 
             <div class="pretitle">Блок ${i}</div>
-            <div class="lessons-icon"><span class="icon-text">${data['lessons']}</span></div>
-            <div class="time-icon"><span class="icon-text">${data['time']}</span></div>
-
+            
+            ${ data['available'] ? '<div class="lessons-icon"><span class="icon-text">' + data['lessons'] + '</span></div>' : ''}
+            ${ data['available'] ? '<div class="time-icon"><span class="icon-text">' + data['time'] + '</span></div>' : ''}
+            
         </div>
         <div class="title">${data['title']}</div>
       </div>
@@ -550,8 +551,8 @@ function setItemTypeVideo(data, i){
         <div class="info-wrapper">
             <div class="presale-title">предпродажа</div> 
             <div class="pretitle">Блок ${i}</div>
-            <div class="lessons-icon"> <span class="icon-text">${data['lessons']}<span class="icon-text"></div>
-            <div class="time-icon"><span class="icon-text">${data['time']}</span></div>
+            ${data['available'] ? '<div class="lessons-icon"><span class="icon-text">' + data['lessons'] + '</span></div>' : ''}
+            ${data['available'] ? '<div class="time-icon"><span class="icon-text">' + data['time'] + '</span></div>' : ''}
         </div>
         <div class="title">${data['title']}</div>
       </div>

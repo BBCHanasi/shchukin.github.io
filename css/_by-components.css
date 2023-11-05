@@ -131,10 +131,32 @@
 .new-item-chapter:not(.locked) {
     cursor: pointer;
 }
+    .new-item-chapter.locked .chapter-cover,
+    .new-item-chapter.locked .item-content {
+        filter: saturate(0) brightness(0.72);
+    }
 
-.new-item-chapter.locked {
-    filter: saturate(0) brightness(0.72);
-}
+    .new-item-chapter.locked::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 68px;
+        height: 90px;
+        background-image: url("/media/images/locked-block/lock.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .new-item-chapter.locked::after {
+            background-image: url("/media/images/locked-block/lock@2x.png");
+        }
+    }
 
 .new-item-chapter.in-progress {
     pointer-events: none;
