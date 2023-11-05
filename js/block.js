@@ -437,7 +437,9 @@ $(document).ready(function() {
       }
 
       // Раньше здесь вызывалась SetInfo, что очень тормозило сайт, но теперь только обложки через setPartialInfo:
-      setPartialInfo(data, inCart = false, i);
+        if ( data['available'] ) {
+            setPartialInfo(data, inCart = false, i);
+        }
     });
   }
 
