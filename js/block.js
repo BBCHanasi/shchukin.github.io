@@ -368,13 +368,10 @@ async function setPartialInfo(info, inCart, blockNumber){
       cover = `
         <div class="cover">
             <picture>
-            
                 <source srcset="${info['cover-img']}-large@3x.avif 3x, ${info['cover-img']}-large@2x.avif 2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
                 <source srcset="${info['cover-img']}-large@3x.jpg 3x, ${info['cover-img']}-large@2x.jpg 2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
-                
                 <source srcset="${info['cover-img']}-small@3x.avif 3x, ${info['cover-img']}-small@2x.avif 2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
                 <source srcset="${info['cover-img']}-small@3x.jpg 3x, ${info['cover-img']}-small@2x.jpg 2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
-                
                 <img src="${info['cover-img']}-large@1x.jpg" 
                   width="1010"
                   height="478"
