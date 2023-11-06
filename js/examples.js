@@ -22,7 +22,7 @@ function setItemVideo(info){
         </div>
         <div class="example-footer">
             <div class="example-footer-top">
-                <img srcset="${info.avatar}@3x.jpg 3x, ${info.avatar}@2x.jpg 2x, ${info.avatar}@1x.jpg 1x"
+                <img srcset="${info.avatar}@3x.jpg 2.2x, ${info.avatar}@2x.jpg 1.2x, ${info.avatar}@1x.jpg 1x"
                      src="${info.avatar}@1x.jpg" 
                      width="64"
                      height="64"
@@ -48,8 +48,8 @@ function setItemImg(info){
     <div class="example-item">
         <div class="example-image">
             <picture>
-                <source srcset="${info.example}@3x.avif 3x, ${info.example}@2x.avif 2x, ${info.example}@1x.avif 1x" type="image/avif">
-                <img srcset="${info.example}@3x.jpg 3x, ${info.example}@2x.jpg 2x, ${info.example}@1x.jpg 1x" 
+                <source srcset="${info.example}@3x.avif 2.2x, ${info.example}@2x.avif 1.2x, ${info.example}@1x.avif 1x" type="image/avif">
+                <img srcset="${info.example}@3x.jpg 2.2x, ${info.example}@2x.jpg 1.2x, ${info.example}@1x.jpg 1x" 
                      src="${info.example}@1x.jpg" 
                      width="324"
                      height="354"
@@ -59,7 +59,7 @@ function setItemImg(info){
         </div>
         <div class="example-footer">
             <div class="example-footer-top">
-                <img srcset="${info.avatar}@3x.jpg 3x, ${info.avatar}@2x.jpg 2x, ${info.avatar}@1x.jpg 1x"
+                <img srcset="${info.avatar}@3x.jpg 2.2x, ${info.avatar}@2x.jpg 1.2x, ${info.avatar}@1x.jpg 1x"
                      src="${info.avatar}@1x.jpg" 
                      width="64"
                      height="64"

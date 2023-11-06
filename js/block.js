@@ -130,11 +130,11 @@ async function setInfo(info, inCart, blockNumber){
         <div class="cover">
             <picture>
             
-                <source srcset="${info['cover-img']}-large@3x.avif 3x, ${info['cover-img']}-large@2x.avif 2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
-                <source srcset="${info['cover-img']}-large@3x.jpg 3x, ${info['cover-img']}-large@2x.jpg 2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-large@3x.avif 2.2x, ${info['cover-img']}-large@2x.avif 1.2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-large@3x.jpg 2.2x, ${info['cover-img']}-large@2x.jpg 1.2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
                 
-                <source srcset="${info['cover-img']}-small@3x.avif 3x, ${info['cover-img']}-small@2x.avif 2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
-                <source srcset="${info['cover-img']}-small@3x.jpg 3x, ${info['cover-img']}-small@2x.jpg 2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-small@3x.avif 2.2x, ${info['cover-img']}-small@2x.avif 1.2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-small@3x.jpg 2.2x, ${info['cover-img']}-small@2x.jpg 1.2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
                 
                 <img src="${info['cover-img']}-large@1x.jpg" 
                   width="1010"
@@ -170,7 +170,7 @@ async function setInfo(info, inCart, blockNumber){
     info['teachers'].forEach(function (e) {
         let i = `
         <div class="teacher-item">
-            <img srcset="${e.avatar}@3x.jpg 3x, ${e.avatar}@2x.jpg 2x, ${e.avatar}@1x.jpg 1x"
+            <img srcset="${e.avatar}@3x.jpg 2.2x, ${e.avatar}@2x.jpg 1.2x, ${e.avatar}@1x.jpg 1x"
                 src="${e['avatar']}@1x.jpg" 
                 width="40"
                 height="40"
@@ -252,11 +252,11 @@ async function setInfo(info, inCart, blockNumber){
         <div class="cover">
             <picture>
             
-                <source srcset="${info['cover-img']}-large@3x.avif 3x, ${info['cover-img']}-large@2x.avif 2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
-                <source srcset="${info['cover-img']}-large@3x.jpg 3x, ${info['cover-img']}-large@2x.jpg 2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-large@3x.avif 2.2x, ${info['cover-img']}-large@2x.avif 1.2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-large@3x.jpg 2.2x, ${info['cover-img']}-large@2x.jpg 1.2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
                 
-                <source srcset="${info['cover-img']}-small@3x.avif 3x, ${info['cover-img']}-small@2x.avif 2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
-                <source srcset="${info['cover-img']}-small@3x.jpg 3x, ${info['cover-img']}-small@2x.jpg 2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-small@3x.avif 2.2x, ${info['cover-img']}-small@2x.avif 1.2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-small@3x.jpg 2.2x, ${info['cover-img']}-small@2x.jpg 1.2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
                 
                 <img src="${info['cover-img']}-large@1x.jpg" 
                   width="1010"
@@ -292,7 +292,7 @@ async function setInfo(info, inCart, blockNumber){
     info['teachers'].forEach(function (e) {
         let i = `
         <div class="teacher-item">
-            <img srcset="${e.avatar}@3x.jpg 3x, ${e.avatar}@2x.jpg 2x, ${e.avatar}@1x.jpg 1x"
+            <img srcset="${e.avatar}@3x.jpg 2.2x, ${e.avatar}@2x.jpg 1.2x, ${e.avatar}@1x.jpg 1x"
                 src="${e['avatar']}@1x.jpg" 
                 width="40"
                 height="40"
@@ -368,10 +368,10 @@ async function setPartialInfo(info, inCart, blockNumber){
       cover = `
         <div class="cover">
             <picture>
-                <source srcset="${info['cover-img']}-large@3x.avif 3x, ${info['cover-img']}-large@2x.avif 2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
-                <source srcset="${info['cover-img']}-large@3x.jpg 3x, ${info['cover-img']}-large@2x.jpg 2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
-                <source srcset="${info['cover-img']}-small@3x.avif 3x, ${info['cover-img']}-small@2x.avif 2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
-                <source srcset="${info['cover-img']}-small@3x.jpg 3x, ${info['cover-img']}-small@2x.jpg 2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-large@3x.avif 2.2x, ${info['cover-img']}-large@2x.avif 1.2x, ${info['cover-img']}-large@1x.avif 1x" type="image/avif" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-large@3x.jpg 2.2x, ${info['cover-img']}-large@2x.jpg 1.2x, ${info['cover-img']}-large@1x.jpg 1x" type="image/jpeg" width="1010" height="478" media="(min-width: 768px)">
+                <source srcset="${info['cover-img']}-small@3x.avif 2.2x, ${info['cover-img']}-small@2x.avif 1.2x, ${info['cover-img']}-small@1x.avif 1x" type="image/avif" width="634" height="300" media="(max-width: 767px)">
+                <source srcset="${info['cover-img']}-small@3x.jpg 2.2x, ${info['cover-img']}-small@2x.jpg 1.2x, ${info['cover-img']}-small@1x.jpg 1x" type="image/jpeg" width="634" height="300" media="(max-width: 767px)">
                 <img src="${info['cover-img']}-large@1x.jpg" 
                   width="1010"
                   height="478"
@@ -470,8 +470,8 @@ function setItemTypeImg(data, i){
   <div class="new-item-chapter ${ data['available'] ? '' : 'locked' } ${progress} i-modal-btn text-${data['text-color']}" style="order:${i}" data-popup-id="block-modal" data-block="${i}" data-category="${data['category'].join(', ')}">
     <div class="chapter-cover">
       <picture>
-        <source srcset="${data['preview-img']}@3x.avif 3x, ${data['preview-img']}@2x.avif 2x, ${data['preview-img']}@1x.avif 1x" type="image/avif">
-        <img srcset="${data['preview-img']}@3x.jpg 3x, ${data['preview-img']}@2x.jpg 2x, ${data['preview-img']}@1x.jpg 1x" 
+        <source srcset="${data['preview-img']}@3x.avif 2.2x, ${data['preview-img']}@2x.avif 1.2x, ${data['preview-img']}@1x.avif 1x" type="image/avif">
+        <img srcset="${data['preview-img']}@3x.jpg 2.2x, ${data['preview-img']}@2x.jpg 1.2x, ${data['preview-img']}@1x.jpg 1x" 
           src="${data['preview-img']}@1x.jpg" 
           width="328"
           height="328"
