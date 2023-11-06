@@ -515,7 +515,7 @@ input[type="radio"]:checked + label:after {
 	overflow: hidden;
 }
 
-@media (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 1.2), (min-resolution: 1.2dppx) {
 	.promo-base {
 		background-image: url("../media/images/bg/bg-1920@2x.png");
 	}
@@ -2613,7 +2613,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		background-size: cover;
 	}
 
-	@media (min-resolution: 2dppx) {
+	@media (-webkit-min-device-pixel-ratio: 1.2), (min-resolution: 1.2dppx) {
 		.promo-base {
 			background-image: url("../media/images/bg/bg-web@2x.png");
 		}
@@ -2732,7 +2732,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		background-image: url("../media/images/bg/bg-tablet.png");
 	}
 
-	@media (min-resolution: 2dppx) {
+	@media (-webkit-min-device-pixel-ratio: 1.2), (min-resolution: 1.2dppx) {
 		.promo-base {
 			background-image: url("../media/images/bg/bg-tablet@2x.png");
 		}
@@ -3845,7 +3845,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 		padding-right: 24px;
 	}
 
-	@media (min-resolution: 2dppx) {
+	@media (-webkit-min-device-pixel-ratio: 1.2), (min-resolution: 1.2dppx) {
 		.promo-base {
 			background-image: url("../media/images/bg/bg-mobile@2x.png");
 		}
