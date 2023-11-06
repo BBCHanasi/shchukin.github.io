@@ -1,6 +1,6 @@
 let pixelDensity;
 
-if (window.matchMedia("(min-resolution: 1.5dppx)").matches) {
+if (window.matchMedia("(min-resolution: 1.2dppx)").matches) {
   pixelDensity = '@2x';
 } else {
   pixelDensity = '@1x';
