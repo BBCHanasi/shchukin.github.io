@@ -1,9 +1,7 @@
-let pixelDensity;
+let pixelDensity = '@1x';
 
-if (window.matchMedia("(min-resolution: 1.2dppx)").matches) {
+if (window.matchMedia("(-webkit-min-device-pixel-ratio: 1.2), (min-resolution: 1.2dppx)").matches) {
   pixelDensity = '@2x';
-} else {
-  pixelDensity = '@1x';
 }
 
 (function () {
