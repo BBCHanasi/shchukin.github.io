@@ -381,24 +381,20 @@ function calc_totals() {
   var str = "";
 
   for (var i = 1; i < BBC_parts_count + 1; i++) {
-    if (
-      document
-        .getElementById("bl_BBC_Part_" + i)
-        .classList.contains("checked_block")
-    ) {
-      Full_total_price = Full_total_price + BBC_Full_price[i];
-      Inst_total_price = Inst_total_price + BBC_Inst_price[i];
+    if ( document.getElementById("bl_BBC_Part_" + i) != null ) {
+      if ( document.getElementById("bl_BBC_Part_" + i).classList.contains("checked_block") ) {
+        Full_total_price = Full_total_price + BBC_Full_price[i];
+        Inst_total_price = Inst_total_price + BBC_Inst_price[i];
+      }
     }
   }
 
   for (var i = 1; i < MC_parts_count + 1; i++) {
-    if (
-      document
-        .getElementById("bl_MC_Part_" + i)
-        .classList.contains("checked_block")
-    ) {
-      Full_total_price = Full_total_price + MC_Full_price[i];
-      Inst_total_price = Inst_total_price + MC_Inst_price[i];
+    if ( document.getElementById("bl_MC_Part_" + i) != null ) {
+      if ( document.getElementById("bl_MC_Part_" + i).classList.contains("checked_block") ) {
+        Full_total_price = Full_total_price + MC_Full_price[i];
+        Inst_total_price = Inst_total_price + MC_Inst_price[i];
+      }
     }
   }
   // Пересчитываем цену с учетом того есть скидка или нет
@@ -453,17 +449,17 @@ function paychange(type) {
     El_Choicer_Full.classList.add("active_choicer");
     El_Choicer_Inst.classList.remove("active_choicer");
 
-    El_BBC_1_price.innerHTML = BBC_Full_price[1].toLocaleString() + `&nbsp₽`;
-    El_BBC_2_price.innerHTML = BBC_Full_price[2].toLocaleString() + `&nbsp₽`;
-    El_BBC_3_price.innerHTML = BBC_Full_price[3].toLocaleString() + `&nbsp₽`;
-    El_BBC_4_price.innerHTML = BBC_Full_price[4].toLocaleString() + `&nbsp₽`;
-    El_BBC_5_price.innerHTML = BBC_Full_price[5].toLocaleString() + `&nbsp₽`;
-    El_BBC_6_price.innerHTML = BBC_Full_price[6].toLocaleString() + `&nbsp₽`;
-    El_BBC_7_price.innerHTML = BBC_Full_price[7].toLocaleString() + `&nbsp₽`;
-    El_BBC_8_price.innerHTML = BBC_Full_price[8].toLocaleString() + `&nbsp₽`;
-    El_BBC_9_price.innerHTML = BBC_Full_price[9].toLocaleString() + `&nbsp₽`;
-    El_BBC_10_price.innerHTML = BBC_Full_price[10].toLocaleString() + `&nbsp₽`;
-    El_BBC_11_price.innerHTML = BBC_Full_price[11].toLocaleString() + `&nbsp₽`;
+    if(El_BBC_1_price != null ) { El_BBC_1_price.innerHTML = BBC_Full_price[1].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_2_price != null ) { El_BBC_2_price.innerHTML = BBC_Full_price[2].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_3_price != null ) { El_BBC_3_price.innerHTML = BBC_Full_price[3].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_4_price != null ) { El_BBC_4_price.innerHTML = BBC_Full_price[4].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_5_price != null ) { El_BBC_5_price.innerHTML = BBC_Full_price[5].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_6_price != null ) { El_BBC_6_price.innerHTML = BBC_Full_price[6].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_7_price != null ) { El_BBC_7_price.innerHTML = BBC_Full_price[7].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_8_price != null ) { El_BBC_8_price.innerHTML = BBC_Full_price[8].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_9_price != null ) { El_BBC_9_price.innerHTML = BBC_Full_price[9].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_10_price != null ) { El_BBC_10_price.innerHTML = BBC_Full_price[10].toLocaleString() + `&nbsp₽`; }
+    if(El_BBC_11_price != null ) { El_BBC_11_price.innerHTML = BBC_Full_price[11].toLocaleString() + `&nbsp₽`; }
 
     // El_MC_1_price.innerHTML = MC_Full_price[1].toLocaleString() + `&nbsp₽`;
     // El_MC_2_price.innerHTML = MC_Full_price[2].toLocaleString() + `&nbsp₽`;
