@@ -1829,10 +1829,6 @@ img.logo-workshop {
 	content:"Оплатить сразу";
 }
 
-.choice-pay-label::before {
-	content:"Выберите блоки обучения"
-}
-
 /* .presale-label::after {
 	content: 'предпродажа';
     display: flex;
@@ -3327,9 +3323,7 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	.full-pay-label::before{
 		content:"Оплатить сразу";
 	}
-	.choice-pay-label::before{
-		content:"Выберите блоки"
-	}
+
 	.pp_left_side,
 	.pp_right_side {
 		margin-left: -24px;

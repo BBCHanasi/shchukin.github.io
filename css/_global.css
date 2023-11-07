@@ -134,3 +134,11 @@ img {
 .carousel-cutter {
     overflow: hidden;
 }
+
+
+@media (max-width: 767px) {
+
+    .desktop-only {
+        display: none;
+    }
+}
