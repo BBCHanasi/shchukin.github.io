@@ -142,3 +142,7 @@ img {
         display: none;
     }
 }
+
+.nobr {
+    white-space: nowrap;
+}
