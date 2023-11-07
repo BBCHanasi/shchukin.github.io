@@ -1123,6 +1123,8 @@ img.logo-workshop {
 }
 
 .pp_text_li {
+	margin-top: 0;
+	margin-bottom: 0;
 	font-size: 40px;
 	line-height: 44px;
 	font-weight: 400;
@@ -2183,6 +2185,8 @@ input[type="text"].custom-input:focus ~ .custom-label {
 }
 
 .faq_ls_top_title_text_li {
+	margin-top: 0;
+	margin-bottom: 0;
 	color: #fff;
 	font-size: 54px;
 	font-weight: 400;
