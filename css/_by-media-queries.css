@@ -1825,10 +1825,6 @@ img.logo-workshop {
 	background-color: #3e3e3e;
 }
 
-.full-pay-label::before {
-	content:"Оплатить сразу";
-}
-
 /* .presale-label::after {
 	content: 'предпродажа';
     display: flex;
@@ -3319,9 +3315,6 @@ input[type="text"].custom-input:focus ~ .custom-label {
 	}
 	.pp_rs_payment_section .full-price{
 		margin-left: 0px;
-	}
-	.full-pay-label::before{
-		content:"Оплатить сразу";
 	}
 
 	.pp_left_side,
